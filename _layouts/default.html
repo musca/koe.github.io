@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <link rel="shortcut icon" href="http://musca.se/favicon.ico">
+    <title>
+      {{ page.title }}
+    </title>
+    <meta name="viewport" content="width=device-width">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+
+    <script>
+      window.addEventListener("load", init, false);
+      function init() {
+        var greeting = document.getElementById("greeting"),
+            now = new Date(),
+            h = now.getHours();
+
+        if (h > 0 && h < 4) {
+          greeting.innerHTML = 'Have a great night';
+        } else if (h >= 4 && h < 12) {
+          greeting.innerHTML = 'Good morning';
+        } else if (h >= 12 && h < 18) {
+          greeting.innerHTML = 'Good afternoon';
+        } else {
+          greeting.innerHTML = 'Good evening';
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <div class='site'>
+      <div id='header'>
+        <div class='' id='h1'>
+          <a href='/'>{{ site.name }}</a>
+          <span class="dim">the social part of</span>
+          <a href='http://musca.se'>musca.se</a>
+        </div>
+        <div id="greeting"></div>
+      </div>
+      {{ content }}
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

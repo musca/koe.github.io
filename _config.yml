@@ -1,0 +1,5 @@
+name: musca.github.io
+markdown: redcarpet
+pygments: true
+description: "This is where I keep a blog about my github projects, web design & development."
+url: http://musca.github.io
