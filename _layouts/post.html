@@ -7,24 +7,28 @@ layout: default
 </h1>
 <div class="post">
   {{ content }}
-  <h4>Related posts</h4>
+  <div id="comments"></div>
+  <ul id="comments-ul"></ul>
+  <!-- <a href="https://github.com/login/oauth/authorize?client_id=8b4f7541af4ed7e79f55&redirect_uri=http://localhost:9999"></a> -->
+  <!-- <a href="https://github.com/login/oauth/authorize?client_id=8b4f7541af4ed7e79f55">authorize this page</a> -->
   <ul id="related">
+    {% if site.related_posts.size == 1 %}
+      You maybe like to read this related post
+    {% else %}
+      You maybe like to read these related posts
+    {% endif %}
     {% for post in site.related_posts limit:3 %}
-      {% assign match = false %}      
+      {% assign match = false %}
       {% for category in post.categories %}
         {% if page.categories contains category %}
           {% assign match = true %}
         {% endif %}
       {% endfor %}
-      {% if match %}
-        <li>
+      {% if match %}      
+        <span>
           <a href="{{ post.url }}">{{ post.title }}</a>
-          <p>{{ post.excerpt }}</p>
-        </li>
+        </span>        
       {% endif %}                       
     {% endfor %}
   </ul>
-  
-    <!-- <a href="http://www.instapaper.com/hello2?url=http://musca.github.io{{ page.url }}" title="{{ page.title}}">Read with instapaper</a> -->
-  
 </div>

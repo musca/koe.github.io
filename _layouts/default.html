@@ -10,31 +10,14 @@
     <link rel="stylesheet" href="/css/syntax.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
-
-    <script>
-      window.addEventListener("load", init, false);
-      function init() {
-        var greeting = document.getElementById("greeting"),
-            now = new Date(),
-            h = now.getHours();
-
-        if (h > 0 && h < 4) {
-          greeting.innerHTML = 'Have a great night';
-        } else if (h >= 4 && h < 12) {
-          greeting.innerHTML = 'Good morning';
-        } else if (h >= 12 && h < 18) {
-          greeting.innerHTML = 'Good afternoon';
-        } else {
-          greeting.innerHTML = 'Good evening';
-        }
-      };
-    </script>
+    <script src="/scripts/site.min.js"></script>
   </head>
   <body>
+    {{ post.title }}
     <div class='site'>
       <div id='header'>
         <div class='' id='h1'>
-          <a href='/'>{{ site.name }}</a>
+          <a href='/'>blog.musca.se</a>
           <span class="dim">the social part of</span>
           <a href='http://musca.se'>musca.se</a>
         </div>
@@ -42,6 +25,13 @@
       </div>
       {{ content }}
     </div>
+    <script>
+        // var code = window.location.href.match(/\?code=(.*)/)[1];
+
+        // $.getJSON('http://localhost:9999/oauth/authenticate/'+code, function(data) {
+        //  console.log(data.token);
+        // });
+    </script>
     {% include footer.html %}
   </body>
 </html>

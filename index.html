@@ -1,27 +1,22 @@
 ---
 layout: default
-title: musca.github.io
+title: blog.musca.se
 ---
 
 <div id="home">
   <img src="images/musca-github.png" id="logo" alt="">
-  <h1>I'm hosted with GitHub Pages. On a CDN server near you.</h1>
-  
+  <h1>I'm hosted with GitHub Pages. On a CDN server near you.</h1> 
   <p class="leading">This is <a href="/">musca.github.io</a> where I keep a blog about my <a href="https://github.com/musca?tab=repositories">github projects</a>, web design & development.</p>
-  <h3 class="dim">latest blog post</h3>
-  <div class="post">
-    
+  <p class="dim">latest blog post</p>
+  <div class="post"> 
     {% assign post = site.posts.first %}
     {% assign content = post.content %}
-
     <!-- {{ post.date | date_to_string }} -->
     <h1>
       <a href="{{ post.url }}">{{ post.title }}</a> 
-    </h1>
-      
+    </h1>    
     {{ content }}
-
-    <h2>older posts</h2>
+    <h2>Older posts</h2>
     {% for post in site.related_posts %}
       <a href="{{ post.url }}">{{ post.title }}</a><br />
     {% endfor %}
