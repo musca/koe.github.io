@@ -14,7 +14,7 @@ function init() {
     greeting.innerHTML = 'Good evening';
   }
 };
-$( document ).ready(function() {   
+$(document).ready(function() {   
   // Get issues
   $.ajax({
     url: "https://api.github.com/repos/musca/musca.github.io/issues",
@@ -26,14 +26,18 @@ $( document ).ready(function() {
           var comments = data[key].comments
           if (comments >= 1) {
             var v = (comments == 1) ? 'comment' : 'comments';
-            $("#comments").html("<a href=''>show "+data[key].comments+" "+v+"</a> ");
+            $("#comments").html("<a href=''>show "+comments+" "+v+"</a> ");
             $("#comments").on('click', 'a', function(event) {
               event.preventDefault()
               getComments(data[key].number);
-              $("#comments").html("showing "+data[key].comments+" "+v+"");
+              $("#comments").html("showing "+comments+" "+v+"");
             });
           } else {
-            $("#comments").html("There is no comments on this post. <a href="+data[key].html_url+">Be the first!</a>");
+            $("#comments").on('click', 'a', function(event) {
+              event.preventDefault()
+              $("#comments-form").addClass("visable");
+            });
+            $("#comments").html("There is no comments on this post. <a href="+data[key].html_url+" id=be-the-first>Be the first!</a>");
           }
         }
       });
@@ -59,6 +63,7 @@ $( document ).ready(function() {
           tmpHolder.push(tmp);
         });
         $("#comments-ul").append(tmpHolder.join('')).addClass("loaded");
+        $("#comments-form").addClass("visable");
       }
     });
   }

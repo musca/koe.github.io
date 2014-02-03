@@ -8,14 +8,19 @@ layout: default
 <div class="post">
   {{ content }}
   <div id="comments"></div>
-  <ul id="comments-ul"></ul>
+  <ul id="comments-ul">
+    
+  </ul>
+  <form action="" id="comments-form">
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+  </form>
   <!-- <a href="https://github.com/login/oauth/authorize?client_id=8b4f7541af4ed7e79f55&redirect_uri=http://localhost:9999"></a> -->
   <!-- <a href="https://github.com/login/oauth/authorize?client_id=8b4f7541af4ed7e79f55">authorize this page</a> -->
   <ul id="related">
     {% if site.related_posts.size == 1 %}
-      You maybe like to read this related post
+      <div class="title">You maybe like to read this related post</div>
     {% else %}
-      You maybe like to read these related posts
+      <div class="title">You maybe like to read these related posts</div>
     {% endif %}
     {% for post in site.related_posts limit:3 %}
       {% assign match = false %}

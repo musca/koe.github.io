@@ -315,7 +315,8 @@ div.comment{
   max-width: 100%;
   min-height: 120px;
 }
-#comments-ul{
+#comments-ul,
+#comments-form{
   list-style: none;
   opacity: 0;
   width: 80%;
@@ -341,6 +342,13 @@ div.comment {
   text-align: left;
   margin: 0 0 20px 10px;
 }
+#comments-form{
+  display: none;
+}
+#comments-form.visable{
+  display: block;
+  opacity: 1;
+}
 #related {
   list-style: none;
   padding-top: 40px;
@@ -364,6 +372,9 @@ div.comment {
 #related li p{
   margin: 5px 0 0 0;
   text-align: left;
+}
+#related > div.title:only-child{
+  display: none;
 }
 #related span:first-child:after {
     content: ", ";
