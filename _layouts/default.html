@@ -3,35 +3,29 @@
   <head>
     <link rel="shortcut icon" href="http://musca.se/favicon.ico">
     <title>
-      {{ page.title }}
+      {{ site.name }} | {{ page.title }}
     </title>
     <meta name="viewport" content="width=device-width">
     <!-- syntax highlighting CSS -->
     <link rel="stylesheet" href="/css/syntax.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
-    <script src="/scripts/site.min.js"></script>
+    <script src="/scripts/jquery-latest.min.js"></script>
+    <script src="/scripts/site.js"></script>   
   </head>
   <body>
     {{ post.title }}
     <div class='site'>
       <div id='header'>
         <div class='' id='h1'>
-          <a href='/'>blog.musca.se</a>
-          <span class="dim">the social part of</span>
-          <a href='http://musca.se'>musca.se</a>
+          <a href='/'>{{ site.name }}</a>
+          <!-- <span class="dim">the social part of</span>
+          <a href='http://musca.se'>musca.se</a> -->
         </div>
         <div id="greeting"></div>
       </div>
       {{ content }}
     </div>
-    <script>
-        // var code = window.location.href.match(/\?code=(.*)/)[1];
-
-        // $.getJSON('http://localhost:9999/oauth/authenticate/'+code, function(data) {
-        //  console.log(data.token);
-        // });
-    </script>
     {% include footer.html %}
   </body>
 </html>

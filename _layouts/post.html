@@ -7,13 +7,24 @@ layout: default
 </h1>
 <div class="post">
   {{ content }}
-  <div id="comments"></div>
-  <ul id="comments-ul">
-    
-  </ul>
-  <form action="" id="comments-form">
-    <textarea name="" id="" cols="30" rows="10"></textarea>
-  </form>
+  <div id="comments-wrapper">
+    <div id="comments"></div>
+    <ul id="comments-ul">
+      
+    </ul>
+    <div id="auth">
+      <img src="/images/john-doe.png" class="john-doe" alt="">
+    </div>
+    <form action="" id="comments-form">
+  <!--     <P>
+        You need a GitHub account to comment.
+        
+      </P>
+      <p>and authorize this site.</p> -->
+      <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+      <div contenteditable="true"></div>
+    </form>
+  </div>
   <!-- <a href="https://github.com/login/oauth/authorize?client_id=8b4f7541af4ed7e79f55&redirect_uri=http://localhost:9999"></a> -->
   <!-- <a href="https://github.com/login/oauth/authorize?client_id=8b4f7541af4ed7e79f55">authorize this page</a> -->
   <ul id="related">

@@ -36,6 +36,7 @@ $(document).ready(function() {
             $("#comments").on('click', 'a', function(event) {
               event.preventDefault()
               $("#comments-form").addClass("visable");
+              $("#comments").html("Be the first!");
             });
             $("#comments").html("There is no comments on this post. <a href="+data[key].html_url+" id=be-the-first>Be the first!</a>");
           }
@@ -52,13 +53,17 @@ $(document).ready(function() {
       success: function (data) {
         var tmpHolder = [];
         Object.keys(data);
-        Object.keys(data).forEach(function (key) { 
+        Object.keys(data).forEach(function (key) {
+          var user = data[key].user;
           var tmp = 
             '<li>' +
-            '  <div class="gravtar"><img src=https://gravatar.com/avatar/'+data[key].user.gravatar_id+'></div>'+
-            '  <div class="user">'+data[key].user.login+'</div>'+
+            '  <div class="gravtar">'+
+            '    <a href="'+user.html_url+'" class="user">'+
+            '      <img src=https://gravatar.com/avatar/'+user.gravatar_id+'>'+
+            '    </a>'+
+            '    <a href="'+user.html_url+'" class="user">'+user.login+'</a>'+
+            '  </div>'+
             '  <div class="comment">'+data[key].body+'</div>'+
-            '  </a>'+ 
             '</li>';
           tmpHolder.push(tmp);
         });

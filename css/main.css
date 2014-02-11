@@ -210,7 +210,7 @@ div.comment{
   max-width: 42em;
 }
 .post h1 > a {
-  color: #111;
+  color: #444;
 }
 .post h1 > a:hover {
   color: #ffae00;
@@ -251,7 +251,7 @@ div.comment{
 .post div img {
   width: 100%;
   display: block;
-  margin: 40px auto;
+  margin: 40px auto 5px;
   height: auto;
 }
 
@@ -290,14 +290,16 @@ div.comment{
   font-weight: bold;
   text-decoration: none;
 }
+#comments-wrapper {
+  width: 80%;
+  max-width: 768px;
+}
 #comments{
   opacity: 0;
   border-top: 1px solid #F1F1F1;
   border-bottom: 1px solid #F1F1F1;
   padding: 20px 0;
   max-width: 100%;
-  width: 80%;
-  max-width: 768px;
   text-align: center;
 }
 #comments a{
@@ -319,35 +321,85 @@ div.comment{
 #comments-form{
   list-style: none;
   opacity: 0;
-  width: 80%;
-  max-width: 768px;
   margin: 0 auto;
 }
 #comments-ul li{
+  position: relative;
   padding-bottom: 4em;
-  font-size: 17px;
+  font-size: 18px;
 }
-ul#comments-ul .gravtar > img {
+ul#comments-ul .gravtar{
   width: 70px;
   height: auto;
-  margin: 0 10px 0 0;
-  float: left;
+  /*margin: 0 auto 10px;*/
+  border-radius: 35px;
 }
-
+ul#comments-ul .gravtar,
+ul#comments-ul .user {
+  text-decoration: none;
+}
+.gravtar {
+  width: 32%;
+  text-align: center;
+}
 ul#comments-ul .user {
   font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  /*font-weight: bold;*/
+  width: 70px;
+  text-align: center;
+  padding-top: 10px;
+}
+#auth{
+  width: 32%;
+  margin: 0;
+}
+#auth .john-doe {
+  border-radius: 50%;
+  border: 1px solid rgb(153, 153, 153);
+  width: 70px;
 }
 div.comment {
+  width: 68%;
   text-align: left;
   margin: 0 0 20px 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 #comments-form{
+  width: 68%;
   display: none;
+  position: relative;
+  min-height: 240px;
+  border-top: 1px solid #FAFAFA;
+  padding-top: 40px;
 }
 #comments-form.visable{
   display: block;
   opacity: 1;
+}
+#comments-form span{
+  width: 32%;
+}
+#comments-form textarea{
+  width: 68%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#comments-form > div{
+  border: 1px solid #999;
+  width: 68%;
+  min-height: 240px;
+  /*position: absolute;*/
+  float: right;
+  right: 0;
+  top: 0;
+}
+#comments-form {
+    content : '\n';
+    clear: both;
+    display: block;
 }
 #related {
   list-style: none;
