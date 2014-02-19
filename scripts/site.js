@@ -22,7 +22,7 @@ $(document).ready(function() {
     success: function (data) {
       Object.keys(data);
       Object.keys(data).forEach(function (key) {
-        if ("musca.github.io | " + data[key].title == document.title) {
+        if ("blog.musca.se | " + data[key].title == document.title) {
           var comments = data[key].comments
           if (comments >= 1) {
             var v = (comments == 1) ? 'comment' : 'comments';
