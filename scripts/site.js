@@ -21,8 +21,8 @@ $(document).ready(function() {
     callback: "foo",
     success: function (data) {
       Object.keys(data);
-      Object.keys(data).forEach(function (key) { 
-        if (data[key].title == document.title) {
+      Object.keys(data).forEach(function (key) {
+        if ("musca.github.io | " + data[key].title == document.title) {
           var comments = data[key].comments
           if (comments >= 1) {
             var v = (comments == 1) ? 'comment' : 'comments';
@@ -35,7 +35,7 @@ $(document).ready(function() {
           } else {
             $("#comments").on('click', 'a', function(event) {
               event.preventDefault()
-              $("#comments-form").addClass("visable");
+              $("#comments-wrapper").addClass("loaded");
               $("#comments").html("Be the first!");
             });
             $("#comments").html("There is no comments on this post. <a href="+data[key].html_url+" id=be-the-first>Be the first!</a>");
@@ -68,7 +68,7 @@ $(document).ready(function() {
           tmpHolder.push(tmp);
         });
         $("#comments-ul").append(tmpHolder.join('')).addClass("loaded");
-        $("#comments-form").addClass("visable");
+        $("#comments-wrapper").addClass("loaded");
       }
     });
   }

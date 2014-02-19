@@ -7,8 +7,9 @@ layout: default
 </h1>
 <div class="post">
   {{ content }}
+  <div id="comments"></div>
   <div id="comments-wrapper">
-    <div id="comments"></div>
+    
     <ul id="comments-ul">
       
     </ul>
@@ -26,7 +27,7 @@ layout: default
     </form>
   </div>
   <!-- <a href="https://github.com/login/oauth/authorize?client_id=8b4f7541af4ed7e79f55&redirect_uri=http://localhost:9999"></a> -->
-  <!-- <a href="https://github.com/login/oauth/authorize?client_id=8b4f7541af4ed7e79f55">authorize this page</a> -->
+  <a href="https://github.com/login/oauth/authorize?client_id=8b4f7541af4ed7e79f55">authorize this page</a>
   <ul id="related">
     {% if site.related_posts.size == 1 %}
       <div class="title">You maybe like to read this related post</div>

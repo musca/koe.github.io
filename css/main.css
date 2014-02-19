@@ -205,7 +205,7 @@ footer > p {
 
 .home p, .post > p, .post > div,
 .posts, .posts > p, .post > div,
-div.comment{
+div.comment, .post > *{
   margin: 1.5em auto;
   max-width: 42em;
 }
@@ -265,7 +265,20 @@ div.comment{
 .post pre.terminal code {
   background-color: #333;
 }
-
+.post blockquote {
+  text-align: center;
+  font-style: italic;
+  background-color: :;
+}
+.post blockquote p:before {
+  content:"\201C";
+}
+.post blockquote p:after {
+  content:"\201D";
+}
+.post blockquote p{
+ padding: 5px 20px;
+}
 /*****************************************************************************/
 /*
 /* Misc
@@ -293,6 +306,7 @@ div.comment{
 #comments-wrapper {
   width: 80%;
   max-width: 768px;
+  opacity: 0;
 }
 #comments{
   opacity: 0;
@@ -318,10 +332,15 @@ div.comment{
   min-height: 120px;
 }
 #comments-ul,
-#comments-form{
+#comments-form,
+#auth{
   list-style: none;
-  opacity: 0;
+  /*opacity: 0;*/
   margin: 0 auto;
+}
+#comments-form {
+  float: right;
+  overflow: hidden;
 }
 #comments-ul li{
   position: relative;
