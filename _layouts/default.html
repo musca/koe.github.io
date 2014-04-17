@@ -14,14 +14,13 @@
     <script src="/scripts/site.js"></script>   
   </head>
   <body>
-    {{ post.title }}
     <div class='site'>
       <div id='header'>
-        <div class='' id='h1'>
-          <a href='/'>{{ site.name }}</a>
-          <!-- <span class="dim">the social part of</span>
-          <a href='http://musca.se'>musca.se</a> -->
-        </div>
+        {% if page.url == '/index.html' %}
+          blog.<a href='http://musca.se'>musca.se</a>      
+        {% else %}
+          <a href='/'>blog.musca.se</a>       
+        {% endif %}
         <div id="greeting"></div>
       </div>
       {{ content }}

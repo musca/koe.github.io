@@ -17,7 +17,7 @@ html, body { height: 100%; }
 
 body {
   background-color: #FFF;
-  font: 13.34px Georgia, serif;
+  font: 13.34px Inconsolata, Georgia, serif;
   /*line-height: 2.83;*/
   font-size: small;
   text-align: center;
@@ -26,14 +26,14 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%; 
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Cutive Mono', Inconsolata, 'Open Sans','Helvetica Neue', Arial, sans-serif;
   text-align: center;
 }
 
 h1 { 
   font-size: 48px;
   margin: 0 0 .5em;
-  color: #111;
+  color: #4f5566;
   line-height: 1.5em;
   font-weight: normal;
 }
@@ -57,9 +57,9 @@ h4 {
   padding: 40px 0 0;
   color: #999;
 }
-p { font-size: 19px; margin: 1em 0; line-height: 1.8em; color: #111;}
+p { font-size: 19px; margin: 1em 0; line-height: 1.8em; color: #111; word-spacing: -3px; }
 
-a         { color: #ffae00; }
+a :not(h1 a){ color: #ffae00; }
 
 a:visited { color: #ff9c00; }
 a, a:link, a:visited {
@@ -96,7 +96,7 @@ a:hover   { color: #000; }
 
 .posts span {
   color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
+  /*font-family: Monaco, "Courier New", monospace;*/
   font-size: 80%;
 }
 

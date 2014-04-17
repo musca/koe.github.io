@@ -26,6 +26,7 @@ $(document).ready(function() {
           var comments = data[key].comments
           if (comments >= 1) {
             var v = (comments == 1) ? 'comment' : 'comments';
+            $("#comments-wrapper").append("if you like to comment, head over <a href="+data[key].html_url+">here</a>");
             $("#comments").html("<a href=''>show "+comments+" "+v+"</a> ");
             $("#comments").on('click', 'a', function(event) {
               event.preventDefault()
@@ -33,13 +34,14 @@ $(document).ready(function() {
               $("#comments").html("showing "+comments+" "+v+"");
             });
           } else {
-            $("#comments").on('click', 'a', function(event) {
-              event.preventDefault()
-              $("#comments-wrapper").addClass("loaded");
-              $("#comments").html("Be the first!");
-            });
+            // $("#comments").on('click', 'a', function(event) {
+            //   event.preventDefault()
+            //   $("#comments-wrapper").addClass("loaded");
+            //   $("#comments").html("Be the first!");
+            // });
             $("#comments").html("There is no comments on this post. <a href="+data[key].html_url+" id=be-the-first>Be the first!</a>");
           }
+
         }
       });
       $("#comments").addClass("loaded");
