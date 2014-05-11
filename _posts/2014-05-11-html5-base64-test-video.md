@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "HTML 5 base64 test video"
+title:  "HTML5 base64 test video"
 date:   2014-05-11 13:15:00
 categories: blog
 tags: HTML5 video base64
