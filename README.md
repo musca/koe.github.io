@@ -1,4 +1,4 @@
 musca
 =====
 
-musca.github.io - Yekyll based GitHub Page and future blog
+musca.github.io - Yekyll based GitHub blog
