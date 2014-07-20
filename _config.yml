@@ -1,5 +1,5 @@
 name: blog.musca.se
 markdown: redcarpet
-pygments: true
+highlighter: null
 description: "This is where I keep a blog about my github projects, web design & development."
 url: http://blog.musca.se
