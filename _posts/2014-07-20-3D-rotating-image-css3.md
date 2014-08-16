@@ -8,7 +8,7 @@ tags: 3D Rotating image CSS3
 
 
 <style>
-	#logo {
+	#musca-logo {
 		width: 140px;
 		height: 140px;
 		margin: 0 auto;
@@ -40,7 +40,7 @@ tags: 3D Rotating image CSS3
 	    transform: perspective(400px) rotateY(-360deg); }
 	}
 </style>
-<img src="/images/logo.svg" id="logo" alt="" />
+<img src="/images/logo.svg" id="musca-logo" alt="" />
 
 
 	<img src="/images/logo.svg" id="logo" alt="" />
