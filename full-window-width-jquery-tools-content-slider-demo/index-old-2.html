@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" href="assets/stylesheets/full-window-width-content-slider-2012.css" type="text/css" media="screen" title="musca.se 2012" charset="utf-8"/>
+	<script src="assets/scripts/head.load.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		head.js(
+			{jQuery:"http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"},
+			{jQuery_Tools:"assets/scripts/custom.jquery.tools.min.js"},
+			{jQuery_easing:"assets/scripts/jquery.easing-1.3.pack.js"},
+			{content_slider_script:"assets/scripts/full-window-width-content-slider.js"}
+			// ,{facebook_like_button:"http://connect.facebook.net/en_US/all.js#xfbml=1"}
+		);
+		WebFontConfig = { google: { families: [ 'Droid Serif', 'Droid Sans' ] } };
+		(function() { var wf = document.createElement('script'); wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js'; wf.type = 'text/javascript'; wf.async = 'true';
+		  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(wf, s); })();
+	</script>
+	<script>var _gaq=[['_setAccount','UA-21499673-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
+	<title>musca | Full window Width jQuery Tools content slider demo.</title>	
+</head>
+<body>
+<a href="https://github.com/musca/full-window-width-content-slider"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+<div id="header-content">
+	<div class="row v-grid-1" id="header">
+		<div id="logo-wrapper" class="column grid_6">
+			<a id="logo" href="/" class="v-grid-1 grid_4" title="Go to the musca homepage.">Go to the musca homepage.</a>
+		</div>
+		<div class="column grid_6">
+			<div id="toggle" class="off">
+				<div id="off" onclick='api.play();'>&nbsp;</div><!-- yes i know we should not use onClick, but i don´t like autoplay myself. ;D -->
+				<div id="on" onclick='api.pause();'>&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<div id="items" class="items">
+		<!-- Pane 1 -->
+		<div id="welcome" class="items-wrapper">
+			<div class="row">
+				<div class="column grid_12">
+					<h1>Full window width jQuery Tools <span class="bold slide-shadow"><span class="slide-shadow2">content slider</span></span>demo</h1>
+					<ul>
+						<li id="window-width" class="grid_4">
+							100% window width,
+							<p>on larger screens also.</p>
+						</li>
+						<li id="fold-friendly" class="grid_4">
+							More content above the fold
+							<p>and it is SEO friendly.</p>
+						</li>
+						<li id="much-more" class="grid_4">
+							Use almost any type of content.
+							<p>Easy customization and much more!</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="overview" class="items-wrapper">
+			<div class="row">
+				<div class="column grid_6">
+				
+				</div>
+				<div class="column grid_3">
+					<iframe title="YouTube video player" width="220" height="195" src="http://www.youtube.com/embed/ECJHBGyxhlw" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="column grid_3">
+					<h3><a href="">jQuery Tools</a></h3>
+					<p>
+					The slider is based on jQuery Tools library so you can easy incorporate other tools from the library. 
+					</p>
+					<p>
+						If you want to use jQuery code from another project on the page. No problem, 
+					jQuery Tools 1.2.5 is based on jQuery 1.4.2.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="items-wrapper" id="specification">
+			<div class="row visible">
+				<div class="column grid_4 visible">
+					<h2>Features</h2>
+					<ul>
+						<li>100% window width.</li>
+						<li>Carrousel with circular mode.</li>
+						<li>Easing plugin support</li>
+						<li>Javascript fallback.</li>
+						<li>Tested &amp; working in IE6-7, Safari, Firefox, Opera.</li>
+					</ul>
+				</div>
+				<div class="column grid_4 visible">
+					<h2>Techniques</h2>
+					<ul>
+						<li><a href="http://flowplayer.org/tools/scrollable/">jQuery Tools - scrollable</a>
+							<ul>
+								<li>navigator plugin</li>
+								<li>autoscroll plugin</li>
+							</ul>	
+						</li>
+						<li><a href="http://1kbgrid.com/">1Kb Grid 960px grid</a></li>
+					</ul>
+				</div>
+				<div class="column grid_4 visible">
+					<h2>Possibilities</h2>
+					<ul>
+						<li>Showcase products</li>
+						<li>Portfolio</li>
+						<li>Multi step forms.</li>
+						<li>and many more&#8230;</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="navigation-wrapper">
+	<div class="row visible">
+		<ul id="navigation" class="clear-left column grid_6  visible">
+			<li class="grid_2 active">Welcome</li>
+			<li class="grid_2">Overview</li>
+			<li class="grid_2">Specification</li>
+		</ul>
+	</div>
+</div>
+<div id="content" class="row clear-left">
+	<div class="column grid_8">
+		<p class="lead">
+			I created this content slider after not finding any solution to my problem.
+			The problem was that I wanted a full window width content slider that worked on big screens, had javascript fallback, support for all major browsers.
+		</p>
+		<p>
+			For the sliding effect I used jQuery Tools Scrollable and wrote my own javascript/jQuery Tools resize code to achieve 100% window width.
+		</p>	
+		<h2>Known issues</h2>
+		<p>Issues i know about is all related to the resize code and from what i understand, JS is slow for calculations of window dimensions in realtime.</p>
+		<!-- <h3>Facebook comments</h3>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<div class="fb-comments" data-href="http://musca.se/full-window-width-jquery-tools-content-slider-demo/" data-num-posts="10" data-width="620"></div> -->
+
+	</div>
+	<div class="column grid_4">
+		<h2>Changelog</h2>
+		<ol id="change-log">
+			<li>
+				<span class="date">04 jul 2012</span> 	
+				<span class="log-data">
+					A beta release of the new page for the slider is now available at <a href="http://musca.se/full-window-width-jquery-tools-content-slider-demo/beta.html">beta page</a>
+				</span>
+			</li>
+			<li>
+				<span class="date">24 apr 2012</span> 
+				
+				<span class="log-data">
+					Made two new responsive versions. One with
+						<a href="html5-css3-media-queries.html">
+							 HTML5/CSS3(media queries) 
+						</a> 
+						and a
+						<a href="html4-css2-responsive.html">	
+							 HTML4/CSS2( via head.js)
+						</a>.
+						I also updated the <a href="http://musca.se/assets/files/full-window-width-jquery-tools-content-slider.zip">Zip file.</a>
+				</span>
+			</li>
+			<li>
+				<span class="date">23 apr 2012</span> 	
+				<span class="log-data">
+					Uploaded a Zip file with a HTML5 head.js responsive version <a href="http://musca.se/assets/files/full-window-width-jquery-tools-content-slider.zip">download.</a>
+				</span>
+			</li>
+			<li>
+				<span class="date">20 apr 2012</span> 
+				<span class="log-data">
+					Updated the design for this page. <a href="index-old.html">old design.</a>
+				</span>
+			</li>
+			<li>
+				<span class="date">12 may 2011</span> 
+				<span class="log-data">Made a <a href="head-js-slider.html">experiment page</a> to try out the responsiveness of head.js and my code. I have tried it on a 1080p screen down to a iPod touch and it seems to work ok.</span>
+			</li>
+			<li>
+				<span class="date">03 apr 2011</span> 
+				<span class="log-data">Made a first version of a simplified demo. <a href="http://musca.se/full-window-width-jquery-tools-content-slider-demo/demo.html" target="_blank">View the demo here.</a> If you love to write copy and want help me with a tutorial or guide, <a href="mailto:contact@musca.se">contact me.</a></span>
+			</li>
+			<li>
+				<span class="date">20 mar 2011</span> 
+				<span class="log-data">Separated jQuery and jQuery tools. Change to google cdn for jQuery 1.4.2.</span>
+			</li>
+			<li>
+				<span class="date">18 mar 2011</span> 
+				<span class="log-data">Updated the overview slide.</span>
+			</li>
+			<li>
+				<span class="date">28 feb 2011</span> 
+				<span class="log-data">Made some small changes in the script and some design changes to this page.</span>
+			</li>
+			<li>
+				<span class="date">26 feb 2011</span> <span class="log-data">Change from play button to on/off toggle.</span>
+			</li>
+			<li>
+				<span class="date">22 feb 2011</span> <span class="log-data">Added a play/pause button image.</span>
+			</li>
+			<li>
+				<span class="date clear-left">21 feb 2011</span> <span class="log-data">First release to the web. Waiting on feedback, especially from iPad and big screen users.</span>
+			</li>
+		</ol>
+<!--			<ul id="social-buttons">
+				<li>
+					<g:plusone href="http://musca.se/full-window-width-jquery-tools-content-slider-demo/"></g:plusone>
+
+					<script type="text/javascript">
+					  (function() {
+					    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+					    po.src = 'https://apis.google.com/js/plusone.js';
+					    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+					  })();
+					</script>
+				</li>
+				<li>
+					<fb:like href="http://www.musca.se/full-window-width-jquery-Tools-content-slider-demo/" layout="button_count" width="90" font="lucida grande"></fb:like>
+				</li>
+				<li>
+					<script type="text/javascript">
+					    (function() {
+					        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+					        s.type = 'text/javascript';
+					        s.async = true;
+					        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+					        t.parentNode.insertBefore(s, t);
+					    })();
+					</script>
+					<a class="FlattrButton" style="display:none;" href="http://www.musca.se/full-window-width-jquery-tools-content-slider-demo/"></a>
+				</li>
+			</ul> -->
+	</div>
+	
+</div>
+<div id="footer" class="row">
+	<div class="column grid_12">
+		<p>copyright 2011-2012 <a href="/">musca.se</a> | <a href="/cookies/">cookies</a></p>
+	</div>
+</div>
+</body>
+</html>
