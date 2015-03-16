@@ -8,7 +8,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 body{  
 	font: 62.5% 'Droid Serif', Georgia, serif;
-	background-image: url('/assets/images/wrapper-background.png');
+	background-image: url('../images/wrapper-background.png');
 	background-repeat: repeat;
 }
 .wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading h4, .wf-loading #navigation li{
@@ -56,7 +56,7 @@ li{
 }
 ul li{
 	margin-top: 5px;
-	list-style-image: url('/assets/images/list-style-image.gif');
+	list-style-image: url('../images/list-style-image.gif');
 }
 ul ul li, #change-log ul, #navigation li{
 	margin: 0;
@@ -136,7 +136,7 @@ ul ul li{
 	padding-bottom: 20px;
 }
 #logo{
-	background: url('/assets/images/logo.png') no-repeat top left;
+	background: url('../images/logo.png') no-repeat top left;
 	position: absolute;
 	left: 10px;
 	top: 10px;
@@ -147,7 +147,7 @@ ul ul li{
 	position: relative;
 }
 #logo-wrapper{
-	background: url('/assets/images/back-to-home-arrow.png') no-repeat center right;
+	background: url('../images/back-to-home-arrow.png') no-repeat center right;
 }
 #header-content h2, #header-content h3{
 }
@@ -187,7 +187,7 @@ ul ul li{
 	line-height: 30px;
 	margin: 10px auto;
 	text-align:center;*/
-	background: url('/assets/images/brake.png') no-repeat center center;
+	background: url('../images/brake.png') no-repeat center center;
 	
 }
 #welcome ul{
@@ -204,13 +204,13 @@ ul ul li{
 	color: #333;
 }
 #welcome li#window-width{
-	background: url('/assets/images/drawn-100-procent-width.png') no-repeat center bottom;
+	background: url('../images/drawn-100-procent-width.png') no-repeat center bottom;
 }
 #welcome li#fold-friendly{
-	background: url('/assets/images/drawn-over-the-fold.png') no-repeat center bottom;
+	background: url('../images/drawn-over-the-fold.png') no-repeat center bottom;
 }
 #welcome li#much-more{
-	background: url('/assets/images/drawn-content.png') no-repeat center bottom;
+	background: url('../images/drawn-content.png') no-repeat center bottom;
 }
 #welcome li p{
 	font-size: 0.8em;
@@ -279,7 +279,7 @@ ul ul li{
 	height: 30px;
 	margin-top: 10px;
 	float: left;
-	background-image: url('/assets/images/on-off.png');
+	background-image: url('../images/on-off.png');
 	background-position: right bottom;
 	background-repeat: no-repeat;
 	cursor: pointer;
