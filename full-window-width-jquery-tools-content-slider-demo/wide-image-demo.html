@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	
+		<style type="text/css">
+			*{ border: 0; margin: 0; }
+			body{ font-family: Georgia,times,serif}
+			h1,h2{	display: block;	width: 960px; margin: 10px auto; font-weight:normal; }
+			p{ background-color: #c5d400; display: block; width: 480px; margin-top: 10px;}
+/*			a{ color: #FFF;}*/
+			a, p{ padding: 10px;}
+
+			/* 	slider code */
+			
+			#slider{
+				width: 960px;
+				height: 360px;
+				margin: 0 auto;
+				overflow: hidden;
+				position:relative;
+			}
+			.JS #slider{
+				width: 100%;
+				min-width: 960px;
+			}
+			#items{
+				width: 20000em;
+				position: absolute;
+				background: #DDD url('../assets/images/wide-screen-mountains.jpg') no-repeat left center;	
+			}
+			#items > div{
+				float: left;
+				overflow: visible;
+			}
+			#items > div:first-child{
+				float: left;
+				overflow: visible;
+			
+			}
+			.content{
+				width: 960px;
+				height: 360px;
+				margin: 0 auto;
+				overflow: hidden;
+/*				background-color: #333;*/
+			}
+
+			/* navigation code */
+			#navigation-wrapper{
+				display: none;
+			}
+			.JS #navigation-wrapper{
+				display: block;
+				width: 960px;
+				margin: 20px auto;
+				text-align: center;
+			}
+			ul#navigation{
+				width: 330px;
+				margin: 0 auto;
+			}
+			ul#navigation li{
+				width: 100px;
+			}
+			ul#navigation li, .prev, .next{
+				padding: 5px;
+				display: block;
+				color: blue;
+			}
+			ul#navigation li, .prev{
+				float: left;
+			}
+			.next{
+				float: right;
+			}
+			#navigation-wrapper span:hover, ul#navigation li:hover{
+				cursor: pointer;
+				color: red;
+			}
+			 ul#navigation li.active, ul#navigation li.active:hover{
+				background-color: #ccc;
+				color: blue;
+				cursor: default;
+			}
+			.disabled{
+				display: none;
+			}
+	</style>
+	
+	<!-- Loads jQuery libary from googles server -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Load the jQuery easing plugin from your server. download it here > http://gsgd.co.uk/sandbox/jquery/easing/ -->
+	<script src="/assets/scripts/jquery.easing-1.3.pack.js" type="text/javascript" charset="utf-8"></script>
+	
+	<!-- 	Load the jQuery tools you need from your server. In this case: jQuery tools Scrollable with navigation plugin.
+		 	
+		 	You can download the tools I use for this demo here  >  http://musca.se/full-window-width-jquery-tools-content-slider-demo/demo.js
+				
+			or you can download your preferred jQuery tools here:  >  http://flowplayer.org/tools/download/index.html    -->
+	<script src="demo.js" type="text/javascript" charset="utf-8"></script>
+	
+	
+	<!-- 	Simplified content slider code     -->
+	<script type="text/javascript" charset="utf-8">
+		/* 
+		 Full window width content slider by Oskar Engdahl
+		 http://www.musca.se/full-window-width-jquery-tools-content-slider-demo/
+
+		 This code is licensed under GPL and free to use. 
+		 http://www.gnu.org/licenses/gpl.html
+		*/
+		$(function() {
+			// Adds a class to the html code so we can target browsers without JS.
+			$('html').addClass('JS');
+			// Sets the slides width on page load
+			var i = $(window).width();
+			if (i > 959){ $('#items > div').css({ width: i }); }
+			
+			// Scrollable and navigator plugin settings.
+			$("#slider").scrollable({ easing: 'easeOutQuad', speed: 900, circular: false }).navigator({ navi: '#navigation' });
+			
+			// Window resize code
+			window.api = $("#slider").data("scrollable");
+			$(window).resize(function() {
+				var a = window.api.getIndex();
+				var w = $(window).width();
+				if (w > 959) {
+					var l = a * w
+					$('#items').css({ left: + - +l });
+					$('#items > div').css({ width: w });
+				} else {
+					$('#items > div').css({ width: 960 });
+				}
+			});
+		});
+	</script>
+	<title>musca | Full window width content slider experiments.</title>
+</head>
+
+<body>
+	
+	<h1>Full window width content slider lab.</h1>
+	<h2>Full width background image.</h2>
+	<div id="slider">
+		<div id="items">
+			<!-- slide 1 -->
+			<div>
+			   <div class="content">
+			   		<p>
+						Look at the source code to get more info.
+						Read more about scrollable settings at the. <a href="http://flowplayer.org/tools/scrollable/index.html">scrollable web page</a>
+						</p>
+						<p>
+						in this lab i put a background image in the #items id and it need to be wide.
+						So either you repeat a smaller image/pattern or if you have 3 slides, put a image that is 3 times wider then your users widest monitor resolution.
+					</p>
+			   </div>
+			</div>
+			
+			<!-- slide 2 -->
+			<div>
+			  	<div class="content">
+					<p>Some more content in slide 2</p>
+				</div>
+			</div>
+			
+			<!-- slide 3 -->
+			<div>
+			  	<div class="content">
+					<p>And even more content in slide 3</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="navigation-wrapper">
+		<span class="prev">&lt; Previous slide</span>
+		<ul id="navigation">
+			<li class="active">slide 1</li>
+			<li>slide 2</li>
+			<li>slide 3</li>
+		</ul>
+		<span class="next">Next slide &gt;</span>
+	</div>
+	
+	<!-- Google analytics code. Just so I can see if someone is interested in this page -->
+	<!-- <script type="text/javascript">
+	/* <![CDATA[ */
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-21499673-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	/* ]]> */
+	</script> -->
+</body>
+</html>

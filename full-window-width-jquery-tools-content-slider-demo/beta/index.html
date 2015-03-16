@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta property="fb:app_id" content="416382121718874"/>
+  <meta id="Viewport" name="viewport" content="width=device-width, user-scalable=no" />
+  <link rel="stylesheet" href="assets/stylesheets/index.css" media="screen" type="text/css"/>
+  <link rel="stylesheet" href="assets/stylesheets/toggles-light.css" media="screen" type="text/css"/>
+  <script src="assets/scripts/head.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+    !window.jQuery && document.write('<script src="assets/scripts/jquery-1.8.2.min.js"><\/script>')
+    head.js(
+      {jQuery_Tools_scrollable_and_plugins:"assets/scripts/scrollable.all.min.js"},
+      {jQuery_Easing:"assets/scripts/jquery.easing.min.js"},
+      {jQuery_animate_enhanced:"assets/scripts/jquery.animate-enhanced.min.js"},
+      {web_site_code:"assets/scripts/index.js"},
+      //Plugins for the onpage live settings. 
+      {plugins:"assets/scripts/jquery.plugins.min.js"}
+    );
+  </script>
+  <title>musca | Full window Width jQuery content slider plugin.</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/"><img src="/video/assets/images/logo.png" height="42" alt="musca logo"></a>
+      <ul>
+        <li><a href="#readme">setup</a></li>
+        <li><a href="#docs">comments</a></li>
+        <li id="download"><a href="#docs">download</a></li>
+      </ul>
+    </nav>
+     <!--  <a href="http://musca.se/assets/files/full-window-width-jquery-tools-content-slider.zip" id="download">download</a> -->
+  </header>
+  <div id="slider">
+    <div id="items">
+      <div id="slide_1">
+        <div id="first-slide">
+          <h1>Full window width<br> jQuery<br> content slider<br> plugin</h1>
+        </div>
+      </div>
+      <div id="slide_2">
+        <div id="welcome">
+          <h2>Some features.</h2>
+          <!-- <ul>
+            <li id="window-width" class="grid_4">
+              100% window width,
+              <p>on larger screens also.</p>
+            </li>
+            <li id="fold-friendly" class="grid_4">
+              More content above the "fold".
+              <p>and it is SEO friendly.</p>
+            </li>
+            <li id="much-more" class="grid_4">
+              Responsive
+              <p>Works on smartphones and big screens.</p>
+            </li>
+          </ul> -->
+        </div>
+      </div>
+      <div id="slide_3">
+        <div id="what-can-you-do">
+          <h3>What you can do with this slider.</h3>
+          <!-- <p>The slider is based on jQuery and JQuery TOOLS, so you can do all things you can do in jQuery.</p> -->
+        <!--   <ul>
+            <li>Showcase products</li>
+            <li>Portfolios</li>
+            <li>Multi step forms</li>
+            <li>and many more&#8230;</li>
+          </ul>
+          <p>do you need help with the design of this slider? <a href="mailto:contact@musca.se">contact me!</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="navigation-wrapper">
+    <span class="prev left"></span>
+    <span class="next right"></span>
+    <ul id="navigation">
+      <li class="active"></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  
+  <article id="content-wrapper">
+    <div id="intro">
+<!--       <p id="lead">
+        I created this content slider after not finding any solution to my problem.
+        The problem was that I wanted a full window width content slider that worked on smartphones and big screens.
+      </p>
+      <p>
+        For the sliding effect I used jQuery Tools Scrollable and wrote my own javascript/jQuery Tools resize code to achieve 100% window width.
+      </p> -->
+      <div id="remote-readme">
+        
+      </div>
+      <h3 id="fbComments">Comments <fb:comments-count href="http://musca.se/full-window-width-jquery-tools-content-slider-demo/"></fb:comments-count></h3>
+      <div id="comments"></div>
+    </div>
+    <div id="config">
+      <label>Autoplay:</label>
+      <div class="toggle"></div>
+     <!--  <div class="on_off">
+        <div>
+          <input type="checkbox" checked="checked" class="toggle" id="on_off_on"/>
+        </div>
+      </div> -->
+      <br><br>
+        <label>
+          Easing Effect:
+          <select id="easing">
+            <option>linear</option>
+            <option>swing</option>
+            <option>easeInQuad</option>
+            <option>easeOutQuad</option>
+            <option>easeInOutQuad</option>
+            <option>easeInCubic</option>
+            <option>easeOutCubic</option>
+            <option>easeInOutCubic</option>
+            <option>easeInQuart</option>
+            <option>easeOutQuart</option>
+            <option>easeInOutQuart</option>
+            <option>easeInQuint</option>
+            <option>easeOutQuint</option>
+            <option>easeInOutQuint</option>
+            <option>easeInSine</option>
+            <option>easeOutSine</option>
+            <option>easeInOutSine</option>
+            <option>easeInExpo</option>
+            <option>easeOutExpo</option>
+            <option>easeInOutExpo</option>
+            <option>easeInCirc</option>
+            <option>easeOutCirc</option>
+            <option>easeInOutCirc</option>
+            <option>easeInElastic</option>
+            <option>easeOutElastic</option>
+            <option>easeInOutElastic</option>
+            <option>easeInBack</option>
+            <option>easeOutBack</option>
+            <option>easeInOutBack</option>
+            <option>easeInBounce</option>
+            <option>easeOutBounce</option>
+            <option>easeInOutBounce</option>
+          </select>
+        </label>
+        <label class="layout-slider">
+          Slider Speed:
+          <input id="SliderSingle" type="slider" name="price" value="400" />
+        </label>
+        <br><br>
+        <h3>Settings for this demo</h3>
+        <pre>
+          <code>
+<span class="o">$</span>(<span class="g">'#slider'</span>).scrollable({ 
+  circular: <span>true</span>, 
+  touch: <span>false</span>, 
+  easing: <span class="g">'<span class="g" id="easing-value">linear</span>'</span>, 
+  speed: <span id="value">500</span>
+}).navigator({ 
+  navi: <span class="g">'#navigation'</span> 
+}).autoscroll({ 
+  autoplay: <span id="autoplay-value">true</span>,
+  autopause:<span>true</span>, 
+  interval: <span>3000</span>
+}).fullwidth();
+          </code>
+        </pre>  
+    </div>
+    <footer>
+      <p>copyright 2011-2013 <a href="/">musca.se</a> | <a href="/cookies/">cookies</a></p>   
+    </footer>
+  </article>  
+</body>
+</html>

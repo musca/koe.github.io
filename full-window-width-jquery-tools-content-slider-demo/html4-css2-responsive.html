@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>HTML4/CSS2 responsive full window width content slider</title>
+	<meta id="Viewport" name="viewport" content="width=device-width, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" media="screen" href="assets/stylesheets/site-styles.css" />
+	<script src="assets/scripts/head.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/scripts/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/scripts/scrollable.all.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/scripts/jquery.easing.min.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		$(function() {
+			// Scrollable and navigator plugin settings.
+			$("#slider").scrollable({ 
+				touch: false, 
+				easing: 'easeInOutBack', 
+				speed: 900
+			})
+			.navigator({ 
+				navi: '#navigation' 
+			})
+			.fullwidth();			
+		});
+	</script>
+	<style>
+		#slider, #items > div, #items > div > div, h1, h2, h3{
+			height:420px;
+			line-height:420px;
+			text-align:center;
+		}
+		#slider{
+			width: 100%;
+			margin: 0 auto;
+			overflow: hidden;
+			position:relative;
+			height:420px;
+		}
+		#items{
+			width: 2000em;
+			position: absolute;
+		}
+		#items > li, #items > div{
+			float: left;
+		}
+		#items > div > div{
+			margin: 0 auto;
+			background: #f4f4f4;
+		}
+		#slide-1{
+			background-color:black;
+	}
+		#items > div > div{
+			width: 1580px;
+		}
+	/*	.lt-1680 .content{
+			width: 1580px;
+		}*/
+		.lt-1440 #items > div > div, .lt-1440 #navigation-wrapper{
+			width: 1180px;
+		}
+		.lt-1280 #items > div > div, .lt-1280 #navigation-wrapper{
+			width: 960px;
+		}
+		.lt-1024 #items > div > div, .lt-1024 #navigation-wrapper{
+			width: 768px;
+		}
+		.lt-768 #items > div > div, .lt-768 #navigation-wrapper{
+			width: 640px;
+		}
+		.lt-640 #items > div > div, .lt-640 #navigation-wrapper{
+			width: 480px;
+		}
+		.lt-480 #items > div > div, .lt-480 #navigation-wrapper{
+			width: 460px;
+		}
+		.lt-320 #items > div > div, .lt-320 #navigation-wrapper{
+			width: 300px;
+		}
+
+		.left, .right{margin-top:10px;}
+		.left, #navigation li{float:left;}
+		.right{float:right;}
+		#navigation-wrapper,#navigation{margin:0 auto;}
+		#navigation{clear:both;width:81px;}
+		#navigation li{width:15px;height:15px;list-style:none;border-radius:8px;border:1px solid #ccc;margin: 5px;}
+		#navigation li:hover, .left:hover, .right:hover{cursor:pointer;}
+		.active{background-color:#ccc;cursor:default;}		
+	</style>
+</head>
+<body>
+	<!-- Site navigation -->
+	<div id="site-nav">
+		<a href="http://musca.se">musca.se</a>/<a href="/full-window-width-jquery-tools-content-slider-demo">full-window-width-content-slider-demo</a>/
+		<ul>
+			<li><a href="demo.html">Static width demo</a></li>
+			<li>responsive html4/css2 demo</li>
+			<li><a href="html5-css3-responsive.html">responsive html5/css3 demo</a></li>
+		</ul>
+	</div>
+	<!-- Slider code -->
+	<div id="slider">
+		<div id="items">
+			<div>
+				<div>
+					<h1>Slide 1</h1>
+				</div>
+			</div>
+			<div>
+				<div>
+					<h2>Slide 2</h2>
+				</div>
+			</div>
+			<div>
+				<div>
+					<h3>Slide 3</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="navigation-wrapper">
+		<span class="prev left">&lt; Previous slide</span>
+		<span class="next right">Next slide &gt;</span>
+		<ul id="navigation">
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<!-- Google analytics code. Just so I can see if someone is interested in this page -->
+	<script>var _gaq=[['_setAccount','UA-21499673-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
+</body>
+</html>

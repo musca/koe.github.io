@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" href="../assets/stylesheets/full-window-width-content-slider.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+	<script src="/assets/scripts/head.load.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		head.js(
+			{jQuery:"http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"},
+			{jQuery_Tools:"/assets/scripts/custom.jquery.tools.min.js"},
+			{jQuery_easing:"/assets/scripts/jquery.easing-1.3.pack.js"},
+			{content_slider_script:"/assets/scripts/full-window-width-content-slider.js"},
+			{google_webfonts:"/assets/scripts/web-fonts.js"},
+			{twitter_button:"http://platform.twitter.com/widgets.js"},
+			{facebook_like_button:"http://connect.facebook.net/en_US/all.js#xfbml=1"},
+			{google_buzz_button:"http://www.google.com/buzz/api/button.js"}
+		);
+	</script>
+	<script type="text/javascript">
+	/* <![CDATA[ */
+	    (function() {
+	        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+	        s.type = 'text/javascript';
+	        s.async = true;
+	        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+	        t.parentNode.insertBefore(s, t);
+	    })();
+	/* ]]> */
+	</script>
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-21499673-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+	<title>musca | Full window Width jQuery Tools content slider demo.</title>	
+</head>
+<body>	
+<div id="header-content">
+	<div class="row v-grid-1" id="header">
+		<div class="column grid_6">
+			<a id="logo" href="/" class="v-grid-1 grid_4" title="Go to the musca homepage.">Go to the musca homepage.</a>
+		</div>
+		<div id="social-media" class="column grid_6">
+			<!-- // Social-buttons html code -->
+			<ul id="social-buttons">
+				<li>
+					<a href="http://twitter.com/share?url=http%3A%2F%2Fwww.musca.se/full-window-width-jquery-tools-content-slider-demo/" class="twitter-share-button" data-count="horizontal">Tweet</a>
+				</li>
+				<!-- <li>
+					<a title="Post to Google Buzz" class="google-buzz-button" href="http://www.google.com/buzz/post" data-button-style="small-count"></a>
+				</li> -->
+				<li>
+					<fb:like href="http://www.musca.se/full-window-width-jquery-Tools-content-slider-demo/" layout="button_count" width="90" font="lucida grande"></fb:like>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="items" class="items">
+		<!-- Pane 1 -->
+		<div class="items-wrapper" id="welcome">
+			<div class="row">
+				<div class="column grid_12">
+					<h1>Full window width jQuery Tools <span class="bold slide-shadow"><span class="slide-shadow2">content slider</span></span> demo</h1>
+					<ul>
+						<li id="window-width" class="grid_4">
+							100% window width,
+							<p>on larger screens also.</p>
+						</li>
+						<li id="fold-friendly" class="grid_4">
+							More content above the fold
+							<p>and it is SEO friendly.</p>
+						</li>
+						<li id="much-more" class="grid_4">
+							Use almost any type of content.
+							<p>Easy customization and much more!</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="overview" class="items-wrapper">
+			<div class="row">
+				<div class="column grid_6">
+					<h2>Overview</h2>
+					<p class="lead">
+						This content slider/Carousel is made to work in all major browsers, but also accessible for users that don't have Java Script enabled.
+					</p>
+					<p>
+						Can be used in many different projects and is easy to customize. You can use almost any content inside the slides.
+					</p>
+				</div>
+				<div class="column grid_3">
+					<iframe title="YouTube video player" width="220" height="195" src="http://www.youtube.com/embed/ECJHBGyxhlw" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="column grid_3">
+					<h3><a href="">jQuery Tools</a></h3>
+					<p>
+					The slider is based on jQuery Tools library so you can easy incorporate other tools from the library. 
+					</p>
+					<p>
+						If you want to use jQuery code from another project on the page. No problem, 
+					jQuery Tools 1.2.5 is based on jQuery 1.4.2.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="items-wrapper" id="specification">
+			<div class="row visible">
+				<div class="column grid_4 visible">
+					<h2>Features</h2>
+					<ul>
+						<li>100% window width.</li>
+						<li>Carrousel with circular mode.</li>
+						<li>Easing plugin support</li>
+						<li>Javascript fallback.</li>
+						<li>Tested &amp; working in IE6-7, Safari, Firefox, Opera.</li>
+					</ul>
+				</div>
+				<div class="column grid_4 visible">
+					<h2>Techniques</h2>
+					<ul>
+						<li><a href="http://flowplayer.org/tools/scrollable/">jQuery Tools - scrollable</a>
+							<ul>
+								<li>navigator plugin</li>
+								<li>autoscroll plugin</li>
+							</ul>	
+						</li>
+						<li><a href="http://1kbgrid.com/">1Kb Grid 960px grid</a></li>
+					</ul>
+				</div>
+				<div class="column grid_4 visible">
+					<h2>Possibilities</h2>
+					<ul>
+						<li>Showcase products</li>
+						<li>Portfolio</li>
+						<li>Multi step forms.</li>
+						<li>and many more&#8230;</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="navigation-wrapper">
+	<div class="row visible">
+		<ul id="navigation" class="clear-left column grid_6  visible">
+			<li class="grid_2 active">Welcome</li>
+			<li class="grid_2">Overview</li>
+			<li class="grid_2">Specification</li>
+		</ul>
+		<div class="column grid_6">
+			<div id="toggle" class="off">
+				<div id="off" onclick='api.play();'>&nbsp;</div><!-- yes i know we should not use onClick -->
+				<div id="on" onclick='api.pause();'>&nbsp;</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="content" class="row clear-left">
+	<div class="column grid_8">
+		<p class="lead">
+			I created this content slider after not finding any solution to my problem.
+			The problem was that I wanted a full window width content slider that worked on big screens, had javascript fallback, support for all major browsers.
+		</p>
+		<p>
+			For the sliding effect I used jQuery Tools Scrollable and wrote my own javascript/jQuery Tools resize code to achieve 100% window width.
+		</p>
+		<p>
+			This is my first real JS/jQuery Tools code I written so it is not perfect. <a href="mailto:contact@musca.se">Please give me feedback</a> on things that can be optimized and improved.
+		</p>
+		<p>
+			You can use <a href="/assets/scripts/full-window-width-content-slider.js">this code</a> for free. If you like this work, you can always Flattr me.
+		</p>
+		<a class="FlattrButton" style="display:none;"
+		href="http://www.musca.se/full-window-width-jquery-tools-content-slider-demo/"></a>
+		
+		<h2>Changelog</h2>
+		<ol id="change-log">
+			<li>
+				<span class="date">12 may 2011</span> 
+				<span class="log-data">Made a <a href="head-js-slider.html">experiment page</a> to try out the responsiveness of head.js and my code. I have tried it on a 1080p screen down to a iPod touch and it seems to work ok.</span>
+			</li>
+			<li>
+				<span class="date">03 apr 2011</span> 
+				<span class="log-data">Made a first version of a simplified demo. <a href="http://musca.se/full-window-width-jquery-tools-content-slider-demo/demo.html" target="_blank">View the demo here.</a> If you love to write copy and want help me with a tutorial or guide, <a href="mailto:contact@musca.se">contact me.</a></span>
+			</li>
+			<li>
+				<span class="date">20 mar 2011</span> 
+				<span class="log-data">Separated jQuery and jQuery tools. Change to google cdn for jQuery 1.4.2.</span>
+			</li>
+			<li>
+				<span class="date">18 mar 2011</span> 
+				<span class="log-data">Updated the overview slide.</span>
+			</li>
+			<li>
+				<span class="date">28 feb 2011</span> 
+				<span class="log-data">Made some small changes in the script and some design changes to this page.</span>
+			</li>
+			<li>
+				<span class="date">26 feb 2011</span> <span class="log-data">Change from play button to on/off toggle.</span>
+			</li>
+			<li>
+				<span class="date">22 feb 2011</span> <span class="log-data">Added a play/pause button image.</span>
+			</li>
+			<li>
+				<span class="date clear-left">21 feb 2011</span> <span class="log-data">First release to the web. Waiting on feedback, especially from iPad and big screen users.</span>
+			</li>
+		</ul>
+		<div id="known-issues" class="row">
+			<div class="column grid_8">
+				<h2>Known issues</h2>
+				<p>Issues i know about is all related to the resize code and from what i understand, JS is slow for calculations of window dimensions in realtime.</p>
+			</div>
+		</div>
+	</div>
+	<div id="twitter" class="column grid_4">
+		<h3>Follow me on twitter.</h3>
+		<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<script>
+		new TWTR.Widget({
+		  version: 2,
+		  type: 'profile',
+		  rpp: 4,
+		  interval: 6000,
+		  width: 300,
+		  height: 300,
+		  theme: {
+		    shell: {
+		      background: 'transparent',
+		      color: '#615f61'
+		    },
+		    tweets: {
+		      background: 'transparent',
+		      color: '#000000',
+		      links: '#999'
+		    }
+		  },
+		  features: {
+		    scrollbar: false,
+		    loop: false,
+		    live: false,
+		    hashtags: false,
+		    timestamp: true,
+		    avatars: true,
+		    behavior: 'all'
+		  }
+		}).render().setUser('muscaWebdesign').start();
+		</script>
+	</div>
+</div>
+<div id="facbook-comments" class="row">
+	<div id="facbook-comments-row" class="column grid_8">
+		<div id="fb-root"></div>
+		<script src="http://connect.facebook.net/en_US/all.js#appId=154125534598903&amp;xfbml=1"></script>
+		<fb:comments href="http://www.musca.se/full-window-width-jquery-tools-content-slider-demo/" num_posts="5" width="620"></fb:comments>
+	</div>
+	
+</div>
+<div id="footer" class="row">
+	<div class="column grid_12">
+		<p>copyright 2011 <a href="/">musca.se</a> | <a href="/cookies/">cookies</a></p>
+	</div>
+</div>
+</body>
+</html>

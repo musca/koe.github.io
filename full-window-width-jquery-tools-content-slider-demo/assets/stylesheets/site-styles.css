@@ -1,0 +1,7 @@
+*{margin:0;padding:0;}
+body{ font-family: Georgia,times,serif}
+h1{	display: block; text-align: center; font-weight:normal; }
+p{ background-color: #c5d400; display: block; width: 480px; margin-top: 10px;}
+#site-nav{ max-width:960px; margin:20px auto;}
+#site-nav ul{float:right;margin:0;}
+#site-nav li{display: inline; margin:0 5px;}
