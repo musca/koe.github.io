@@ -7,6 +7,7 @@ body {
   line-height: 1.43;
   transition: opacity 1s linear;
   -webkit-font-smoothing: antialiased;
+  background-color: #fefefe;
 }
 h1, h2, h3, h4, #intro, footer, .bob {
   font-family: $prim-font-stack;

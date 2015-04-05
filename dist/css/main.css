@@ -45,7 +45,7 @@ abbr,address,article,aside,audio,b,blockquote,body,caption,cite,code,dd,del,deta
 .block,.leading{display:block}
 @media screen and (min-width:1180px){.grid.wider,.wider .grid{max-width:1180px;margin:0 auto}}
 html{font-size:62.5%}
-body{font-family:Inconsolata,Monaco,'Courier New',monospace;line-height:1.43;transition:opacity 1s linear;-webkit-font-smoothing:antialiased}
+body{font-family:Inconsolata,Monaco,'Courier New',monospace;line-height:1.43;transition:opacity 1s linear;-webkit-font-smoothing:antialiased;background-color:#fefefe}
 #intro,.bob,footer,h1,h2,h3,h4{font-family:'Cutive Mono',Monaco,'Courier New' monospace;font-weight:200;text-align:center}
 #intro a,.bob a,footer a,h1 a,h2 a,h3 a,h4 a{font-size:100%}
 code,p{font-size:1.8em}
