@@ -31,8 +31,49 @@ body {
   font: 62.5% Inconsolata, menlo, 'andale mono', 'courier new', sans-serif;
   line-height: 1.43;
   padding-top: 1em;
+  transition: opacity 1s linear;
 }
-
+h1, h2, h3, h4, #intro, footer, .bob {
+  font-family: 'Cutive Mono', Inconsolata, 'Helvetica Neue Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  text-align: center;
+}
+h1 {
+  font-size: 4.8em;
+  padding-top: 2em;
+  padding-bottom: 0px;
+  position: relative;
+  text-align: center;
+  font-weight: 400;
+  color: #4f5566;
+  letter-spacing: -2px;
+  word-spacing: -6px;
+}
+h2 {
+  font-size: 3.6em;
+  padding-bottom: 30px;
+  color: #222;
+}
+h3 {
+  font-size: 2.4em;
+}
+h4 {
+  font-size: 2.1em;
+}
+p {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  line-height: 30px;
+  color: #222;
+  word-spacing: -1px;
+  letter-spacing: .3px;
+}
+a {
+  color: #00B1FC;
+}
+ul {
+  list-style: none;
+}
 .border {
   border: $border;
 }
@@ -102,7 +143,6 @@ body {
 .leading {
   font-size: 2.1em;
   line-height: 1.5;
-  max-width: 60%;
   display: block;
 }
 .justify {

@@ -1,0 +1,38 @@
+.header {
+  height: 48px;
+  line-height: 4em;
+  position: relative;
+  .logo, aside {
+    position: absolute;
+  }
+  .logo {
+    width: 42px;
+    height: 42px;
+    top: 10px;
+    left: 0;
+    opacity: 1;
+  }
+  aside {
+    right: 0;
+    top: 0;
+    font-size: 1.5em;
+    color: #555;
+  }
+}
+
+
+.logo {
+  transition: all .5s linear;
+}
+#loading .logo,
+#imgLoading {
+  animation: loading 2s linear infinite;
+}
+@keyframes loading {
+  from {
+    transform: perspective(300px) rotateY(0deg);
+  }
+  to {
+    transform: perspective(300px) rotateY(-360deg);
+  }
+}

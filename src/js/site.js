@@ -1,6 +1,6 @@
 window.addEventListener("load", init, false);
 function init() {
-  var greeting = document.getElementById("greeting"),
+  var greeting = document.querySelector(".greeting"),
       now = new Date(),
       h = now.getHours();
   // Show Greeting

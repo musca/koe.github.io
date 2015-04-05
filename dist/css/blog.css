@@ -1,13 +1,113 @@
-#header a:first-child,#rss{font-weight:700}
+h2,p{color:#222}
+.block,.float-center,.leading{display:block}
+.header,h1{position:relative}
+#comments a,#rss,.border-button,ul#comments-ul .gravtar,ul#comments-ul .user{text-decoration:none}
+#related,.list-unstyled,ul{list-style:none}
+.grid,.grid:after,footer{clear:both}
+abbr,address,article,aside,audio,b,blockquote,body,caption,cite,code,dd,del,details,dfn,dl,dt,em,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;border:0;padding:0;font-size:100%;outline:0;vertical-align:baseline;background:0 0;-webkit-font-smoothing:antialiased}
+body{font:62.5% Inconsolata,menlo,'andale mono','courier new',sans-serif;line-height:1.43;padding-top:1em;transition:opacity 1s linear}
 #comments a,.post blockquote{font-style:italic}
-#comments a,#rss,ul#comments-ul .gravtar,ul#comments-ul .user{text-decoration:none}
-#greeting{display:block;width:300px;position:absolute;text-align:right;top:0;right:0}
+#intro,.bob,footer,h1,h2,h3,h4{font-family:'Cutive Mono',Inconsolata,'Helvetica Neue Regular','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:200;text-align:center}
+h1{font-size:4.8em;padding-top:2em;padding-bottom:0;text-align:center;font-weight:400;color:#4f5566;letter-spacing:-2px;word-spacing:-6px}
+#header a:first-child,#rss,.bold{font-weight:700}
+h2{font-size:3.6em;padding-bottom:30px}
+h3{font-size:2.4em}
+h4{font-size:2.1em}
+.hire-me,p{font-size:1.8em}
+p{margin-bottom:1em;line-height:30px;word-spacing:-1px;letter-spacing:.3px}
+a{color:#00B1FC}
+.border{border:1px solid #ddd}
+.margin-top{margin-top:3em}
+.margin-right{margin-right:3em}
+.margin-bottom{margin-bottom:3em}
+.margin-left{margin-left:3em}
+.more-margin-top{margin-top:5em}
+.more-margin-right{margin-right:5em}
+.content,.float-center{margin-left:auto;margin-right:auto}
+.more-margin-bottom{margin-bottom:5em}
+.more-margin-left{margin-left:5em}
+.less-padding-top{padding-top:1em!important}
+.less-padding-bottom{padding-bottom:1em!important}
+.padding-top{padding-top:2em!important}
+.padding-right{padding-right:2em!important}
+.padding-bottom{padding-bottom:2em!important}
+.padding-left{padding-left:2em!important}
+.more-padding-top{padding-top:5em}
+.more-padding-right{padding-right:5em}
+.more-padding-bottom{padding-bottom:5em}
+.content{width:90%;max-width:1111px}
+.leading{line-height:1.5}
+.justify{text-align:justify}
+.float-center{float:none}
+.column,.pull-left{float:left}
+.uppercase{text-transform:uppercase}
+.inline-block{display:inline-block}
+.box-shadow{box-shadow:0 2px 7px #ccc}
+.border-button{border:1px solid #65c7fd;padding:9px 18px;border-radius:30px}
+.hire-me{width:7em}
+#grid[data-columns]::before{content:'3 .column.size-1of3'}
+.size-1of3{width:33.333%}
+.column>div{padding:1.5em}
+.column img{width:100%}
+.content-wrapper{width:90%;max-width:1500px;min-width:300px;margin:0 auto}
+.grid,.unit{box-sizing:border-box}
+.grid{display:block}
+.grid .unit{float:left;width:100%;padding:10px}
+.grid .unit:first-child{padding-left:20px}
+.grid .unit:last-child{padding-right:20px}
+.unit .unit:first-child{padding-left:0}
+.unit .unit:last-child{padding-right:0}
+.unit .grid:first-child>.unit{padding-top:0}
+.unit .grid:last-child>.unit{padding-bottom:0}
+.no-gutters .unit,.unit.no-gutters{padding:0!important}
+.grid.wrap,.wrap .grid{max-width:978px;margin:0 auto}
+.grid .w-1-1,.grid .whole{width:100%}
+.grid .half,.grid .w-1-2{width:50%}
+.grid .one-third,.grid .w-1-3{width:33.3332%}
+.grid .two-thirds,.grid .w-2-3{width:66.6665%}
+.grid .one-fourth,.grid .one-quarter,.grid .w-1-4{width:25%}
+.grid .three-fourths,.grid .three-quarters,.grid .w-3-4{width:75%}
+.grid .one-fifth,.grid .w-1-5{width:20%}
+.grid .two-fifths,.grid .w-2-5{width:40%}
+.grid .three-fifths,.grid .w-3-5{width:60%}
+.grid .four-fifths,.grid .w-4-5{width:80%}
+.grid .golden-small,.grid .w-g-s{width:38.2716%}
+.grid .golden-large,.grid .w-g-l{width:61.7283%}
+.grid:after,.grid:before{display:table;content:"";line-height:0}
+.align-center{text-align:center}
+.align-left{text-align:left}
+.align-right{text-align:right}
+.pull-right{float:right}
+.unit img{max-width:100%}
+.only-on-mobiles{display:none!important}
+@media screen and (max-width:568px){.grid:not(.no-stacking-on-mobiles)>.unit{width:100%!important;padding-left:20px;padding-right:20px}
+.unit .grid .unit{padding-left:0;padding-right:0}
+.center-on-mobiles{text-align:center!important}
+.hide-on-mobiles{display:none!important}
+.only-on-mobiles{display:block!important}}
+@media screen and (min-width:1180px){.grid.wider,.wider .grid{max-width:1180px;margin:0 auto}}
+.header{height:48px;line-height:4em}
+.header .logo,.header aside{position:absolute}
 #comments-ul li,#header{position:relative}
+.header .logo{width:42px;height:42px;top:10px;left:0;opacity:1}
+.header aside{right:0;top:0;font-size:1.5em;color:#555}
+.logo{transition:all .5s linear}
+#imgLoading,#loading .logo{-webkit-animation:loading 2s linear infinite;animation:loading 2s linear infinite}
+@-webkit-keyframes loading{from{-webkit-transform:perspective(300px)rotateY(0);transform:perspective(300px)rotateY(0)}
+to{-webkit-transform:perspective(300px)rotateY(-360deg);transform:perspective(300px)rotateY(-360deg)}}
+@keyframes loading{from{-webkit-transform:perspective(300px)rotateY(0);transform:perspective(300px)rotateY(0)}
+to{-webkit-transform:perspective(300px)rotateY(-360deg);transform:perspective(300px)rotateY(-360deg)}}
+.portfolio a{font-size:1.6em}
+.github img{width:80%}
+.github ul{width:100%;display:block;overflow:hidden;font-size:1.8em}
+.github li{padding:10px 0;border-bottom:1px solid #ccc}
+.github li span.language{color:#ccc;font-size:14px}
+.github li:last-child{border-width:0}
 .posts{list-style-type:none}
 .posts li{line-height:1.75em}
 .posts span{color:#aaa;font-size:80%}
 .site{font-size:115%;text-align:justify;width:90%;margin:1em auto 2em}
-#comments,.dim,.gravtar,.leading,.meta,.post blockquote,footer>p,ul#comments-ul .user{text-align:center}
+#comments,.dim,.gravtar,.leading,.meta,.post blockquote,ul#comments-ul .user{text-align:center}
 .title{display:inline-block;margin-bottom:2em}
 .title a{color:#a00}
 .title a:hover{color:#111}
@@ -15,13 +115,6 @@
 .header a.extra:hover{color:#111}
 .meta{color:#aaa;margin-top:40px}
 .leading{padding-bottom:30px;font-size:21px;border-bottom:1px solid #bdb0a8}
-#logo{display:block;width:60%;margin:4em auto 0}
-.footer{font-size:80%;color:#666;border-top:4px solid #eee;margin-top:2em;overflow:hidden}
-.footer .contact{float:left;margin-right:3em}
-.footer .contact a{color:#8085C1}
-.footer .rss{margin-top:1.1em;margin-right:-.2em;float:right}
-.footer .rss img{border:0}
-footer>p{padding:20px auto!important}
 .home p,.post>*,.post>div,.post>p,.posts,.posts>p,div.comment{margin:1.5em auto;max-width:42em}
 .post h1>a{color:#444}
 .post h1>a:hover{color:#ffae00}
@@ -56,7 +149,7 @@ div.comment{width:68%;text-align:left;margin:0 0 20px 10px;position:absolute;top
 #comments-form span{width:32%}
 #comments-form textarea{width:68%;position:absolute;right:0;top:0}
 #comments-form>div{border:1px solid #999;width:68%;min-height:240px;float:right;right:0;top:0}
-#related{list-style:none;padding-top:40px;text-align:center}
+#related{padding-top:40px;text-align:center}
 #related li{width:31%;padding:0 1%;display:block;float:left;text-align:center}
 #related>a,#related>span{white-space:nowrap;line-height:1.43}
 #related li>a{font-size:1.5em}
@@ -66,6 +159,6 @@ div.comment{width:68%;text-align:left;margin:0 0 20px 10px;position:absolute;top
 #related span:first-child:nth-last-child(1):before,#related span:first-child:nth-last-child(1):before~span,#related span:first-child:nth-last-child(2):after,#related span:first-child:nth-last-child(2):after~span,#related span:first-child:nth-last-child(2):before,#related span:first-child:nth-last-child(2):before~span,#related span:only-child:after,#related span:only-child:before{content:""}
 #related span:last-child:before{content:" or "}
 #related span:last-child:after{content:".";margin-left:-3px}
-footer{padding:3em 0 10px;clear:both}
+footer{padding:3em 0 10px}
 footer p{padding:20px 0 0}
 .small{max-width:420px}

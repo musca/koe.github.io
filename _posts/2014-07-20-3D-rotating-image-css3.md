@@ -40,10 +40,10 @@ tags: 3D Rotating image CSS3
 	    transform: perspective(400px) rotateY(-360deg); }
 	}
 </style>
-<img src="/images/logo.svg" id="musca-logo" alt="" />
+<img src="/dist/img/logo.svg" id="musca-logo" alt="" />
 
 
-	<img src="/images/logo.svg" id="logo" alt="" />
+	<img src="/dist/img/logo.svg" id="logo" alt="" />
 
 	#logo {
 		-webkit-animation: loading 20s linear infinite;

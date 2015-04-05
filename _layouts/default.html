@@ -1,28 +1,43 @@
-<!DOCTYPE html>
-<html lang='en'>
+<!doctype html>
+
+<html lang="en">
   <head>
-    <script>
-      var _gaq=[['_setAccount','UA-21499673-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='http://www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
-    <link rel="shortcut icon" href="http://musca.se/favicon.ico">
-    <title>
-      {{ site.name }} | {{ page.title }}
-    </title>
-    <meta name="viewport" content="width=device-width">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/dist/css/blog.css">
-    <script src="/dist/blog.js"></script>   
+    <meta charset="utf-8">
+    <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1">
+    <meta content="musca web and webapp design. Makes simple, usable, functional and responsive web design" name="description">
+    <meta content="musca,design,web,webapp,web app,web application,swedish,simple,useable,functional,landing pages,one page web design, web pages" name="keywords">
+    <style>
+      /*future above the fold styles*/
+      .loading body { opacity: 0; }
+      #grid[data-columns]::before { content: '3 .column.size-1of3'; }
+      .column { float: left; }
+      .size-1of3 { width: 33.333%; }
+      .column > div { padding: 1.5em; }
+      .portfolio img { width: 100%; }
+    </style>
+		<script type="text/javascript">
+      document.documentElement.setAttribute("class","loading");
+      {% include head.js %}
+      loadCSS("/dist/css/{{ page.css }}.css"); // loads a specified css file from YAML Front Matter block
+			loadJS("/dist/js/all.min.js"); // load main JS file. Same for all pages    
+		</script>
+  	<!--[if lte IE 9]>
+  		<link rel="stylesheet" href="/dist/ie.css" media="screen" title="lt IE10 css file" charset="utf-8" type="text/css" />
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
+      <script src="https://github.com/inexorabletash/polyfill/blob/master/polyfill.min.js"></script>
+  	<![endif]-->
+		<noscript><link href="dist/css/main.css" rel="stylesheet"></noscript>
+    <title>musca.se | {{ page.title }}</title>
   </head>
   <body>
-    <div class='site'>
-      <div id='header'>
-        {% if page.url == '/index.html' %}
-          blog.<a href='http://musca.se'>musca.se</a>      
-        {% else %}
-          <a href='/'>blog.musca.se</a>       
-        {% endif %}
-        <div id="greeting"></div>
-      </div>
+    <header class="header content-wrapper">
+      <a href="/">
+        <img alt="musca logo" height="42" id="logo" src="/dist/img/logo-42x42.svg" width="42" height="42">
+      </a>
+      <aside class="greeting"></aside>
+    </header>
+    <div class="content-wrapper">
       {{ content }}
     </div>
     {% include footer.html %}

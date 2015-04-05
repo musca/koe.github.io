@@ -1,75 +1,10 @@
 @import 'globals';
 @import 'grid';
+@import 'header';
 @import 'portfolio';
 @import 'github';
 @import url(http://fonts.googleapis.com/css?family=Cutive+Mono|Inconsolata);
 
-body {
-  -webkit-transition: opacity 1s linear;
-  -moz-transition: opacity 1s linear;
-  transition: opacity 1s linear;
-}
-h1, h2, h3, h4, #intro, footer, .bob {
-  font-family: 'Cutive Mono', Inconsolata, 'Helvetica Neue Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 200;
-  text-align: center;
-}
-h1 {
-  font-size: 4.8em;
-  padding-top: 2em;
-  padding-bottom: 0px;
-  position: relative;
-  text-align: center;
-  font-weight: 400;
-  color: #4f5566;
-  letter-spacing: -2px;
-  word-spacing: -6px;
-}
-h2 {
-  font-size: 3.6em;
-  padding-bottom: 30px;
-  color: #222;
-}
-h3 {
-  font-size: 2.4em;
-}
-h4 {
-  font-size: 2.1em;
-}
-p {
-  font-size: 1.8em;
-  margin-bottom: 1em;
-  line-height: 30px;
-  color: #222;
-  word-spacing: -1px;
-  letter-spacing: .3px;
-}
-a {
-  color: #00B1FC;
-}
-ul {
-  list-style: none;
-}
-header#top {
-  height: 48px;
-  line-height: 4em;
-  position: relative;
-}
-#logo {
-  width: 42px;
-  height: 42px;
-}
-header#top #greeting {
-  float: right;
-  line-height: 58px;
-  font-size: 1.5em;
-  color: #555;
-}
-.content-wrapper {
-  max-width: 1500px;
-  min-width: 300px;
-  margin: 0 auto;
-}
 .content {
   padding-bottom: 80px;
 }
@@ -79,12 +14,12 @@ header#top #greeting {
 #content:after {
   clear: both;
 }
-#intro {
+.intro {
   height: 410px !important;
   position: relative;
   border-bottom: 1px dotted #fafafa;
 }
-#intro h2 {
+.intro h2 {
   font-size: 2.1em;
 }
 .bob {
@@ -103,47 +38,6 @@ header#top #greeting {
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-#loading body {
-  opacity: 0;
-}
-#logo {
-  position: absolute;
-  top: 10px;
-  left: 0%;
-  -webkit-transition: all .5s linear;
-  -moz-transition: all .5s linear;
-  transition: all .5s linear;
-}
-#loading #logo,
-#imgLoading {
-  -webkit-animation: loading 2s linear infinite;
-  -moz-animation: loading 2s linear infinite;
-  animation: loading 2s linear infinite;
-}
-@-webkit-keyframes loading {
-  from {
-    -webkit-transform: perspective(300px) rotateY(0deg);
-  }
-  to {
-    -webkit-transform: perspective(300px) rotateY(-360deg);
-  }
-}
-@-moz-keyframes loading {
-  from {
-    -moz-transform: perspective(300px) rotateY(0deg);
-  }
-  to {
-    -moz-transform: perspective(300px) rotateY(-360deg);
-  }
-}
-@keyframes loading {
-  from {
-    transform: perspective(300px) rotateY(0deg);
-  }
-  to {
-    transform: perspective(300px) rotateY(-360deg);
-  }
-}
 #quote-wrapper {
   padding-top: 50px;
 }

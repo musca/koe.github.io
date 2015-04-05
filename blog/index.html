@@ -1,29 +1,28 @@
 ---
 layout: default
-title: musca blog | a design and dev blog
+title: a design and dev blog
+css: blog
 ---
 
-<div id="home">
-  <img src="images/musca-github.png" id="logo" alt="">
-  <h1>I'm hosted with GitHub Pages. On a CDN server near you.</h1>
-  <p class="leading">This is blog.<a href="/">musca.se</a> where I keep a blog about my <a href="https://github.com/musca?tab=repositories">github projects</a>, web design & development.</p>
-  <p class="dim">latest blog post</p>
-  <div class="post">
-    {% assign post = site.posts.first %}
-    {% assign content = post.content %}
-    <!-- {{ post.date | date_to_string }} -->
-    <h1>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </h1>
-    {{ content }}
-    <h2>Older posts</h2>
-    {% for post in site.related_posts %}
-      <a href="{{ post.url }}">{{ post.title }}</a><br />
+<img src="/dist/img/musca-github.png" id="logo" alt="musca loves github" class="float-center">
+<h1>I'm hosted with GitHub Pages. On a CDN server near you.</h1>
+<p class="leading">This is blog.<a href="/">musca.se</a> where I keep a blog about my <a href="https://github.com/musca?tab=repositories">github projects</a>, web design & development.</p>
+<p class="dim">latest blog post</p>
+<div class="post">
+  {% assign post = site.posts.first %}
+  {% assign content = post.content %}
+  <!-- {{ post.date | date_to_string }} -->
+  <h1>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </h1>
+  {{ content }}
+  <h2>Older posts</h2>
+  {% for post in site.related_posts %}
+    <a href="{{ post.url }}">{{ post.title }}</a><br />
+  {% endfor %}
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
-    <ul class="posts">
-      {% for post in site.posts %}
-        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
+  </ul>
 </div>
