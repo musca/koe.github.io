@@ -3,6 +3,8 @@
 @import 'header';
 @import 'portfolio';
 @import 'github';
+@import 'flickr';
+@import 'footer';
 @import url(http://fonts.googleapis.com/css?family=Cutive+Mono|Inconsolata);
 
 .content {
@@ -158,121 +160,6 @@
   width: 50%;
   overflow: hidden;
 }
-#flickr {
-  clear: both;
-  padding-bottom: 20px;
-  min-height: 220px;
-  padding-top: 20px;
-}
-#flickr h3 {
-  color: #111;
-}
-#flickr #imgLoading {
-  width: 128px;
-  height: 128px;
-  margin: 40px auto;
-}
-#flickrLoader {
-  display: none;
-  width: 60px;
-  height: 20px;
-  margin: 40px auto;
-  position: relative;
-}
-#flickrLoader .ball {
-  position: absolute;
-  left: 0px;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  -webkit-animation: flickrBalls 1.6s linear infinite;
-  -moz-animation: flickrBalls 1.6s linear infinite;
-}
-#flickrLoader .pink {
-  background-color: #FF0084;
-}
-#flickrLoader .blue {
-  background-color: #0063DC;
-  -webkit-animation-delay: .8s;
-  -moz-animation-delay: .8s;
-  animation-delay: .8s;
-}
-#flickr ul {
-  margin-top: 10px;
-}
-#flickr a,
-#flickr li {
-  display: block;
-  float: left;
-  overflow: hidden;
-  position: relative;
-}
-#flickr li {
-  width: 16.66%;
-}
-#flickr a {
-  width: 100%;
-  height: 100%;
-}
-#flickr > img {
-  display: block;
-  margin: 20px auto;
-  width: 100%;
-  height: auto;
-  max-width: auto;
-}
-#flickr > img#spinner {
-  display: block;
-  width: 48px;
-  height: 48px;
-  -webkit-animation: rotating 2s linear infinite;
-  -moz-animation: rotating 2s linear infinite;
-}
-#flickr-feed img {
-  height: 101%;
-  width: 101%;
-  opacity: 1;
-  transition: all 1s ease-out;
-  -webkit-transition: all 1s ease-out;
-  -moz-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
-}
-#flickr-feed img[data-frz-src] {
-  opacity: 0;
-}
-#flickr a#more-flickr-photos {
-  float: right;
-  text-align: right;
-  text-decoration: none;
-  font-size: 1.3em;
-  margin-top: 5px;
-  height: 20px;
-}
-#social,
-footer li {
-  display: inline-block;
-  text-align: center;
-  font-size: 1.4em;
-}
-#social li {
-  float: left;
-  padding: 0 10px;
-  font-size: 16px;
-  line-height: 24px;
-  color: #4C4F55;
-  border-right: dotted 1px #ccc;
-}
-#social li:last-child {
-  border: 0;
-}
-#social li a {
-  display: block;
-  width: 24px;
-  height: 24px;
-  font-size: 24px;
-  color: #4C4F55;
-  text-decoration: none;
-}
 .show {
   -webkit-animation: FadeIn 1s linear;
   -moz-animation: FadeIn 1s linear;
@@ -285,7 +172,7 @@ footer li {
   display: block;
   font-size: 1.4em;
 }
-#footer p {
+footer p {
   margin-top: 5px;
   color: #999;
 }

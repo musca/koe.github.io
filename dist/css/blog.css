@@ -1,21 +1,22 @@
 h2,p{color:#222}
 .block,.float-center,.leading{display:block}
 .header,h1{position:relative}
-#comments a,#rss,.border-button,ul#comments-ul .gravtar,ul#comments-ul .user{text-decoration:none}
-#related,.list-unstyled,ul{list-style:none}
-.grid,.grid:after,footer{clear:both}
-abbr,address,article,aside,audio,b,blockquote,body,caption,cite,code,dd,del,details,dfn,dl,dt,em,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;border:0;padding:0;font-size:100%;outline:0;vertical-align:baseline;background:0 0;-webkit-font-smoothing:antialiased}
-body{font:62.5% Inconsolata,menlo,'andale mono','courier new',sans-serif;line-height:1.43;padding-top:1em;transition:opacity 1s linear}
 #comments a,.post blockquote{font-style:italic}
-#intro,.bob,footer,h1,h2,h3,h4{font-family:'Cutive Mono',Inconsolata,'Helvetica Neue Regular','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:200;text-align:center}
+#comments a,#rss,.border-button,ul#comments-ul .gravtar,ul#comments-ul .user{text-decoration:none}
+.grid,.grid:after{clear:both}
+#related,.list-unstyled,ul{list-style:none}
+abbr,address,article,aside,audio,b,blockquote,body,caption,cite,code,dd,del,details,dfn,dl,dt,em,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;border:0;padding:0;font-size:100%;outline:0;vertical-align:baseline;background:0 0;-webkit-font-smoothing:antialiased}
+html{font-size:62.5%}
+body{font-family:Inconsolata,Monaco,'Courier New',monospace;line-height:1.43;padding-top:1em;transition:opacity 1s linear}
+#intro,.bob,footer,h1,h2,h3,h4{font-family:'Cutive Mono',Monaco,'Courier New' monospace;font-weight:200;text-align:center}
+#intro a,.bob a,footer a,h1 a,h2 a,h3 a,h4 a{font-size:100%}
 h1{font-size:4.8em;padding-top:2em;padding-bottom:0;text-align:center;font-weight:400;color:#4f5566;letter-spacing:-2px;word-spacing:-6px}
 #header a:first-child,#rss,.bold{font-weight:700}
 h2{font-size:3.6em;padding-bottom:30px}
 h3{font-size:2.4em}
 h4{font-size:2.1em}
-.hire-me,p{font-size:1.8em}
-p{margin-bottom:1em;line-height:30px;word-spacing:-1px;letter-spacing:.3px}
-a{color:#00B1FC}
+p{font-size:1.8em;margin-bottom:1em;line-height:30px;word-spacing:-.1em;letter-spacing:.3px}
+a{color:#00B1FC;font-size:1.6em}
 .border{border:1px solid #ddd}
 .margin-top{margin-top:3em}
 .margin-right{margin-right:3em}
@@ -42,9 +43,10 @@ a{color:#00B1FC}
 .column,.pull-left{float:left}
 .uppercase{text-transform:uppercase}
 .inline-block{display:inline-block}
+.smaller-text{font-size:1.2em}
 .box-shadow{box-shadow:0 2px 7px #ccc}
 .border-button{border:1px solid #65c7fd;padding:9px 18px;border-radius:30px}
-.hire-me{width:7em}
+.hire-me{width:7em;font-size:1.8em}
 #grid[data-columns]::before{content:'3 .column.size-1of3'}
 .size-1of3{width:33.333%}
 .column>div{padding:1.5em}
@@ -97,12 +99,13 @@ a{color:#00B1FC}
 to{-webkit-transform:perspective(300px)rotateY(-360deg);transform:perspective(300px)rotateY(-360deg)}}
 @keyframes loading{from{-webkit-transform:perspective(300px)rotateY(0);transform:perspective(300px)rotateY(0)}
 to{-webkit-transform:perspective(300px)rotateY(-360deg);transform:perspective(300px)rotateY(-360deg)}}
-.portfolio a{font-size:1.6em}
 .github img{width:80%}
-.github ul{width:100%;display:block;overflow:hidden;font-size:1.8em}
+.github ul{width:100%;display:block;overflow:hidden}
 .github li{padding:10px 0;border-bottom:1px solid #ccc}
-.github li span.language{color:#ccc;font-size:14px}
+.github li span.language{color:#ccc}
 .github li:last-child{border-width:0}
+.github p{margin-bottom:0}
+.footer li{display:inline;text-align:center}
 .posts{list-style-type:none}
 .posts li{line-height:1.75em}
 .posts span{color:#aaa;font-size:80%}
@@ -159,6 +162,4 @@ div.comment{width:68%;text-align:left;margin:0 0 20px 10px;position:absolute;top
 #related span:first-child:nth-last-child(1):before,#related span:first-child:nth-last-child(1):before~span,#related span:first-child:nth-last-child(2):after,#related span:first-child:nth-last-child(2):after~span,#related span:first-child:nth-last-child(2):before,#related span:first-child:nth-last-child(2):before~span,#related span:only-child:after,#related span:only-child:before{content:""}
 #related span:last-child:before{content:" or "}
 #related span:last-child:after{content:".";margin-left:-3px}
-footer{padding:3em 0 10px}
-footer p{padding:20px 0 0}
 .small{max-width:420px}

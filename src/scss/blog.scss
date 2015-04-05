@@ -3,6 +3,7 @@
 @import 'header';
 @import 'portfolio';
 @import 'github';
+@import 'footer';
 /*****************************************************************************/
 /*
 /* Home
@@ -359,13 +360,6 @@ div.comment {
 #related span:last-child:after {
     content: ".";
     margin-left: -3px;
-}
-footer {
-  padding: 3em 0 10px;
-  clear: both;
-}
-footer p {
-  padding: 20px 0 0;
 }
 .small {
   max-width: 420px;

@@ -102,8 +102,8 @@
     width: 100%;
     height: 259px;
   }
-  #flickr li,
-  #flickr a {
+  .flickr li,
+  .flickr a {
     width: 153.3px;
     height: 153.3px;
   }
@@ -139,7 +139,7 @@
   #latest-work > li > video {
     height: 240px !important;
   }
-  #flickr li {
+  .flickr li {
     width: 43% !important;
     height: auto;
   }

@@ -1,9 +1,9 @@
-$prim-font-stack:		'Roboto', 'Helvetica Neue', Arial, sans-serif;
-$sec-font-stack:		$prim-font-stack;
+$prim-font-stack:		'Cutive Mono', 'Monaco', 'Courier New' monospace;
+$sec-font-stack:		'Inconsolata', 'Monaco', 'Courier New', monospace;
 $line-height:       1.6;
 $header-bg-color: 	#fbfbfb;
 $link-color:        #65C7FD;
-$grey:							#7b7c7c;
+$grey:							#ccc;
 $border: 						1px solid #ddd;
 $less-padding:			1em;
 $padding:						2em;
@@ -25,18 +25,21 @@ html, body, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, ab
   -webkit-font-smoothing: antialiased;
 }
 html {
-  
+ font-size: 62.5%; 
 }
 body {
-  font: 62.5% Inconsolata, menlo, 'andale mono', 'courier new', sans-serif;
+  font-family: $sec-font-stack;
   line-height: 1.43;
   padding-top: 1em;
   transition: opacity 1s linear;
 }
 h1, h2, h3, h4, #intro, footer, .bob {
-  font-family: 'Cutive Mono', Inconsolata, 'Helvetica Neue Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: $prim-font-stack;
   font-weight: 200;
   text-align: center;
+  a {
+    font-size: 100%;
+  }
 }
 h1 {
   font-size: 4.8em;
@@ -65,11 +68,12 @@ p {
   margin-bottom: 1em;
   line-height: 30px;
   color: #222;
-  word-spacing: -1px;
+  word-spacing:  -.1em;;
   letter-spacing: .3px;
 }
 a {
   color: #00B1FC;
+  font-size: 1.6em;
 }
 ul {
   list-style: none;
@@ -166,7 +170,7 @@ ul {
 .bold					{ font-weight: bold;}
 .inline-block { display: inline-block; }
 .list-unstyled{ list-style: none;}
-
+.smaller-text { font-size: 1.2em;}
 .box-shadow {
   box-shadow: 0 2px 7px #ccc;
 }

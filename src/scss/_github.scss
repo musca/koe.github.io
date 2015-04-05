@@ -1,21 +1,24 @@
-.github img {
-  width: 80%;
-}
-.github ul {
-  width: 100%;
-  display: block;
-  overflow: hidden;
-//  font-family: helvetica neue;
-  font-size: 1.8em;
-}
-.github li {
-  padding: 10px 0;
-  border-bottom: 1px solid #ccc;
-}
-.github li span.language {
-  color: #ccc;
-  font-size: 14px;
-}
-.github li:last-child {
-  border-width: 0px;
+.github {
+  img {
+    width: 80%;
+  }
+  ul {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+  //  font-family: helvetica neue;
+  }
+  li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    span.language {
+      color: $grey;
+    }
+  }
+  li:last-child {
+    border-width: 0px;
+  }
+  p {
+    margin-bottom: 0;
+  }
 }

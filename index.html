@@ -4,12 +4,11 @@ title: Web design and development
 css: main
 ---
 <div class="grid">
-  <div id="content">
+  <div class="unit whole">
     <header class="intro">
       <h1>I design and code for the web</h1>
       <!-- <h2>that loves simple design and new internet technolegies</h2> -->
-      <!-- <aside id="some-of-my-work">Some of my work</aside> -->
-      <p class="align-center">This page is under counstruction and settling down on a new server. come back soon for more stuff.</p>          
+      <p class="align-center">This page is under construction and settling down on a new server. come back soon for more stuff.</p>   
       <!-- <a class="border-button float-center hire-me margin-top" href="mailto:contact@musca.se">Hire me!</a> -->
     </header>     
     <div id="grid" class="portfolio align-center" data-columns>
@@ -66,10 +65,19 @@ css: main
       </span>
     </div>
   </div> -->
-
-<!--
+  <div class="blog more-padding-top unit whole">
+    <h2>latest from the blog</h2>
+    <div class="padding-top">
+      {% assign post = site.posts.first %}
+      {% assign content = post.content %}
+      <h3 class="padding-bottom">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h3>
+      {{ content }}
+    </div>
+  </div>
 </div>
-<div id="black-area" class="more-margin-top grid">
+<!-- <div id="black-area" class="more-margin-top grid">
   <h2>Random stuff I made</h2>
   <h3>Old designs, unreleased or under construction</h3>
   <div>
@@ -80,8 +88,8 @@ css: main
     </h1>
     {{ content }}
   </div>
-</div>
-<div class="content-wrapper">
+</div> -->
+<!-- <div class="content-wrapper">
   <div id="content-slider">
     <header>
       <h2>Full window width content slider.</h2>
@@ -98,25 +106,25 @@ css: main
     </div>
   </div>
 </div> -->
-<div class="content-wrapper">
+<div class="content-wrapper more-padding-top">
   <!-- Top 3 GitHub projects -->
-  <div class="grid github">
+  <div class="grid github more-padding-bottom">
     <h2>Some of <a href="http://github.com/musca">my GitHub stuff</a></h2>
     <div class="unit w-1-2">
       <img class="float-center margin-top" alt="octocat" src="/dist/img/octocat.svg">       
     </div>
     <div class="unit w-1-2">
-       <ul id="github-projects"></ul>
+       <ul class="github-projects"></ul>
     </div>      
   </div>
-  <div id="flickr">
+  <div class="flickr more-margin-top">
     <h3>Random pics from my flickr stream</h3>
-    <div id="flickrLoader">
+    <div class="flickrLoader">
       <div class="ball pink"></div>
       <div class="ball blue"></div>
     </div>
-    <ul id="flickr-feed"></ul>
-    <a href="http://flickr.com/karl-oskar" id="more-flickr-photos">See more photos</a>
+    <ul class="flickr-feed"></ul>
+    <a href="http://flickr.com/karl-oskar" class="more-flickr-photos">See more photos</a>
   </div>
 </div>
 <!-- <footer id="footer">
