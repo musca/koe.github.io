@@ -1,0 +1,146 @@
+$prim-font-stack:		'Roboto', 'Helvetica Neue', Arial, sans-serif;
+$sec-font-stack:		$prim-font-stack;
+$line-height:       1.6;
+$header-bg-color: 	#fbfbfb;
+$link-color:        #65C7FD;
+$grey:							#7b7c7c;
+$border: 						1px solid #ddd;
+$less-padding:			1em;
+$padding:						2em;
+$margin:            3em;
+$more-margin:       5em;
+$extra-padding:			5em;
+$green:							rgba(104, 166, 52, .95);
+$white:							#f4f4f4;
+$blue:							#08c;
+
+html, body, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-size: 100%;
+  outline: 0 none;
+  vertical-align: baseline;
+  background: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+html {
+  
+}
+body {
+  font: 62.5% Inconsolata, menlo, 'andale mono', 'courier new', sans-serif;
+  line-height: 1.43;
+  padding-top: 1em;
+}
+
+.border {
+  border: $border;
+}
+/* margins */
+.margin-top {
+  margin-top: $margin;
+}
+.margin-right {
+  margin-right: $margin;
+}
+  
+.margin-bottom {
+  margin-bottom: $margin;
+}
+.margin-left {
+  margin-left: $margin;
+}
+.more-margin-top {
+  margin-top: $more-margin;
+}
+.more-margin-right {
+  margin-right: $more-margin;
+}
+  
+.more-margin-bottom {
+  margin-bottom: $more-margin;
+}
+.more-margin-left {
+  margin-left: $more-margin;
+}
+
+
+/* paddings */
+.less-padding-top {
+  padding-top: $less-padding !important;
+}
+.less-padding-bottom {
+  padding-bottom: $less-padding !important;
+}
+.padding-top {
+  padding-top: $padding !important;
+}
+.padding-right {
+  padding-right: $padding !important;
+}
+.padding-bottom {
+  padding-bottom: $padding !important;
+}
+.padding-left {
+  padding-left: $padding !important;
+}
+.more-padding-top {
+  padding-top: $extra-padding;
+}
+.more-padding-right {
+  padding-right: $extra-padding;
+}
+.more-padding-bottom {
+  padding-bottom: $extra-padding;
+}
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 1111px;
+}
+.leading {
+  font-size: 2.1em;
+  line-height: 1.5;
+  max-width: 60%;
+  display: block;
+}
+.justify {
+  text-align: justify;
+}
+.block {
+  display: block;
+}
+.float-center {
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.align-center { text-align: center; }
+.align-left   { text-align: left; }
+.align-right  { text-align: right; }
+.pull-left    { float: left; }
+.pull-right   { float: right; }
+.uppercase	  { text-transform: uppercase; }
+.bold					{ font-weight: bold;}
+.inline-block { display: inline-block; }
+.list-unstyled{ list-style: none;}
+
+.box-shadow {
+  box-shadow: 0 2px 7px #ccc;
+}
+
+/* Buttons */
+
+.border-button {
+  border: 1px solid #65c7fd;
+  text-decoration: none;
+  padding: 9px 18px;
+  text-decoration: none;
+  border-radius: 30px;
+}
+.hire-me {
+  width: 7em;
+  font-size: 1.8em;
+}

@@ -1,0 +1,71 @@
+#header a:first-child,#rss{font-weight:700}
+#comments a,.post blockquote{font-style:italic}
+#comments a,#rss,ul#comments-ul .gravtar,ul#comments-ul .user{text-decoration:none}
+#greeting{display:block;width:300px;position:absolute;text-align:right;top:0;right:0}
+#comments-ul li,#header{position:relative}
+.posts{list-style-type:none}
+.posts li{line-height:1.75em}
+.posts span{color:#aaa;font-size:80%}
+.site{font-size:115%;text-align:justify;width:90%;margin:1em auto 2em}
+#comments,.dim,.gravtar,.leading,.meta,.post blockquote,footer>p,ul#comments-ul .user{text-align:center}
+.title{display:inline-block;margin-bottom:2em}
+.title a{color:#a00}
+.title a:hover{color:#111}
+.header a.extra{color:#aaa;margin-left:1em}
+.header a.extra:hover{color:#111}
+.meta{color:#aaa;margin-top:40px}
+.leading{padding-bottom:30px;font-size:21px;border-bottom:1px solid #bdb0a8}
+#logo{display:block;width:60%;margin:4em auto 0}
+.footer{font-size:80%;color:#666;border-top:4px solid #eee;margin-top:2em;overflow:hidden}
+.footer .contact{float:left;margin-right:3em}
+.footer .contact a{color:#8085C1}
+.footer .rss{margin-top:1.1em;margin-right:-.2em;float:right}
+.footer .rss img{border:0}
+footer>p{padding:20px auto!important}
+.home p,.post>*,.post>div,.post>p,.posts,.posts>p,div.comment{margin:1.5em auto;max-width:42em}
+.post h1>a{color:#444}
+.post h1>a:hover{color:#ffae00}
+.post div:first-child+p,.post>img:nth-child(-n+1),.post>p:first-child{font-size:21px;text-align:center}
+.post pre{border:1px solid #ddd;background-color:#eef}
+.post code{background-color:#fafafa;word-break:break-all;display:block;font-size:13px;line-height:1.2;padding:10px}
+.post pre.terminal,.post pre.terminal code{background-color:#333}
+.post pre code{border:none}
+.img{padding:0!important;margin:0!important;max-width:100%!important}
+.post div img{width:100%;display:block;margin:40px auto 5px;height:auto}
+.post pre.terminal{border:1px solid #000;color:#FFF}
+.post blockquote p:before{content:"\201C"}
+.post blockquote p:after{content:"\201D"}
+.post blockquote p{padding:5px 20px}
+.dim{color:#999}
+.text{word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto}
+#rss{margin-bottom:40px;background-color:orange;padding:10px 20px;color:#fff}
+#comments-wrapper{width:80%;max-width:768px;opacity:0}
+#comments{opacity:0;border-top:1px solid #F1F1F1;border-bottom:1px solid #F1F1F1;padding:20px 0;max-width:100%}
+.loaded{opacity:1!important;transition:all 1s ease}
+#comments-ul ul li{padding-top:20px;max-width:100%;min-height:120px}
+#auth,#comments-form,#comments-ul{list-style:none;margin:0 auto}
+#comments-ul li{padding-bottom:4em;font-size:18px}
+ul#comments-ul .gravtar{width:70px;height:auto;border-radius:35px}
+.gravtar{width:32%}
+ul#comments-ul .user{font-family:Helvetica,Arial,sans-serif;width:70px;padding-top:10px}
+#auth{width:32%;margin:0}
+#auth .john-doe{border-radius:50%;border:1px solid #999;width:70px}
+div.comment{width:68%;text-align:left;margin:0 0 20px 10px;position:absolute;top:0;right:0}
+#comments-form{float:right;overflow:hidden;width:68%;position:relative;min-height:240px;border-top:1px solid #FAFAFA;padding-top:40px;content:'\n';clear:both;display:block}
+#comments-form.visable{display:block;opacity:1}
+#comments-form span{width:32%}
+#comments-form textarea{width:68%;position:absolute;right:0;top:0}
+#comments-form>div{border:1px solid #999;width:68%;min-height:240px;float:right;right:0;top:0}
+#related{list-style:none;padding-top:40px;text-align:center}
+#related li{width:31%;padding:0 1%;display:block;float:left;text-align:center}
+#related>a,#related>span{white-space:nowrap;line-height:1.43}
+#related li>a{font-size:1.5em}
+#related li p{margin:5px 0 0;text-align:left}
+#related>div.title:only-child{display:none}
+#related span:first-child:after{content:", ";margin:0 4px 0 -2px}
+#related span:first-child:nth-last-child(1):before,#related span:first-child:nth-last-child(1):before~span,#related span:first-child:nth-last-child(2):after,#related span:first-child:nth-last-child(2):after~span,#related span:first-child:nth-last-child(2):before,#related span:first-child:nth-last-child(2):before~span,#related span:only-child:after,#related span:only-child:before{content:""}
+#related span:last-child:before{content:" or "}
+#related span:last-child:after{content:".";margin-left:-3px}
+footer{padding:3em 0 10px;clear:both}
+footer p{padding:20px 0 0}
+.small{max-width:420px}
