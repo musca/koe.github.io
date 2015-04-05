@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>document.documentElement.setAttribute("class","loading");</script>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  	<meta name="description" content="musca web and webapp design. Makes simple, usable, functional and responsive web design" />
+  	<meta name="keywords" content="musca,design,web,webapp,web app,web application,swedish,simple,useable,functional,landing pages,one page web design, web pages" />
+  	<meta id="Viewport" name="viewport" content="width=device-width, user-scalable=no" />
+    <style>
+      /*future above the fold styles*/
+      .loading body { opacity: 0; }
+      #grid[data-columns]::before { content: '3 .column.size-1of3'; }
+      .column { float: left; }
+      .size-1of3 { width: 33.333%; }
+      .column > div { padding: 1.5em; }
+      .portfolio img { width: 100%; }
+    </style>
+    <script type="text/javascript">
+      /*! loadCSS: load a CSS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. Licensed MIT */
+      function loadCSS(e,t,n,o){"use strict";function r(){for(var t,o=0;o<l.length;o++)l[o].href&&l[o].href.indexOf(e)>-1&&(t=!0);t?i.media=n||"all":setTimeout(r)}var i=window.document.createElement("link"),d=t||window.document.getElementsByTagName("script")[0],l=window.document.styleSheets;return i.rel="stylesheet",i.href=e,i.media="only x",i.onload=o||function(){},d.parentNode.insertBefore(i,d),r(),i}
+      /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+      function loadJS(e,t){"use strict";var n=window.document.getElementsByTagName("script")[0],o=window.document.createElement("script");return o.src=e,o.async=!0,n.parentNode.insertBefore(o,n),t&&"function"==typeof t&&(o.onload=t),o}
+      // load assets
+      loadCSS( "/dist/css/main.css" );
+      loadJS( "/dist/js/all.min.js" );
+      // var _gaq=[['_setAccount','UA-21499673-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='http://www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+  	<!--[if lt IE 10]>
+  		<link rel="stylesheet" href="assets/stylesheets/index-ie.css" media="screen" title="musca.se screen stylesheet" charset="utf-8" type="text/css" />
+  		<script src="assets/scripts/html5shiv.js"></script>
+  	<![endif]-->
+    <title>musca.se | I design and code for the web</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="musca web and webapp design. Makes simple, usable, functional and responsive web design" name="description">
+    <meta content="musca,design,web,webapp,web app,web application,swedish,simple,useable,functional,landing pages,one page web design, web pages" name="keywords">
+    <meta content="width=device-width, user-scalable=no" id="Viewport" name="viewport">
+    <!-- Main javascriptfile -->
+    <!--[if lt IE 9]>
+      <script src="/assets/scripts/lt-IE-9.min.js"></script>
+    <![endif]-->
+    </head>
+    <body>
+    <div class="content-wrapper grid">
+      <header id="top">
+        <img alt="musca logo" height="42" id="logo" src="/dist/img/logo-42x42.svg" width="42" height="42">
+        <aside>
+          <div id="greeting"></div>
+        </aside>
+      </header>
+      <div id="content">
+        <header id="intro">
+          <h1>I design and code for the web</h1>
+          <!-- <h2>that loves simple design and new internet technolegies</h2> -->
+          <!-- <aside id="some-of-my-work">Some of my work</aside> -->
+          <p>This page is under counstruction and settling down in a new server. come back soon for more stuff.</p>          <!-- <a class="border-button float-center hire-me margin-top" href="mailto:contact@musca.se">Hire me!</a> -->
+        </header>
+        
+        <!-- <div id="grid" class="portfolio align-center" data-columns>
+          <div>
+            <a href="http://www.restfuldesign.com">
+              <img class="chrome" src="/dist/img/rd.png" alt="Full jQuery window width content slider">
+              restfuldesign.com
+            </a>
+            <p>HTML, CSS and JS</p>
+          </div>
+          <div>
+            <a href="http://www.rolandpersson.com">
+              <img src="/dist/img/roland-persson-ipad-white.jpg" alt="Roland Persson Photographer">
+              rolandpersson.com
+            </a>
+            <p>Design and initial code</p>
+          </div>
+          <div>
+            <a href="/video" >
+              <img class="box-shadow" src="/dist/img/vinyl-animation.gif" alt="Full window background video">
+            </a>
+            <p>Design, code and video editing</p>
+          </div>
+          <div>
+            <a href="http://www.jofjell.se">
+              <img class="box-shadow" src="/dist/img/per-jofjell.png" alt="www.jofjell.se">
+              jofjell.se
+            </a>
+            <p>
+              Design and code
+            </p>
+          </div>
+          <div>
+            <a href="/full-window-width-jquery-tools-content-slider-demo/" title="Full jQuery window width content slider">
+              <img alt="Full window width content slider" class="box-shadow" src="/dist/img/fwwcs.jpg">
+            </a>
+            <p>jQuery, HTML and CSS</p>
+          </div>
+        </div>
+      </div>
+      <!-- quotes -->
+      <!-- <div id="quote-wrapper">
+        <div id="what-ppl-say">
+          <h3>quotes from real people</h3>
+        </div>
+        <div class="content" id="quotes">
+          <p>
+            “I just wanted to thank you for the work you've done with the
+            <a href="/full-window-width-jquery-tools-content-slider-demo/">content slider</a>.
+            It works great!”
+          </p>
+          <span id="quote-author">
+            Kurt Lambert - silverbackstrategies.com
+          </span>
+        </div>
+      </div> -->
+    
+    <!--
+    </div>
+    <div id="black-area" class="more-margin-top grid">
+      <h2>Random stuff I made</h2>
+      <h3>Old designs, unreleased or under construction</h3>
+      <div>
+        {% assign post = site.posts.first %}
+        {% assign content = post.content %}
+        <h1>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </h1>
+        {{ content }}
+      </div>
+    </div>
+    <div class="content-wrapper">
+      <div id="content-slider">
+        <header>
+          <h2>Full window width content slider.</h2>
+        </header>
+        <img alt="" src="/dist/img/family.png">
+        <div>
+          <p>
+            I created this content slider after not finding any solution to my problem. The problem was that I wanted a full window width content slider that worked on smartphones and big screens.
+          </p>
+          <p>
+            For the sliding effect I used jQuery Tools Scrollable and wrote my own javascript/jQuery Tools resize code to achieve 100% window width.
+            <a href="/full-window-width-jquery-tools-content-slider-demo/">Try the content slider</a>
+          </p>
+        </div>
+      </div>
+    </div> -->
+    <div class="content-wrapper">
+      <!-- Top 3 GitHub projects -->
+      <div class="grid github">
+        <h2>Some of <a href="http://github.com/musca">my GitHub stuff</a></h2>
+        <div class="unit w-1-2">
+          <img class="float-center margin-top" alt="octocat" src="/dist/img/octocat.svg">       
+        </div>
+        <div class="unit w-1-2">
+           <ul id="github-projects"></ul>
+        </div>      
+      </div>
+      <div id="flickr">
+        <h3>Random pics from my flickr stream</h3>
+        <div id="flickrLoader">
+          <div class="ball pink"></div>
+          <div class="ball blue"></div>
+        </div>
+        <ul id="flickr-feed"></ul>
+        <a href="http://flickr.com/karl-oskar" id="more-flickr-photos">See more photos</a>
+      </div>
+    </div>
+    <footer id="footer">
+      <ul id="social">
+        <li>
+          koe[at]musca.se
+        </li>
+        <li>
+          <a href="https://plus.google.com/112541904288766057510" title="g+">g+</a>
+        </li>
+      </ul>
+      <ul>
+        <li>Copyright 2011-2015</li>
+      </ul>
+      <p id="ps">All designs and images are made by me except for OCTOCAT® and client pics.</p>
+    </footer>
+  </body>
+</html>
