@@ -1,54 +1,12 @@
 h2,p{color:#222}
-.block,.float-center,.leading{display:block}
 .list-unstyled,ul{list-style:none}
 .header,h1{position:relative}
 #content:after,.flickr,.grid,.grid:after{clear:both}
 .bob,.border-button{text-decoration:none}
 @font-face{font-family:'Cutive Mono';font-style:normal;font-weight:400;src:local('Cutive Mono'),local('CutiveMono-Regular'),url(http://fonts.gstatic.com/s/cutivemono/v4/N5odNRruTwjvCM8y77PhQZ0EAVxt0G0biEntp43Qt6E.ttf)format('truetype')}
 @font-face{font-family:Inconsolata;font-style:normal;font-weight:400;src:local('Inconsolata'),url(http://fonts.gstatic.com/s/inconsolata/v10/BjAYBlHtW3CJxDcjzrnZCJ0EAVxt0G0biEntp43Qt6E.ttf)format('truetype')}
-abbr,address,article,aside,audio,b,blockquote,body,caption,cite,code,dd,del,details,dfn,dl,dt,em,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;border:0;padding:0;font-size:100%;outline:0;vertical-align:baseline;background:0 0;-webkit-font-smoothing:antialiased}
-html{font-size:62.5%}
-body{font-family:Inconsolata,Monaco,'Courier New',monospace;line-height:1.43;padding-top:1em;transition:opacity 1s linear}
-#intro,.bob,footer,h1,h2,h3,h4{font-family:'Cutive Mono',Monaco,'Courier New' monospace;font-weight:200;text-align:center}
-#intro a,.bob a,footer a,h1 a,h2 a,h3 a,h4 a{font-size:100%}
-h1{font-size:4.8em;padding-top:2em;padding-bottom:0;text-align:center;font-weight:400;color:#4f5566;letter-spacing:-2px;word-spacing:-6px}
-h2{font-size:3.6em;padding-bottom:30px}
-h3{font-size:2.4em}
-h4{font-size:2.1em}
-p{font-size:1.8em;margin-bottom:1em;line-height:30px;word-spacing:-.1em;letter-spacing:.3px}
-a{color:#00B1FC;font-size:1.6em}
-.border{border:1px solid #ddd}
-.margin-top{margin-top:3em}
-.margin-right{margin-right:3em}
-.margin-bottom{margin-bottom:3em}
-.margin-left{margin-left:3em}
-.more-margin-top{margin-top:5em}
-.more-margin-right{margin-right:5em}
-.content,.float-center{margin-left:auto;margin-right:auto}
-.more-margin-bottom{margin-bottom:5em}
-.more-margin-left{margin-left:5em}
-.less-padding-top{padding-top:1em!important}
-.less-padding-bottom{padding-bottom:1em!important}
-.padding-top{padding-top:2em!important}
-.padding-right{padding-right:2em!important}
-.padding-bottom{padding-bottom:2em!important}
-.padding-left{padding-left:2em!important}
-.more-padding-top{padding-top:5em}
-.more-padding-right{padding-right:5em}
-.more-padding-bottom{padding-bottom:5em}
-.content{width:90%;max-width:1111px}
-.leading{font-size:2.1em;line-height:1.5}
-.justify{text-align:justify}
-.float-center{float:none}
-.column,.pull-left{float:left}
-.uppercase{text-transform:uppercase}
-.bold{font-weight:700}
-.inline-block{display:inline-block}
-.smaller-text{font-size:1.2em}
-.box-shadow{box-shadow:0 2px 7px #ccc}
-.border-button{border:1px solid #65c7fd;padding:9px 18px;border-radius:30px}
-.hire-me{width:7em;font-size:1.8em}
 #grid[data-columns]::before{content:'3 .column.size-1of3'}
+.column{float:left}
 .size-1of3{width:33.333%}
 .column>div{padding:1.5em}
 .column img{width:100%}
@@ -77,10 +35,6 @@ a{color:#00B1FC;font-size:1.6em}
 .grid .golden-small,.grid .w-g-s{width:38.2716%}
 .grid .golden-large,.grid .w-g-l{width:61.7283%}
 .grid:after,.grid:before{display:table;content:"";line-height:0}
-.align-center{text-align:center}
-.align-left{text-align:left}
-.align-right{text-align:right}
-.pull-right{float:right}
 .unit img{max-width:100%}
 .only-on-mobiles{display:none!important}
 @media screen and (max-width:568px){.grid:not(.no-stacking-on-mobiles)>.unit{width:100%!important;padding-left:20px;padding-right:20px}
@@ -88,7 +42,57 @@ a{color:#00B1FC;font-size:1.6em}
 .center-on-mobiles{text-align:center!important}
 .hide-on-mobiles{display:none!important}
 .only-on-mobiles{display:block!important}}
+.block,.leading{display:block}
 @media screen and (min-width:1180px){.grid.wider,.wider .grid{max-width:1180px;margin:0 auto}}
+abbr,address,article,aside,audio,b,blockquote,body,caption,cite,code,dd,del,details,dfn,dl,dt,em,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;border:0;padding:0;font-size:100%;outline:0;vertical-align:baseline;background:0 0;-webkit-font-smoothing:antialiased}
+html{font-size:62.5%}
+body{font-family:Inconsolata,Monaco,'Courier New',monospace;line-height:1.43;transition:opacity 1s linear}
+#intro,.bob,footer,h1,h2,h3,h4{font-family:'Cutive Mono',Monaco,'Courier New' monospace;font-weight:200;text-align:center}
+#intro a,.bob a,footer a,h1 a,h2 a,h3 a,h4 a{font-size:100%}
+code,p{font-size:1.8em}
+h1{font-size:4.8em;padding-top:2em;padding-bottom:0;text-align:center;font-weight:400;color:#4f5566;letter-spacing:-2px;word-spacing:-6px}
+h2{font-size:3.6em;padding-bottom:30px}
+h3{font-size:2.4em}
+h4{font-size:2.1em}
+p{margin-bottom:1em;line-height:30px;word-spacing:-.1em;letter-spacing:.3px}
+a{color:#00B1FC;font-size:1.6em}
+.border{border:1px solid #ddd}
+.margin-top{margin-top:3em}
+.margin-right{margin-right:3em}
+.margin-bottom{margin-bottom:3em}
+.margin-left{margin-left:3em}
+.more-margin-top{margin-top:5em}
+.more-margin-right{margin-right:5em}
+.content,.float-center,.highlight{margin-left:auto;margin-right:auto}
+.more-margin-bottom{margin-bottom:5em}
+.more-margin-left{margin-left:5em}
+.less-padding-top{padding-top:1em!important}
+.less-padding-bottom{padding-bottom:1em!important}
+.padding-top{padding-top:2em!important}
+.padding-right{padding-right:2em!important}
+.padding-bottom{padding-bottom:2em!important}
+.padding-left{padding-left:2em!important}
+.more-padding-top{padding-top:5em}
+.more-padding-right{padding-right:5em}
+.more-padding-bottom{padding-bottom:5em}
+.content{width:90%;max-width:1111px}
+.leading{font-size:2.1em;line-height:1.5}
+.justify{text-align:justify}
+.float-center,.highlight{display:block;float:none}
+.align-center{text-align:center}
+.align-left{text-align:left}
+.align-right{text-align:right}
+.pull-left{float:left}
+.pull-right{float:right}
+.uppercase{text-transform:uppercase}
+.bold{font-weight:700}
+.inline-block{display:inline-block}
+.small-text{font-size:1.4em}
+.smaller-text{font-size:1.2em}
+.box-shadow{box-shadow:0 2px 7px #ccc}
+.border-button{border:1px solid #65c7fd;padding:9px 18px;border-radius:30px}
+.hire-me{width:7em;font-size:1.8em}
+.highlight{padding-top:5em;width:60%}
 .header{height:48px;line-height:4em}
 .header .logo,.header aside{position:absolute}
 .header .logo{width:42px;height:42px;top:10px;left:0;opacity:1}

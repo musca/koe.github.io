@@ -9,10 +9,11 @@ $less-padding:			1em;
 $padding:						2em;
 $margin:            3em;
 $more-margin:       5em;
-$extra-padding:			5em;
+$more-padding:			5em;
 $green:							rgba(104, 166, 52, .95);
 $white:							#f4f4f4;
 $blue:							#08c;
+$p-font-size:       1.8em;
 
 html, body, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
   margin: 0;
@@ -30,7 +31,6 @@ html {
 body {
   font-family: $sec-font-stack;
   line-height: 1.43;
-  padding-top: 1em;
   transition: opacity 1s linear;
 }
 h1, h2, h3, h4, #intro, footer, .bob {
@@ -64,7 +64,7 @@ h4 {
   font-size: 2.1em;
 }
 p {
-  font-size: 1.8em;
+  font-size: $p-font-size;
   margin-bottom: 1em;
   line-height: 30px;
   color: #222;
@@ -77,6 +77,9 @@ a {
 }
 ul {
   list-style: none;
+}
+code {
+  font-size: $p-font-size;
 }
 .border {
   border: $border;
@@ -130,13 +133,13 @@ ul {
   padding-left: $padding !important;
 }
 .more-padding-top {
-  padding-top: $extra-padding;
+  padding-top: $more-padding;
 }
 .more-padding-right {
-  padding-right: $extra-padding;
+  padding-right: $more-padding;
 }
 .more-padding-bottom {
-  padding-bottom: $extra-padding;
+  padding-bottom: $more-padding;
 }
 .content {
   margin-left: auto;
@@ -170,6 +173,7 @@ ul {
 .bold					{ font-weight: bold;}
 .inline-block { display: inline-block; }
 .list-unstyled{ list-style: none;}
+.small-text   { font-size: 1.4em;}
 .smaller-text { font-size: 1.2em;}
 .box-shadow {
   box-shadow: 0 2px 7px #ccc;
@@ -186,5 +190,11 @@ ul {
 }
 .hire-me {
   width: 7em;
-  font-size: 1.8em;
+  font-size: $p-font-size;
+}
+/*  */
+.highlight {
+  padding-top: $more-padding;
+  width: 60%;
+  @extend .float-center;
 }
