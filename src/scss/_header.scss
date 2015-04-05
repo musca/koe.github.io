@@ -20,12 +20,22 @@
   }
 }
 
+.intro {
+  height: 410px !important;
+  position: relative;
+  border-bottom: 1px dotted #fafafa;
+}
+.intro h2 {
+  font-size: 2.1em;
+}
 
 .logo {
   transition: all .5s linear;
 }
 #loading .logo,
 #imgLoading {
+  z-index: 3;
+  opacity: 1 !important;
   animation: loading 2s linear infinite;
 }
 @keyframes loading {

@@ -2,7 +2,6 @@ h2,p{color:#222}
 .list-unstyled,ul{list-style:none}
 .header,h1{position:relative}
 #content:after,.flickr,.grid,.grid:after{clear:both}
-.bob,.border-button{text-decoration:none}
 @font-face{font-family:'Cutive Mono';font-style:normal;font-weight:400;src:local('Cutive Mono'),local('CutiveMono-Regular'),url(http://fonts.gstatic.com/s/cutivemono/v4/N5odNRruTwjvCM8y77PhQZ0EAVxt0G0biEntp43Qt6E.ttf)format('truetype')}
 @font-face{font-family:Inconsolata;font-style:normal;font-weight:400;src:local('Inconsolata'),url(http://fonts.gstatic.com/s/inconsolata/v10/BjAYBlHtW3CJxDcjzrnZCJ0EAVxt0G0biEntp43Qt6E.ttf)format('truetype')}
 abbr,address,article,aside,audio,b,blockquote,body,caption,cite,code,dd,del,details,dfn,dl,dt,em,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;border:0;padding:0;font-size:100%;outline:0;vertical-align:baseline;background:0 0}
@@ -90,15 +89,17 @@ a{color:#00B1FC;font-size:1.6em}
 .small-text{font-size:1.4em}
 .smaller-text{font-size:1.2em}
 .box-shadow{box-shadow:0 2px 7px #ccc}
-.border-button{border:1px solid #65c7fd;padding:9px 18px;border-radius:30px}
+.border-button{border:1px solid #65c7fd;padding:9px 18px;text-decoration:none;border-radius:30px}
 .hire-me{width:7em;font-size:1.8em}
 .highlight{padding-top:5em;width:60%}
 .header{height:48px;line-height:4em}
 .header .logo,.header aside{position:absolute}
 .header .logo{width:42px;height:42px;top:10px;left:0;opacity:1}
 .header aside{right:0;top:0;font-size:1.5em;color:#555}
+.intro{height:410px!important;position:relative;border-bottom:1px dotted #fafafa}
+.intro h2{font-size:2.1em}
 .logo{transition:all .5s linear}
-#imgLoading,#loading .logo{-webkit-animation:loading 2s linear infinite;animation:loading 2s linear infinite}
+#imgLoading,#loading .logo{z-index:3;opacity:1!important;-webkit-animation:loading 2s linear infinite;animation:loading 2s linear infinite}
 @-webkit-keyframes loading{from{-webkit-transform:perspective(300px)rotateY(0);transform:perspective(300px)rotateY(0)}
 to{-webkit-transform:perspective(300px)rotateY(-360deg);transform:perspective(300px)rotateY(-360deg)}}
 @keyframes loading{from{-webkit-transform:perspective(300px)rotateY(0);transform:perspective(300px)rotateY(0)}
@@ -114,8 +115,6 @@ to{-webkit-transform:perspective(300px)rotateY(-360deg);transform:perspective(30
 .flickr .imgLoading{width:128px;height:128px;margin:40px auto}
 .flickrLoader{display:none;width:60px;height:20px;margin:40px auto;position:relative}
 .flickrLoader .ball{position:absolute;left:0;width:20px;height:20px;border-radius:10px;-webkit-animation:flickrBalls 1.6s linear infinite;animation:flickrBalls 1.6s linear infinite}
-#quotes p,.bob{border-radius:4px}
-#sr-player,#what-ppl-say,.intro{position:relative}
 .flickrLoader .pink{background-color:#FF0084}
 .flickrLoader .blue{background-color:#0063DC;-webkit-animation-delay:.8s;animation-delay:.8s}
 .flickr ul{margin-top:10px}
@@ -128,39 +127,11 @@ to{-webkit-transform:perspective(300px)rotateY(-360deg);transform:perspective(30
 .flickr-feed img[data-frz-src]{opacity:0}
 .flickr a.more-flickr-photos{float:right;text-align:right;text-decoration:none;font-size:1.3em;margin-top:5px;height:20px}
 .footer li{display:inline;text-align:center}
-#mtext>p,.bob{display:block}
-.content{padding-bottom:80px}
-#content{padding-top:0}
-.intro{height:410px!important;border-bottom:1px dotted #fafafa}
-.intro h2{font-size:2.1em}
-.bob{background-color:orange;line-height:1.4em;padding:8px 15px;margin-bottom:10px;font-size:18px;color:#fff!important;font-weight:200}
-.bob:hover{box-shadow:0 0 1px 1px rgba(0,0,0,.1)}
-#quote-wrapper{padding-top:50px;margin-top:-70px}
-#quotes p{padding:10px}
-#mtext>p{font-size:2.1em;text-align:center}
-#mtImages img{max-width:100%}
-#content-slider{display:inline-block;padding-bottom:80px}
-#content-slider H2{padding-bottom:40px}
-#black-area .bob,#content-slider img{float:right}
-#black-area{width:100%;background-color:#111;padding:0}
-#black-area h2{padding:40px 0 0;margin-bottom:0;color:#fff;text-shadow:none;font-weight:400}
-#black-area h3{padding-bottom:40px;color:#e9e9e9;text-shadow:none}
-#black-area div{background:url(/assets/images/chromebook-V2.jpg)center bottom no-repeat #111;height:390px;padding:0}
-#black-area img{margin-left:25%;margin-bottom:-4px}
-#sr-player{width:100%;height:auto;padding-top:20px;display:inline-block}
-#sr-player h3{text-align:left}
-#sr-player img:first-child{margin-left:5%;height:auto}
-#what-ppl-say{clear:left;height:65px;overflow:hidden;margin:0 0 -25px -20px;z-index:89;font-size:100%;background:url(/dist/img/arrows.png)top left no-repeat}
-#what-ppl-say h3{position:absolute;height:55px;top:-55px;left:0}
-#quotes{width:95%;font-size:100%;text-align:center;margin:0 auto -2px}
-#quotes p{font-size:2.1em;background-color:#fff;color:#111;position:relative;margin-bottom:0}
-#quotes a:visited{color:#007AAF}
-#quote-author{font-size:12px;color:#333;margin-bottom:40px}
-#content-slider div,#sr-player div{width:50%;overflow:hidden}
-.show{-webkit-animation:FadeIn 1s linear;-moz-animation:FadeIn 1s linear}
 #footer{margin:30px 0}
 #footer p{display:block;font-size:1.4em}
 footer p{margin-top:5px;color:#999}
+.content{padding-bottom:80px}
+#content{padding-top:0}
 @media screen and (max-width:1920px){.content-wrapper{width:90%}
 #intro #lets-chat{right:22%}
 h1{font-size:5.6em}
