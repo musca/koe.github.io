@@ -1,30 +1,4 @@
-$prim-font-stack:		'Cutive Mono', 'Monaco', 'Courier New' monospace;
-$sec-font-stack:		'Inconsolata', 'Monaco', 'Courier New', monospace;
-$line-height:       1.6;
-$header-bg-color: 	#fbfbfb;
-$link-color:        #65C7FD;
-$grey:							#ccc;
-$border: 						1px solid #ddd;
-$less-padding:			1em;
-$padding:						2em;
-$margin:            3em;
-$more-margin:       5em;
-$more-padding:			5em;
-$green:							rgba(104, 166, 52, .95);
-$white:							#f4f4f4;
-$blue:							#08c;
-$p-font-size:       1.8em;
-
-html, body, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  font-size: 100%;
-  outline: 0 none;
-  vertical-align: baseline;
-  background: transparent;
-  -webkit-font-smoothing: antialiased;
-}
+@import url(http://fonts.googleapis.com/css?family=Cutive+Mono|Inconsolata);
 html {
  font-size: 62.5%; 
 }
@@ -32,6 +6,7 @@ body {
   font-family: $sec-font-stack;
   line-height: 1.43;
   transition: opacity 1s linear;
+  -webkit-font-smoothing: antialiased;
 }
 h1, h2, h3, h4, #intro, footer, .bob {
   font-family: $prim-font-stack;

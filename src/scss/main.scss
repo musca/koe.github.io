@@ -1,3 +1,5 @@
+@import 'reset';
+@import 'variable';
 @import 'grid';
 @import 'globals';
 @import 'header';
@@ -5,7 +7,6 @@
 @import 'github';
 @import 'flickr';
 @import 'footer';
-@import url(http://fonts.googleapis.com/css?family=Cutive+Mono|Inconsolata);
 
 .content {
   padding-bottom: 80px;

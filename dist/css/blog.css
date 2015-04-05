@@ -5,9 +5,8 @@ h2,p{color:#222}
 #comments a,#rss,.border-button,ul#comments-ul .gravtar,ul#comments-ul .user{text-decoration:none}
 .grid,.grid:after{clear:both}
 #related,.list-unstyled,ul{list-style:none}
-abbr,address,article,aside,audio,b,blockquote,body,caption,cite,code,dd,del,details,dfn,dl,dt,em,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;border:0;padding:0;font-size:100%;outline:0;vertical-align:baseline;background:0 0;-webkit-font-smoothing:antialiased}
 html{font-size:62.5%}
-body{font-family:Inconsolata,Monaco,'Courier New',monospace;line-height:1.43;transition:opacity 1s linear}
+body{font-family:Inconsolata,Monaco,'Courier New',monospace;line-height:1.43;transition:opacity 1s linear;-webkit-font-smoothing:antialiased}
 #intro,.bob,footer,h1,h2,h3,h4{font-family:'Cutive Mono',Monaco,'Courier New' monospace;font-weight:200;text-align:center}
 #intro a,.bob a,footer a,h1 a,h2 a,h3 a,h4 a{font-size:100%}
 code,p{font-size:1.8em}

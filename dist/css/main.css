@@ -5,6 +5,7 @@ h2,p{color:#222}
 .bob,.border-button{text-decoration:none}
 @font-face{font-family:'Cutive Mono';font-style:normal;font-weight:400;src:local('Cutive Mono'),local('CutiveMono-Regular'),url(http://fonts.gstatic.com/s/cutivemono/v4/N5odNRruTwjvCM8y77PhQZ0EAVxt0G0biEntp43Qt6E.ttf)format('truetype')}
 @font-face{font-family:Inconsolata;font-style:normal;font-weight:400;src:local('Inconsolata'),url(http://fonts.gstatic.com/s/inconsolata/v10/BjAYBlHtW3CJxDcjzrnZCJ0EAVxt0G0biEntp43Qt6E.ttf)format('truetype')}
+abbr,address,article,aside,audio,b,blockquote,body,caption,cite,code,dd,del,details,dfn,dl,dt,em,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;border:0;padding:0;font-size:100%;outline:0;vertical-align:baseline;background:0 0}
 #grid[data-columns]::before{content:'3 .column.size-1of3'}
 .column{float:left}
 .size-1of3{width:33.333%}
@@ -44,9 +45,8 @@ h2,p{color:#222}
 .only-on-mobiles{display:block!important}}
 .block,.leading{display:block}
 @media screen and (min-width:1180px){.grid.wider,.wider .grid{max-width:1180px;margin:0 auto}}
-abbr,address,article,aside,audio,b,blockquote,body,caption,cite,code,dd,del,details,dfn,dl,dt,em,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;border:0;padding:0;font-size:100%;outline:0;vertical-align:baseline;background:0 0;-webkit-font-smoothing:antialiased}
 html{font-size:62.5%}
-body{font-family:Inconsolata,Monaco,'Courier New',monospace;line-height:1.43;transition:opacity 1s linear}
+body{font-family:Inconsolata,Monaco,'Courier New',monospace;line-height:1.43;transition:opacity 1s linear;-webkit-font-smoothing:antialiased}
 #intro,.bob,footer,h1,h2,h3,h4{font-family:'Cutive Mono',Monaco,'Courier New' monospace;font-weight:200;text-align:center}
 #intro a,.bob a,footer a,h1 a,h2 a,h3 a,h4 a{font-size:100%}
 code,p{font-size:1.8em}
