@@ -1,7 +1,7 @@
 h2,p{color:#222}
 .list-unstyled,ul{list-style:none}
 .header,h1{position:relative}
-#content:after,.flickr,.grid,.grid:after{clear:both}
+.flickr,.grid,.grid:after{clear:both}
 @font-face{font-family:'Cutive Mono';font-style:normal;font-weight:400;src:local('Cutive Mono'),local('CutiveMono-Regular'),url(http://fonts.gstatic.com/s/cutivemono/v4/N5odNRruTwjvCM8y77PhQZ0EAVxt0G0biEntp43Qt6E.ttf)format('truetype')}
 @font-face{font-family:Inconsolata;font-style:normal;font-weight:400;src:local('Inconsolata'),url(http://fonts.gstatic.com/s/inconsolata/v10/BjAYBlHtW3CJxDcjzrnZCJ0EAVxt0G0biEntp43Qt6E.ttf)format('truetype')}
 abbr,address,article,aside,audio,b,blockquote,body,caption,cite,code,dd,del,details,dfn,dl,dt,em,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;border:0;padding:0;font-size:100%;outline:0;vertical-align:baseline;background:0 0}
@@ -99,11 +99,7 @@ a{color:#00B1FC;font-size:1.6em}
 .intro{height:410px!important;position:relative;border-bottom:1px dotted #fafafa}
 .intro h2{font-size:2.1em}
 .logo{transition:all .5s linear}
-#imgLoading,#loading .logo{z-index:3;opacity:1!important;-webkit-animation:loading 2s linear infinite;animation:loading 2s linear infinite}
-@-webkit-keyframes loading{from{-webkit-transform:perspective(300px)rotateY(0);transform:perspective(300px)rotateY(0)}
-to{-webkit-transform:perspective(300px)rotateY(-360deg);transform:perspective(300px)rotateY(-360deg)}}
-@keyframes loading{from{-webkit-transform:perspective(300px)rotateY(0);transform:perspective(300px)rotateY(0)}
-to{-webkit-transform:perspective(300px)rotateY(-360deg);transform:perspective(300px)rotateY(-360deg)}}
+#loading .logo{z-index:3;opacity:1!important;-webkit-animation:loading 2s linear infinite;animation:loading 2s linear infinite}
 .github img{width:80%}
 .github ul{width:100%;display:block;overflow:hidden}
 .github li{padding:10px 0;border-bottom:1px solid #ccc}
@@ -127,11 +123,8 @@ to{-webkit-transform:perspective(300px)rotateY(-360deg);transform:perspective(30
 .flickr-feed img[data-frz-src]{opacity:0}
 .flickr a.more-flickr-photos{float:right;text-align:right;text-decoration:none;font-size:1.3em;margin-top:5px;height:20px}
 .footer li{display:inline;text-align:center}
-#footer{margin:30px 0}
-#footer p{display:block;font-size:1.4em}
 footer p{margin-top:5px;color:#999}
 .content{padding-bottom:80px}
-#content{padding-top:0}
 @media screen and (max-width:1920px){.content-wrapper{width:90%}
 #intro #lets-chat{right:22%}
 h1{font-size:5.6em}

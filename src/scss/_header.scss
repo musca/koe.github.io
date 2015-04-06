@@ -32,17 +32,8 @@
 .logo {
   transition: all .5s linear;
 }
-#loading .logo,
-#imgLoading {
+#loading .logo{
   z-index: 3;
   opacity: 1 !important;
   animation: loading 2s linear infinite;
-}
-@keyframes loading {
-  from {
-    transform: perspective(300px) rotateY(0deg);
-  }
-  to {
-    transform: perspective(300px) rotateY(-360deg);
-  }
 }
