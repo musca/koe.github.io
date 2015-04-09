@@ -1,7 +1,7 @@
-musca
-=====
+musca.se
+========
 
-# musca.github.io - Yekyll based GitHub page/blog
+# A Yekyll based GitHub page/blog
 
 Gulp based build system with:
 
