@@ -1,5 +1,5 @@
-$prim-font-stack:		'Cutive Mono', 'Monaco', 'Courier New' monospace;
-$sec-font-stack:		'Inconsolata', 'Monaco', 'Courier New', monospace;
+$prim-font-stack:		'Inconsolata','Cutive', 'Menlo', 'Monaco', 'Courier New' monospace;
+$sec-font-stack:		'Menlo', 'Monaco', 'Courier New', monospace;
 $line-height:       1.6;
 $header-bg-color: 	#fbfbfb;
 $link-color:        #65C7FD;
@@ -13,4 +13,5 @@ $more-padding:			5em;
 $green:							rgba(104, 166, 52, .95);
 $white:							#f4f4f4;
 $blue:							#08c;
+$light-blue:         #F1F4F9;
 $p-font-size:       1.8em;
