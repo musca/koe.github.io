@@ -1,6 +1,7 @@
-name: musca.github.io
+name: musca.se
 markdown: redcarpet
 highlighter: pygments
 description: "This is where I keep a blog about my github projects, web design & development."
 url: http://blog.musca.se
 exclude: ["src", "node_modules", "gulpfile.js", "package.json", "README.md"]
+production_url : http://musca.se
