@@ -13,11 +13,16 @@ function init() {
   } else {
     greeting.innerHTML = 'Good evening';
   }
-  document.documentElement.removeAttribute("class");
+  document.documentElement.removeAttribute("id");
 };
+
 var o = $;
+
 $(document).ready(function() {   
   o("body").addClass('loaded');
+  var bLazy = new Blazy({ 
+      // options
+  });
   // Get github repos
   o.ajax({
       url: 'https://api.github.com/users/musca/repos?sort=updated'
@@ -41,8 +46,6 @@ $(document).ready(function() {
         tmpHolder.push('<li>' + tmp + '</li>');
       };
       o(".github-projects").append(tmpHolder.join(''));
-      // alert(tmpHolder)
-      //document.getElementById('github-projects').innerHTML = tmpHolder.join('');
     }
   });
   //Flickr stream
@@ -62,15 +65,16 @@ $(document).ready(function() {
 	  	items.sort(function() {return 0.5 - Math.random()});
 
 	  	for (var u = 0; u < 6; u++) {
-	  		
 	  		li =	'  <a href="'+items[u].media.m.replace('_m','_b')+'" class="zoom" rel="group">' +
-    	  			'    <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== onload=lzld(this) onerror=lzld(this) data-src="'+items[u].media.m+'" alt="{{title}}" />' +
+    	  			'    <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==   data-src="'+items[u].media.m+'" alt="flickr pictures" class="b-lazy"/>' +
               '  </a>';
         imgHolder.push('<li>' + li + '</li>');
 	  	};
 
       o(".flickr-feed").append(imgHolder.join(''));
-
+      var bLazy = new Blazy({ 
+          // options
+      });
 	  	o('.flickr-feed, .flickr li').css('height', $('.flickr li').width() + 'px');
   		o(window).resize(function() {
   			o('.flickr li').css('height', o('.flickr li').width() + 'px');
@@ -96,7 +100,6 @@ $(document).ready(function() {
 	   	objImagePreloader.onload=function(){};
 	  }
 	  else{
-	  	// o('#flickr h3').after('<img src="/assets/images/logo.svg" id="imgLoading">');
       o('.flickrLoader').css('display', 'block');
 	    objImagePreloader.onload = function() {
 	      o('.flickr > img').remove();
