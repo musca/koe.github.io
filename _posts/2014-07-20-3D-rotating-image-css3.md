@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "3D Rotating image with CSS3"
 date:   2014-07-20 13:15:00
 categories: blog
@@ -12,7 +12,7 @@ css: blog
 	.musca-logo {
 		width: 140px;
 		height: 140px;
-		margin: 0 auto;
+		margin: 2em auto;
 		display: block;
 	  -webkit-animation: loading 20s linear infinite;
 	  	 -moz-animation: loading 20s linear infinite;
@@ -41,16 +41,20 @@ css: blog
 	    transform: perspective(400px) rotateY(-360deg); }
 	}
 </style>
-<img src="/dist/img/logo.svg" class="musca-logo" />
+<img src="/dist/img/logo.svg" class="musca-logo margin-top margin-bottom" />
 
 
-	<img src="/dist/img/logo.svg" class="logo" onerror="this.src='logo.png'" />
+	<img src="/dist/img/logo.svg" class="logo">
 
 	.logo {
       animation: loading 20s linear infinite;
 	}
 
 	@keyframes loading {
-      from { transform: perspective(400px) rotateY(0deg); }
-      to { transform: perspective(400px) rotateY(-360deg); }
+      from { 
+        transform: perspective(400px) rotateY(0deg); 
+      }
+      to { 
+        transform: perspective(400px) rotateY(-360deg); 
+      }
 	}

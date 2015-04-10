@@ -1,10 +1,10 @@
 ---
-layout: default
+layout: post
 title:  "HTML5 base64 test video"
 date:   2014-05-11 13:15:00
 categories: blog
 tags: HTML5 video base64
-blog: css
+css: blog
 ---
 
 I needed a small base64 video file to check for HTML 5 video tag support in the browser. This is what I came up with.
