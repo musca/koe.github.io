@@ -3,130 +3,94 @@ layout: default
 title: Web design and development
 css: main
 ---
-<div class="grid">
-  <div class="unit whole">
-    <header class="intro">
-      <h1>I design and code for the web</h1>
-      <!-- <h2>that loves simple design and new internet technolegies</h2> -->
-      <p class="align-center">This page is under construction and settling down on a new server. come back soon for more stuff.</p>   
-      <!-- <a class="border-button float-center hire-me margin-top" href="mailto:contact@musca.se">Hire me!</a> -->
-    </header>     
-    <div id="grid" class="portfolio align-center" data-columns>
-      <div>
-        <a href="http://www.restfuldesign.com">
-          <img class="chrome" src="/dist/img/rd.png" alt="Full jQuery window width content slider">
-          restfuldesign.com
-        </a>
-        <p>HTML, CSS and JS</p>
-      </div>
-      <div>
-        <a href="http://www.rolandpersson.com">
-          <img src="/dist/img/roland-persson-ipad-white.jpg" alt="Roland Persson Photographer">
-          rolandpersson.com
-        </a>
-        <p>Design and initial code</p>
-      </div>
-      <div>
-        <!-- <a href="/video" > -->
-          <img class="box-shadow" src="/dist/img/vinyl-animation.gif" alt="Full window background video">
-        <!-- </a> -->
-        <p>Design, code and video editing</p>
-      </div>
-      <div>
-        <a href="http://www.jofjell.se">
-          <img class="box-shadow" src="/dist/img/per-jofjell.png" alt="www.jofjell.se">
-          jofjell.se
-        </a>
-        <p>
-          Design and code
-        </p>
-      </div>
-      <div>
-        <a href="/full-window-width-jquery-tools-content-slider-demo/" title="Full jQuery window width content slider">
-          <img alt="Full window width content slider" class="box-shadow" src="/dist/img/fwwcs.jpg">
-        </a>
-        <p>jQuery, HTML and CSS</p>
-      </div>
-    </div>
+<section class="intro content-wrapper">
+  <header>
+    <h1>I design and code for the web</h1>
+    <!-- <h2>and loves simple design and new internet technolegies</h2> -->
+    <p class="align-center">This page is under construction and settling down on a new server. come back soon for more stuff.</p>   
+    <!-- <a class="border-button float-center hire-me margin-top" href="mailto:contact@musca.se">Hire me!</a> -->
+  </header>     
+</section>
+<section class="portfolio align-center content-wrapper clear" id="grid" data-columns>
+  <div>
+    <a href="http://restfuldesign.github.io/restfuldesign.com/">
+      <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/dist/img/rd.png" alt="Full jQuery window width content slider">
+      restfuldesign.com
+    </a>
+    <p>HTML, SCSS and JS</p>
   </div>
-  <!-- quotes -->
-  <!-- <div id="quote-wrapper">
-    <div id="what-ppl-say">
-      <h3>quotes from real people</h3>
-    </div>
-    <div class="content" id="quotes">
-      <p>
-        “I just wanted to thank you for the work you've done with the
-        <a href="/full-window-width-jquery-tools-content-slider-demo/">content slider</a>.
-        It works great!”
-      </p>
-      <span id="quote-author">
-        Kurt Lambert - silverbackstrategies.com
-      </span>
-    </div>
-  </div> -->
-  <div class="blog more-margin-top more-margin-bottom unit whole">
-    <h2>latest from the blog</h2>
-    <div class="padding-top">
-      {% assign post = site.posts.first %}
-      {% assign content = post.content %}
-      <h3 class="padding-bottom">
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </h3>
-      {{ content }}
-    </div>
+  <div>
+    <a href="http://www.rolandpersson.com">
+      <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/dist/img/roland-persson-ipad-white.jpg" alt="Roland Persson Photographer">
+      rolandpersson.com
+    </a>
+    <p>Design and initial code</p>
   </div>
-</div>
-
-<!-- <div class="content-wrapper">
-  <div class="content-slider">
-    <header>
-      <h2>Full window width content slider.</h2>
-    </header>
-    <img alt="" src="/dist/img/family.png">
-    <div>
-      <p>
-        I created this content slider after not finding any solution to my problem. The problem was that I wanted a full window width content slider that worked on smartphones and big screens.
-      </p>
-      <p>
-        For the sliding effect I used jQuery Tools Scrollable and wrote my own javascript/jQuery Tools resize code to achieve 100% window width.
-        <a href="/full-window-width-jquery-tools-content-slider-demo/">Try the content slider</a>
-      </p>
-    </div>
+  <div>
+    <img class="box-shadow b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/dist/img/vinyl-animation.gif" alt="Full window background video">
+    <p>Design, code and video editing</p>
+  </div>
+  <div>
+    <a class="disabled" href="http://www.jofjell.se">
+      <img class="box-shadow b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/dist/img/per-jofjell.png" alt="www.jofjell.se">
+      jofjell.se
+    </a>
+    <p>
+      Design and code
+    </p>
+  </div>
+  <div>
+    <a href="/full-window-width-jquery-tools-content-slider-demo/" title="Full jQuery window width content slider">
+      <img alt="Full window width content slider" class="box-shadow" src="/dist/img/fwwcs.jpg">
+    </a>
+    <p>jQuery, HTML and CSS</p>
+  </div>
+</section>
+<!-- quotes -->
+<!-- <div id="quote-wrapper">
+  <div id="what-ppl-say">
+    <h3>quotes from real people</h3>
+  </div>
+  <div class="content" id="quotes">
+    <p>
+      “I just wanted to thank you for the work you've done with the
+      <a href="/full-window-width-jquery-tools-content-slider-demo/">content slider</a>.
+      It works great!”
+    </p>
+    <span id="quote-author">
+      Kurt Lambert - silverbackstrategies.com
+    </span>
   </div>
 </div> -->
-<div class="content-wrapper more-margin-top more-margin-bottom">
-  <!-- Top 3 GitHub projects -->
-  <div class="grid github more-padding-bottom">
-    <h2>Some of <a href="http://github.com/musca">my GitHub stuff</a></h2>
+
+<section class="github more-padding-top more-padding-bottom content-wrapper">
+  <h2>Some of <a href="http://github.com/musca">my GitHub stuff</a></h2>
+  <div class="grid">
     <div class="unit w-1-2">
       <img class="float-center margin-top" alt="octocat" src="/dist/img/octocat.svg">       
     </div>
     <div class="unit w-1-2">
        <ul class="github-projects"></ul>
-    </div>      
-  </div>
-  <div class="flickr more-margin-top">
-    <h3>Random pics from my flickr stream</h3>
-    <div class="flickrLoader">
-      <div class="ball pink"></div>
-      <div class="ball blue"></div>
     </div>
-    <ul class="flickr-feed"></ul>
-    <a href="http://flickr.com/karl-oskar" class="more-flickr-photos">See more photos</a>
   </div>
-</div>
-<!-- <footer id="footer">
-  <ul id="social">
-    <li>
-      koe[at]musca.se
-    </li>
-    <li>
-      <a href="https://plus.google.com/112541904288766057510" title="g+">g+</a>
-    </li>
-  </ul>
-  <ul>
-    <li>Copyright 2011-2015</li>
-  </ul>
-  <p id="ps">All designs and images are made by me except for OCTOCAT® and client pics.</p>
-</footer> -->
+</section>
+<section class="blog more-padding-top more-padding-bottom content-wrapper clear-both">
+  <h2>latest from the blog</h2>
+  <div class="padding-top">
+    {% assign post = site.posts.first %}
+    {% assign content = post.content %}
+    <h3 class="padding-bottom">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </h3>
+    {{ content }}
+  </div>
+</section>
+<section class="flickr more-margin-top grid content-wrapper">
+  <h3>Random pics from my flickr stream</h3>
+  <div class="flickrLoader">
+    <div class="ball pink"></div>
+    <div class="ball blue"></div>
+  </div>
+  <ul class="flickr-feed unit whole"></ul>
+  <a href="http://flickr.com/karl-oskar" class="more-flickr-photos">See more photos</a>
+</section>
