@@ -4,3 +4,10 @@ function loadCSS(e,t,n,o){"use strict";function r(){for(var t,o=0;o<l.length;o++
 function loadJS(e,t){"use strict";var n=window.document.getElementsByTagName("script")[0],o=window.document.createElement("script");return o.src=e,o.async=!0,n.parentNode.insertBefore(o,n),t&&"function"==typeof t&&(o.onload=t),o}
 /*! Google Analytics code*/ 
 var _gaq=[['_setAccount','UA-21499673-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='http://www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'));
+/*! Google fonts code*/
+WebFontConfig = {
+  google: {
+    families: ['Cutive', 'Inconsolata']
+  }
+};
+(function() { var wf = document.createElement('script'); wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1.5.6/webfont.js'; wf.type = 'text/javascript'; wf.async = 'true'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(wf, s); })();
