@@ -1,3 +1,5 @@
+@import 'reset';
+@import 'variable';
 @import 'globals';
 @import 'grid';
 @import 'header';
@@ -20,7 +22,6 @@
 
 .posts span {
   color: #aaa;
-  /*font-family: Monaco, "Courier New", monospace;*/
   font-size: 80%;
 }
 
@@ -35,11 +36,6 @@
   text-align: justify;
   width: 90%;
   margin: 1em auto 2em;
-  /*line-height: 1.5em;*/
-}
-
-#header {
-  position: relative;
 }
 
 #header a:first-child{
@@ -109,8 +105,6 @@ div.comment, .post > *{
   text-align: center;
 }
 .post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
 }
 
 .post ul, .post ol {
@@ -118,8 +112,6 @@ div.comment, .post > *{
 }
 
 .post code {
-  /*border: 1px solid #ddd;*/
-  background-color: #fafafa;
   word-break: break-all;
   display: block;
   font-size: 13px;
@@ -210,9 +202,7 @@ div.comment, .post > *{
 }
 .loaded{
   opacity: 1 !important;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  transition: all 1s ease;
+  transition: opacity 1s ease;
 }
 #comments-ul ul li{
   padding-top: 20px;
@@ -326,7 +316,8 @@ div.comment {
   line-height: 1.43;
 }
 #related li > a{
-  font-size: 1.5em
+  font-size: 1.5em;
+  text-decoration: none;
 }
 #related li p{
   margin: 5px 0 0 0;
@@ -336,30 +327,17 @@ div.comment {
   display: none;
 }
 #related span:first-child:after {
-    content: ", ";
-    margin:  0 4px 0 -2px;
+  content: ", ";
+  margin:  0 4px 0 -2px;
 }
-#related span:only-child:after,
-#related span:only-child:before {
-  content: "";
-}
-#related span:first-child:nth-last-child(1):before,
-#related span:first-child:nth-last-child(1):before ~ span {
-  content: "";
-}
-#related span:first-child:nth-last-child(2):before,
-#related span:first-child:nth-last-child(2):before ~ span,
-#related span:first-child:nth-last-child(2):after,
-#related span:first-child:nth-last-child(2):after ~ span {
-  content: "";
-}
-#related span:last-child:before {
-    content: " or ";
-    /*margin: 0 5px;*/
+#related a:last-child:before {
+  content: " or ";
+  /*margin: 0 5px;*/
+  color: #333;
 }
 #related span:last-child:after {
-    content: ".";
-    margin-left: -3px;
+  content: ".";
+  margin-left: -3px;
 }
 .small {
   max-width: 420px;

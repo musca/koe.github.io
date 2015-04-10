@@ -1,13 +1,12 @@
 h2,p{color:#222}
-.block,.leading{display:block}
 .header,h1{position:relative}
 #comments a,.post blockquote{font-style:italic}
-#comments a,#rss,.border-button,ul#comments-ul .gravtar,ul#comments-ul .user{text-decoration:none}
-.grid,.grid:after{clear:both}
+#comments-form,.clear-both,.grid,.grid:after{clear:both}
 #related,.list-unstyled,ul{list-style:none}
+abbr,address,article,aside,audio,b,blockquote,body,caption,cite,code,dd,del,details,dfn,dl,dt,em,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;border:0;padding:0;font-size:100%;outline:0;vertical-align:baseline;background:0 0}
 html{font-size:62.5%}
-body{font-family:Inconsolata,Monaco,'Courier New',monospace;line-height:1.43;transition:opacity 1s linear;-webkit-font-smoothing:antialiased}
-#intro,.bob,footer,h1,h2,h3,h4{font-family:'Cutive Mono',Monaco,'Courier New' monospace;font-weight:200;text-align:center}
+body{font-family:Inconsolata,Cutive,Menlo,Monaco,'Courier New' monospace;line-height:1.43;transition:opacity 1s linear;-webkit-font-smoothing:antialiased;background-color:#fefefe}
+#intro,.bob,footer,h1,h2,h3,h4{font-family:'Cutive Mono',Menlo,Monaco,'Courier New',monospace;font-weight:200;text-align:center}
 #intro a,.bob a,footer a,h1 a,h2 a,h3 a,h4 a{font-size:100%}
 code,p{font-size:1.8em}
 h1{font-size:4.8em;padding-top:2em;padding-bottom:0;text-align:center;font-weight:400;color:#4f5566;letter-spacing:-2px;word-spacing:-6px}
@@ -18,13 +17,13 @@ h4{font-size:2.1em}
 p{margin-bottom:1em;line-height:30px;word-spacing:-.1em;letter-spacing:.3px}
 a{color:#00B1FC;font-size:1.6em}
 .border{border:1px solid #ddd}
+.content{margin-left:auto;margin-right:auto;width:90%;max-width:1111px}
 .margin-top{margin-top:3em}
 .margin-right{margin-right:3em}
 .margin-bottom{margin-bottom:3em}
 .margin-left{margin-left:3em}
 .more-margin-top{margin-top:5em}
 .more-margin-right{margin-right:5em}
-.content,.float-center,.highlight{margin-left:auto;margin-right:auto}
 .more-margin-bottom{margin-bottom:5em}
 .more-margin-left{margin-left:5em}
 .less-padding-top{padding-top:1em!important}
@@ -36,29 +35,33 @@ a{color:#00B1FC;font-size:1.6em}
 .more-padding-top{padding-top:5em}
 .more-padding-right{padding-right:5em}
 .more-padding-bottom{padding-bottom:5em}
-.content{width:90%;max-width:1111px}
-.leading{line-height:1.5}
-.justify{text-align:justify}
-.float-center,.highlight{display:block;float:none}
+.block{display:block}
+.float-center,.highlight{display:block;float:none;margin-left:auto;margin-right:auto}
 .column,.pull-left{float:left}
+.clear:after,.clear:before{clear:both;content:"\0020";display:block;height:0;visibility:hidden}
+.justify{text-align:justify}
 .uppercase{text-transform:uppercase}
-.inline-block{display:inline-block}
 .small-text{font-size:1.4em}
 .smaller-text{font-size:1.2em}
+.inline-block{display:inline-block}
+.leading{line-height:1.5;display:block}
+.disabled,a[disabled]{pointer-events:none;cursor:default;text-decoration:line-through}
+#comments a,#related li>a,#rss,.border-button,ul#comments-ul .gravtar,ul#comments-ul .user{text-decoration:none}
 .box-shadow{box-shadow:0 2px 7px #ccc}
 .border-button{border:1px solid #65c7fd;padding:9px 18px;border-radius:30px}
 .hire-me{width:7em;font-size:1.8em}
-.highlight{padding-top:5em;width:60%}
+.highlight{padding:2em;overflow:scroll;background-color:#F1F4F9;border-radius:2px}
+.post pre.terminal,.post pre.terminal code{background-color:#333}
 #grid[data-columns]::before{content:'3 .column.size-1of3'}
 .size-1of3{width:33.333%}
 .column>div{padding:1.5em}
 .column img{width:100%}
 .content-wrapper{width:90%;max-width:1500px;min-width:300px;margin:0 auto}
 .grid,.unit{box-sizing:border-box}
-.grid{display:block}
-.grid .unit{float:left;width:100%;padding:10px}
-.grid .unit:first-child{padding-left:20px}
-.grid .unit:last-child{padding-right:20px}
+.grid{display:block;padding:0 1.5em}
+.grid .unit{float:left;width:100%;padding:.75em}
+.grid .unit:first-child{padding-left:1.5em}
+.grid .unit:last-child{padding-right:1.5em}
 .unit .unit:first-child{padding-left:0}
 .unit .unit:last-child{padding-right:0}
 .unit .grid:first-child>.unit{padding-top:0}
@@ -90,24 +93,21 @@ a{color:#00B1FC;font-size:1.6em}
 .hide-on-mobiles{display:none!important}
 .only-on-mobiles{display:block!important}}
 @media screen and (min-width:1180px){.grid.wider,.wider .grid{max-width:1180px;margin:0 auto}}
-.header{height:48px;line-height:4em}
+.header{margin-top:1em;height:42px;line-height:42px}
 .header .logo,.header aside{position:absolute}
-#comments-ul li,#header{position:relative}
-.header .logo{width:42px;height:42px;top:10px;left:0;opacity:1}
+.header .logo{width:42px;height:42px;top:0;left:0;opacity:1}
 .header aside{right:0;top:0;font-size:1.5em;color:#555}
+.intro{height:410px!important;position:relative}
+.intro h2{font-size:2.1em}
 .logo{transition:all .5s linear}
-#imgLoading,#loading .logo{-webkit-animation:loading 2s linear infinite;animation:loading 2s linear infinite}
-@-webkit-keyframes loading{from{-webkit-transform:perspective(300px)rotateY(0);transform:perspective(300px)rotateY(0)}
-to{-webkit-transform:perspective(300px)rotateY(-360deg);transform:perspective(300px)rotateY(-360deg)}}
-@keyframes loading{from{-webkit-transform:perspective(300px)rotateY(0);transform:perspective(300px)rotateY(0)}
-to{-webkit-transform:perspective(300px)rotateY(-360deg);transform:perspective(300px)rotateY(-360deg)}}
+#loading .logo{z-index:3;opacity:1!important;-webkit-animation:loading 2s linear infinite;animation:loading 2s linear infinite}
 .github img{width:80%}
 .github ul{width:100%;display:block;overflow:hidden}
 .github li{padding:10px 0;border-bottom:1px solid #ccc}
 .github li span.language{color:#ccc}
 .github li:last-child{border-width:0}
 .github p{margin-bottom:0}
-.footer li{display:inline;text-align:center}
+.footer{border-top:1px solid #F1F4F9}
 .posts{list-style-type:none}
 .posts li{line-height:1.75em}
 .posts span{color:#aaa;font-size:80%}
@@ -124,9 +124,7 @@ to{-webkit-transform:perspective(300px)rotateY(-360deg);transform:perspective(30
 .post h1>a{color:#444}
 .post h1>a:hover{color:#ffae00}
 .post div:first-child+p,.post>img:nth-child(-n+1),.post>p:first-child{font-size:21px;text-align:center}
-.post pre{border:1px solid #ddd;background-color:#eef}
-.post code{background-color:#fafafa;word-break:break-all;display:block;font-size:13px;line-height:1.2;padding:10px}
-.post pre.terminal,.post pre.terminal code{background-color:#333}
+.post code{word-break:break-all;display:block;font-size:13px;line-height:1.2;padding:10px}
 .post pre code{border:none}
 .img{padding:0!important;margin:0!important;max-width:100%!important}
 .post div img{width:100%;display:block;margin:40px auto 5px;height:auto}
@@ -139,17 +137,17 @@ to{-webkit-transform:perspective(300px)rotateY(-360deg);transform:perspective(30
 #rss{margin-bottom:40px;background-color:orange;padding:10px 20px;color:#fff}
 #comments-wrapper{width:80%;max-width:768px;opacity:0}
 #comments{opacity:0;border-top:1px solid #F1F1F1;border-bottom:1px solid #F1F1F1;padding:20px 0;max-width:100%}
-.loaded{opacity:1!important;transition:all 1s ease}
+.loaded{opacity:1!important;transition:opacity 1s ease}
 #comments-ul ul li{padding-top:20px;max-width:100%;min-height:120px}
 #auth,#comments-form,#comments-ul{list-style:none;margin:0 auto}
-#comments-ul li{padding-bottom:4em;font-size:18px}
+#comments-ul li{position:relative;padding-bottom:4em;font-size:18px}
 ul#comments-ul .gravtar{width:70px;height:auto;border-radius:35px}
 .gravtar{width:32%}
 ul#comments-ul .user{font-family:Helvetica,Arial,sans-serif;width:70px;padding-top:10px}
 #auth{width:32%;margin:0}
 #auth .john-doe{border-radius:50%;border:1px solid #999;width:70px}
 div.comment{width:68%;text-align:left;margin:0 0 20px 10px;position:absolute;top:0;right:0}
-#comments-form{float:right;overflow:hidden;width:68%;position:relative;min-height:240px;border-top:1px solid #FAFAFA;padding-top:40px;content:'\n';clear:both;display:block}
+#comments-form{float:right;overflow:hidden;width:68%;position:relative;min-height:240px;border-top:1px solid #FAFAFA;padding-top:40px;content:'\n';display:block}
 #comments-form.visable{display:block;opacity:1}
 #comments-form span{width:32%}
 #comments-form textarea{width:68%;position:absolute;right:0;top:0}
@@ -161,7 +159,6 @@ div.comment{width:68%;text-align:left;margin:0 0 20px 10px;position:absolute;top
 #related li p{margin:5px 0 0;text-align:left}
 #related>div.title:only-child{display:none}
 #related span:first-child:after{content:", ";margin:0 4px 0 -2px}
-#related span:first-child:nth-last-child(1):before,#related span:first-child:nth-last-child(1):before~span,#related span:first-child:nth-last-child(2):after,#related span:first-child:nth-last-child(2):after~span,#related span:first-child:nth-last-child(2):before,#related span:first-child:nth-last-child(2):before~span,#related span:only-child:after,#related span:only-child:before{content:""}
-#related span:last-child:before{content:" or "}
+#related a:last-child:before{content:" or ";color:#333}
 #related span:last-child:after{content:".";margin-left:-3px}
 .small{max-width:420px}
