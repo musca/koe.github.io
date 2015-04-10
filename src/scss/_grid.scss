@@ -1,7 +1,6 @@
 #grid[data-columns]::before {
 	content: '3 .column.size-1of3';
 }
-
 /* These are the classes that are going to be applied: */
 .column { float: left; }
 .size-1of3 { width: 33.333%; }
@@ -38,16 +37,17 @@
 .grid {
   display: block;
   clear: both;
+  padding: 0 1.5em;
 }
 .grid .unit {
   float: left;
   width: 100%;
-  padding: 10px;
+  padding: .75em;
 }
 
 /* This ensures the outer gutters are equal to the (doubled) inner gutters. */
-.grid .unit:first-child { padding-left: 20px; }
-.grid .unit:last-child { padding-right: 20px; }
+.grid .unit:first-child { padding-left: 1.5em; }
+.grid .unit:last-child { padding-right: 1.5em; }
 
 /* Nested grids already have padding though, so let’s nuke it */
 .unit .unit:first-child { padding-left: 0; }

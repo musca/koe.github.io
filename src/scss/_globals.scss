@@ -1,16 +1,15 @@
-@import url(http://fonts.googleapis.com/css?family=Cutive+Mono|Inconsolata);
 html {
  font-size: 62.5%; 
 }
 body {
-  font-family: $sec-font-stack;
+  font-family: $prim-font-stack;
   line-height: 1.43;
   transition: opacity 1s linear;
   -webkit-font-smoothing: antialiased;
   background-color: #fefefe;
 }
 h1, h2, h3, h4, #intro, footer, .bob {
-  font-family: $prim-font-stack;
+  font-family: $sec-font-stack;
   font-weight: 200;
   text-align: center;
   a {
@@ -60,103 +59,83 @@ code {
 .border {
   border: $border;
 }
-/* margins */
-.margin-top {
-  margin-top: $margin;
-}
-.margin-right {
-  margin-right: $margin;
-}
-  
-.margin-bottom {
-  margin-bottom: $margin;
-}
-.margin-left {
-  margin-left: $margin;
-}
-.more-margin-top {
-  margin-top: $more-margin;
-}
-.more-margin-right {
-  margin-right: $more-margin;
-}
-  
-.more-margin-bottom {
-  margin-bottom: $more-margin;
-}
-.more-margin-left {
-  margin-left: $more-margin;
-}
 
-
-/* paddings */
-.less-padding-top {
-  padding-top: $less-padding !important;
-}
-.less-padding-bottom {
-  padding-bottom: $less-padding !important;
-}
-.padding-top {
-  padding-top: $padding !important;
-}
-.padding-right {
-  padding-right: $padding !important;
-}
-.padding-bottom {
-  padding-bottom: $padding !important;
-}
-.padding-left {
-  padding-left: $padding !important;
-}
-.more-padding-top {
-  padding-top: $more-padding;
-}
-.more-padding-right {
-  padding-right: $more-padding;
-}
-.more-padding-bottom {
-  padding-bottom: $more-padding;
-}
 .content {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
   max-width: 1111px;
 }
-.leading {
-  font-size: 2.1em;
-  line-height: 1.5;
-  display: block;
-}
-.justify {
-  text-align: justify;
-}
-.block {
-  display: block;
-}
+
+/* margins */
+.margin-top         { margin-top: $margin; }
+.margin-right       { margin-right: $margin; } 
+.margin-bottom      { margin-bottom: $margin; }
+.margin-left        { margin-left: $margin; }
+.more-margin-top    { margin-top: $more-margin; }
+.more-margin-right  { margin-right: $more-margin; }
+.more-margin-bottom { margin-bottom: $more-margin; }
+.more-margin-left   { margin-left: $more-margin; }
+
+
+/* paddings */
+.less-padding-top     { padding-top: $less-padding !important; }
+.less-padding-bottom  { padding-bottom: $less-padding !important; }
+.padding-top          { padding-top: $padding !important; }
+.padding-right        { padding-right: $padding !important; }
+.padding-bottom       { padding-bottom: $padding !important; }
+.padding-left         { padding-left: $padding !important; }
+.more-padding-top     { padding-top: $more-padding; }
+.more-padding-right   { padding-right: $more-padding; }
+.more-padding-bottom  { padding-bottom: $more-padding; }
+
+.block { display: block; }
+/* floats */
 .float-center {
   display: block;
   float: none;
   margin-left: auto;
   margin-right: auto;
 }
+.pull-left    { float: left; }
+.pull-right   { float: right; }
+.clear-both   { clear: both; }
+.clear:before, .clear:after {
+  clear: both;
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/* Text */
+.justify      { text-align: justify; }
 .align-center { text-align: center; }
 .align-left   { text-align: left; }
 .align-right  { text-align: right; }
-.pull-left    { float: left; }
-.pull-right   { float: right; }
 .uppercase	  { text-transform: uppercase; }
 .bold					{ font-weight: bold;}
-.inline-block { display: inline-block; }
-.list-unstyled{ list-style: none;}
 .small-text   { font-size: 1.4em;}
 .smaller-text { font-size: 1.2em;}
-.box-shadow {
-  box-shadow: 0 2px 7px #ccc;
+.inline-block { display: inline-block; }
+.leading {
+  font-size: 2.1em;
+  line-height: 1.5;
+  display: block;
 }
 
-/* Buttons */
+/* List styles */
+.list-unstyled { list-style: none;}
 
+
+a[disabled], .disabled {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: line-through;
+}
+
+.box-shadow { box-shadow: 0 2px 7px #ccc; }
+/* Buttons */
 .border-button {
   border: 1px solid #65c7fd;
   text-decoration: none;
@@ -168,9 +147,11 @@ code {
   width: 7em;
   font-size: $p-font-size;
 }
-/*  */
+/* Code highlight*/
 .highlight {
-  padding-top: $more-padding;
-  width: 60%;
+  padding: $padding;
   @extend .float-center;
+  overflow: scroll;
+  background-color: $light-blue;
+  border-radius: 2px;
 }
