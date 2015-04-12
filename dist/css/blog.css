@@ -107,6 +107,7 @@ a{color:#00B1FC;font-size:1.6em}
 .github li span.language{color:#ccc}
 .github li:last-child{border-width:0}
 .github p{margin-bottom:0}
+.gitter{width:200px;margin-top:4em}
 .footer{border-top:1px solid #F1F4F9}
 .posts{list-style-type:none}
 .posts li{line-height:1.75em}
