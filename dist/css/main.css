@@ -34,12 +34,6 @@ abbr,address,article,aside,audio,b,blockquote,body,caption,cite,code,dd,del,deta
 .grid:after,.grid:before{display:table;content:"";line-height:0}
 .unit img{max-width:100%}
 .only-on-mobiles{display:none!important}
-@media screen and (max-width:568px){.grid:not(.no-stacking-on-mobiles)>.unit{width:100%!important;padding-left:20px;padding-right:20px}
-.unit .grid .unit{padding-left:0;padding-right:0}
-.center-on-mobiles{text-align:center!important}
-.hide-on-mobiles{display:none!important}
-.only-on-mobiles{display:block!important}}
-@media screen and (min-width:1180px){.grid.wider,.wider .grid{max-width:1180px;margin:0 auto}}
 html{font-size:62.5%}
 body{font-family:Inconsolata,Cutive,Menlo,Monaco,'Courier New' monospace;line-height:1.43;transition:opacity 1s linear;-webkit-font-smoothing:antialiased;background-color:#fefefe}
 #intro,.bob,footer,h1,h2,h3,h4{font-family:'Cutive Mono',Menlo,Monaco,'Courier New',monospace;font-weight:200;text-align:center}
