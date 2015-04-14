@@ -108,7 +108,7 @@ $(document).ready(function() {
 	    }
 	  }
 
-	  function callback(){           
+	  function callback() {           
       //window.scrollTo(topPos,topPos)
       o('.flickrLoader').css('display', 'none');
       o('.flickr h3').after(objImagePreloader);

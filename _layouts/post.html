@@ -14,9 +14,9 @@ layout: default
 </div>
 <ul id="related">
   {% if site.related_posts.size == 1 %}
-    <div class="title">You maybe like to read this related post</div>
+    <div class="title"><p>You maybe like to read this related post</p></div>
   {% else %}
-    <div class="title">You maybe like to read these related posts</div>
+    <div class="title"><p>You maybe like to read these related posts</p></div>
   {% endif %}
   {% for post in site.related_posts limit:3 %}
     {% assign match = false %}
