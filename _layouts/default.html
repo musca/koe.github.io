@@ -6,29 +6,10 @@
     <meta content="musca web and webapp design. Makes simple, usable, functional and responsive web design" name="description">
     <meta content="musca,design,web,webapp,web app,web application,swedish,simple,useable,functional,landing pages,one page web design, web pages" name="keywords">
     <style>
-      /*future above the fold styles*/
-      #loading body { opacity: 0; }
-      #grid[data-columns]::before { content: '3 .column.size-1of3'; }
-      @media screen and (max-width: 480px){
-      	#grid[data-columns]::before { content: '1 .column.size-1of1';}
-      }
-      @media screen and (min-width: 481px) and (max-width: 768px) {
-      	#grid[data-columns]::before { content: '2 .column.size-1of2'; }
-      }
-      @media screen and (min-width: 769px) {
-      	#grid[data-columns]::before { content: '3 .column.size-1of3'; }
-      }
-      .size-1of1 { width: 100%; }
-      .size-1of2 { width: 50%; }
-      .size-1of3 { width: 33.333%; }
-      .column > div { padding: 1.5em; }
-      .portfolio img { width: 100%; }
+    {% include above-the-fold.css %}
     </style>
 		<script type="text/javascript">
-      document.documentElement.setAttribute("id","loading");
-      {% include head.js %}
-      loadCSS("/dist/css/{{ page.css }}.css"); // loads a specified css file from YAML Front Matter block
-			loadJS("/dist/js/all.min.js"); // load main JS file. Same for all pages    
+    {% include head.js %}
 		</script>
   	<!--[if lte IE 9]>
   		<link rel="stylesheet" href="/dist/ie.css" media="screen" title="lt IE10 css file" charset="utf-8" type="text/css" />
@@ -41,15 +22,6 @@
   </head>
   <body>
     <header class="header content-wrapper">
-      {% if page.categories == '' %}
-        <a href="/">
-          <img alt="musca logo" height="42" class="logo" src="/dist/img/logo-42x42.svg" width="42" height="42">
-        </a>      
-      {% else %}
-        <a href="/blog">
-          <img alt="musca logo" height="42" class="logo" src="/dist/img/logo-42x42.svg" width="42" height="42">
-        </a>      
-      {% endif %}
       <a href="/">
         <img alt="musca logo" height="42" class="logo" src="/dist/img/logo-42x42.svg" width="42" height="42">
       </a>

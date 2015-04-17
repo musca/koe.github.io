@@ -4,18 +4,12 @@ var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var minifyCSS 	= require('gulp-minify-css');
-var concat      = require('gulp-concat');
+var include     = require('gulp-include');
 var uglify      = require('gulp-uglify');
 var sourcemaps  = require('gulp-sourcemaps');
 
 var messages = {
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
-};
-
-var paths = {
-  scripts: ['src/vendor/j*.js', 'src/vendor/*.js', 'src/js/*.js'],
-  styles:  ['src/css/*.css'],
-  scss:    ['src/scss/*.scss']
 };
 
 /**
@@ -45,24 +39,17 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
   });
 });
 
-gulp.task('minify-css', function() {
-  return gulp.src(paths.styles)
-    .pipe(minifyCSS({keepBreaks:true}))
-    .pipe(gulp.dest('./dist/css'))
-});
-
 gulp.task('scripts', function() {
-  // Minify and copy all JavaScript
-  // with sourcemaps all the way down
-  return gulp.src(paths.scripts)
+  return gulp.src('src/js/*.js')
     .pipe(sourcemaps.init())
-      .pipe(concat('all.min.js'))
+      .pipe(include())
       .pipe(uglify())
-    .pipe(sourcemaps.write('./maps'))
-  .pipe(gulp.dest('./dist/js'))
+    .pipe(sourcemaps.write('maps'))
+  .pipe(gulp.dest('dist/js'))
   .pipe(gulp.dest('_site/dist/js'))
   .pipe(browserSync.reload({stream:true}));
 });
+
 /**
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
  */
@@ -73,9 +60,7 @@ gulp.task('sass', function () {
       onError: browserSync.notify
     }))
     .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-    // .pipe(sourcemaps.init())
-      .pipe(minifyCSS({keepBreaks:true}))
-    // .pipe(sourcemaps.write('./maps'))
+    .pipe(minifyCSS({keepBreaks:true}))
   .pipe(gulp.dest('dist/css'))
   .pipe(gulp.dest('_site/dist/css'))
   .pipe(browserSync.reload({stream:true}));
@@ -88,7 +73,7 @@ gulp.task('sass', function () {
 gulp.task('watch', function () {
   gulp.watch('src/scss/*.scss', ['sass']);
   gulp.watch(['src/js/*.js', 'src/vendor/*.js'], ['scripts']);
-  gulp.watch(['index.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+  gulp.watch(['index.html', 'video/index.html','_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
 /**
