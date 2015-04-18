@@ -48,7 +48,7 @@ p {
 }
 a {
   color: #00B1FC;
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 ul {
   list-style: none;
@@ -56,6 +56,9 @@ ul {
 code {
   font-size: $p-font-size;
   word-break: break-all;
+  display: block;
+  font-size: 13px;
+  line-height: 1.2;
 }
 .border {
   border: $border;
