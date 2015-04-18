@@ -1,5 +1,5 @@
 .header {
-  margin-top: 1em;
+  padding-top: 1em;
   height: 42px;
   line-height: 42px;
   position: relative;
@@ -9,13 +9,13 @@
   .logo {
     width: 42px;
     height: 42px;
-    top: 0;
+    top: 1em;
     left: 0;
     opacity: 1;
   }
   aside {
     right: 0;
-    top: 0;
+    top: 1em;
     font-size: 1.5em;
     color: #555;
   }

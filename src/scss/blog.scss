@@ -66,10 +66,9 @@
 }
 
 .meta {
-  color: #aaa;
+  width: 100px;
   text-align: center;
   margin-top: 40px;
-
 }
 
 .leading {
@@ -101,8 +100,9 @@ div.comment, .post > *{
 .post > p:first-child,
 .post div:first-child + p,
 .post > img:nth-child(-n+1) {
-  font-size: 21px;
+  font-size: 24px;
   text-align: center;
+  padding: 2em 0;
 }
 .post pre {
 }
@@ -165,10 +165,6 @@ div.comment, .post > *{
 /*
 /*****************************************************************************/
 
-.dim {
-  color: #999;
-  text-align: center;
-}
 .text {
   word-wrap: break-word;
   -webkit-hyphens: auto;

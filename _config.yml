@@ -1,5 +1,5 @@
 name: musca.se
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 description: "This is where I keep a blog about my github projects, web design & development."
 url: http://blog.musca.se
