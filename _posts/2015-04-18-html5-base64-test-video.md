@@ -1,20 +1,24 @@
 ---
 layout: post
 title:  "HTML5 base64 test video"
-date:   2014-05-11 13:15:00
+date:   2015-04-18 13:37:01
 categories: blog
 tags: HTML5 video base64
 css: blog
+js: blog
 ---
 
 I needed a small base64 video file to check for HTML 5 video tag support in the browser. This is what I came up with.
 
 If you can make the webm version smaller please make a comment.
 
-mp4 version:
+mp4 version (1K):
 <code>
 data:video/mp4;base64,AAAAGGZ0eXBtcDQyAAAAAG1wNDJpc29tAAAC3W1vb3YAAABsbXZoZAAAAADPawGIz2sBiAABX5AAAAAAAAEAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAYaW9kcwAAAAAQgICABwBP////f/8AAAHidHJhawAAAFx0a2hkAAAAAc9rAYjPawGIAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAFAAAAAtAAAAAABfm1kaWEAAAAgbWRoZAAAAADPawGIz2sBiAABX5AAAAAAVcQAAAAAACFoZGxyAAAAAAAAAAB2aWRlAAAAAAAAAAAAAAAAAAAAATVtaW5mAAAAFHZtaGQAAAABAAAAAAAAAAAAAAAkZGluZgAAABxkcmVmAAAAAAAAAAEAAAAMdXJsIAAAAAEAAAD1c3RibAAAAKlzdHNkAAAAAAAAAAEAAACZYXZjMQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAFAALQASAAAAEgAAAAAAAAAAQ5KVlQvQVZDIENvZGluZwAAAAAAAAAAAAAAAAAAAAAAABj//wAAADFhdmNDAULAC//hABpnQsAL2QFBn55qAgICgAAAAwCAAV+QB4oVJAEABGjLjLIAAAASY29scm5jbGMAAQABAAEAAAAQc3R0cwAAAAAAAAAAAAAAFHN0c3oAAAAA/////wAAAAAAAAAQc3RzYwAAAAAAAAAAAAAAEHN0Y28AAAAAAAAAAAAAAG91ZHRhAAAAZ21ldGEAAAAAAAAAIWhkbHIAAAAAAAAAAG1kaXIAAAAAAAAAAAAAAAAAAAAAOmlsc3QAAAAyqXRvbwAAACpkYXRhAAAAAQAAAABIYW5kQnJha2UgMC45LjkgMjAxMzA1MTgwMAAAAAhtZGF0
 </code>
+
+<!-- <p data-height="268" data-theme-id="0" data-slug-hash="cCyba" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/Tyriar/pen/cCyba'>The <samp> element</a> by Daniel Imms (<a href='http://codepen.io/Tyriar'>@Tyriar</a>) on <a href='http://codepen.io'>CodePen</a>.</p> -->
+<!-- <script async src="//codepen.io/assets/embed/ei.js"></script> -->
 
 webm version:
 <code>
