@@ -88,10 +88,10 @@ code{display:block;font-size:13px;line-height:1.2}
 .pull-right{float:right}
 .unit img{max-width:100%}
 .only-on-mobiles{display:none!important}
-.header{margin-top:1em;height:42px;line-height:42px}
+.header{padding-top:1em;height:42px;line-height:42px}
 .header .logo,.header aside{position:absolute}
-.header .logo{width:42px;height:42px;top:0;left:0;opacity:1}
-.header aside{right:0;top:0;font-size:1.5em;color:#555}
+.header .logo{width:42px;height:42px;top:1em;left:0;opacity:1}
+.header aside{right:0;top:1em;font-size:1.5em;color:#555}
 .intro{height:410px!important;position:relative}
 .intro h2{font-size:2.1em}
 .logo{transition:all .5s linear}
@@ -104,22 +104,21 @@ code{display:block;font-size:13px;line-height:1.2}
 .github p{margin-bottom:0}
 .gitter{width:200px;margin-top:4em}
 .footer{border-top:1px solid #F1F4F9}
+.white aside,.white h1{color:#fcfcfc}
 .posts{list-style-type:none}
 .posts li{line-height:1.75em}
 .posts span{color:#aaa;font-size:80%}
 .site{font-size:115%;text-align:justify;width:90%;margin:1em auto 2em}
-#comments,.dim,.gravtar,.leading,.meta,.post blockquote,ul#comments-ul .user{text-align:center}
+#comments,.gravtar,.leading,.meta,.post blockquote,ul#comments-ul .user{text-align:center}
 .title{display:inline-block;margin-bottom:2em}
 .title a{color:#a00}
 .title a:hover{color:#111}
 .header a.extra{color:#aaa;margin-left:1em}
 .header a.extra:hover{color:#111}
-.meta{color:#aaa;margin-top:40px}
+.meta{width:100px;margin-top:40px}
 .leading{padding-bottom:30px;font-size:21px;border-bottom:1px solid #bdb0a8}
 .home p,.post>*,.post>div,.post>p,.posts,.posts>p,div.comment{margin:1.5em auto;max-width:42em}
-.post h1>a{color:#444}
-.post h1>a:hover{color:#ffae00}
-.post div:first-child+p,.post>img:nth-child(-n+1),.post>p:first-child{font-size:21px;text-align:center}
+.post div:first-child+p,.post>img:nth-child(-n+1),.post>p:first-child{font-size:24px;text-align:center;padding:2em 0}
 .post code{display:block;font-size:13px;line-height:1.2;padding:10px}
 .post pre code{border:none}
 .img{padding:0!important;margin:0!important;max-width:100%!important}
@@ -128,7 +127,6 @@ code{display:block;font-size:13px;line-height:1.2}
 .post blockquote p:before{content:"\201C"}
 .post blockquote p:after{content:"\201D"}
 .post blockquote p{padding:5px 20px}
-.dim{color:#999}
 .text{word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto}
 #rss{margin-bottom:40px;background-color:orange;padding:10px 20px;color:#fff}
 #comments-wrapper{width:80%;max-width:768px;opacity:0}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1">
+    <meta content="musca web and webapp design. Makes simple, usable, functional and responsive web design" name="description">
+    <meta content="musca,design,web,webapp,web app,web application,swedish,simple,useable,functional,landing pages,one page web design, web pages" name="keywords">
+    <style>
+    {% include above-the-fold.css %}
+    </style>
+		<script type="text/javascript">
+    {% include head.js %}
+		</script>
+  	<!--[if lte IE 9]>
+  		<link rel="stylesheet" href="/dist/ie.css" media="screen" title="lt IE10 css file" charset="utf-8" type="text/css" />
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
+      <script src="https://github.com/inexorabletash/polyfill/blob/master/polyfill.min.js"></script>
+  	<![endif]-->
+		<noscript><link href="dist/css/main.css" rel="stylesheet"></noscript>
+    <title>musca.se | {{ page.title }}</title>
+  </head>
+  <body>
+    {{ content }}
+    <footer class="footer more-margin-top more-padding-top content-wrapper">
+      {% include footer.html %}
+    </footer>
+  </body>
+</html>

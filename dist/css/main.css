@@ -84,10 +84,10 @@ code{word-break:break-all;display:block;font-size:13px;line-height:1.2}
 .border-button{border:1px solid #65c7fd;padding:9px 18px;text-decoration:none;border-radius:30px}
 .hire-me{width:7em;font-size:1.8em}
 .highlight{padding:2em;overflow:scroll;background-color:#F1F4F9;border-radius:2px}
-.header{margin-top:1em;height:42px;line-height:42px}
+.header{padding-top:1em;height:42px;line-height:42px}
 .header .logo,.header aside{position:absolute}
-.header .logo{width:42px;height:42px;top:0;left:0;opacity:1}
-.header aside{right:0;top:0;font-size:1.5em;color:#555}
+.header .logo{width:42px;height:42px;top:1em;left:0;opacity:1}
+.header aside{right:0;top:1em;font-size:1.5em;color:#555}
 .intro{height:410px!important;position:relative}
 .intro h2{font-size:2.1em}
 .logo{transition:all .5s linear}

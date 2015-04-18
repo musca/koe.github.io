@@ -1,15 +1,28 @@
 ---
-layout: default
+layout: blog
 ---
-<p class="meta">{{ page.date | date_to_string }}</p>
-<h1>
-  <a href="{{ post.url }}">{{ page.title }}</a> 
-</h1>
+<section class="header-wrapper {{ page.color }}" style="background-color:#{{ page.bgColor }};">
+  <header class="header content-wrapper more-padding-bottom">
+    <a href="/">
+      <img alt="musca logo" height="42" class="logo" src="/dist/img/logo-42x42.svg" width="42" height="42">
+    </a>
+    <aside class="greeting"></aside>
+  </header>
+  {% if page.image %}
+  <img src="/dist/img/{{ page.image }}" width="256" class="header-image float-center more-margin-top">
+  {% endif %}
+  <h1 class="padding-bottom">
+    {{ page.title }}
+  </h1>
+</section>
 <div class="post">
   {{ content }}
-  <div id="comments"></div>
-  <div id="comments-wrapper">
-    <ul id="comments-ul"></ul>
+  <p class="meta float-center margin-bottom">{{ page.date | date_to_string }}</p>
+  <div class="content-wrapper">
+    <div id="comments"></div>
+    <div id="comments-wrapper" >
+      <ul id="comments-ul"></ul>
+    </div>
   </div>
 </div>
 <ul id="related">

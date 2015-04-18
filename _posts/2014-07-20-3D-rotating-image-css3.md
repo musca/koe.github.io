@@ -5,11 +5,13 @@ date:   2014-07-20 13:15:00
 categories: blog
 tags: 3D Rotating image CSS3
 css: blog
+js: blog
+image: html5_3d_effects.svg
 ---
 
 
 <style>
-	.musca-logo {
+	.header-image {
 		width: 140px;
 		height: 140px;
 		margin: 2em auto;
@@ -41,8 +43,6 @@ css: blog
 	    transform: perspective(400px) rotateY(-360deg); }
 	}
 </style>
-<img src="/dist/img/logo.svg" class="musca-logo margin-top margin-bottom" />
-
 
 	<img src="/dist/img/logo.svg" class="logo">
 

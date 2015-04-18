@@ -6,11 +6,12 @@
 @import 'portfolio';
 @import 'github';
 @import 'footer';
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
+
+.white aside,
+.white h1 {
+  color: #fcfcfc;
+}
+
 .posts {
   list-style-type: none;
   margin-bottom: 2em;
@@ -24,12 +25,6 @@
   color: #aaa;
   font-size: 80%;
 }
-
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
 
 .site {
   font-size: 115%;
@@ -89,12 +84,6 @@
 div.comment, .post > *{
   margin: 1.5em auto;
   max-width: 42em;
-}
-.post h1 > a {
-  color: #444;
-}
-.post h1 > a:hover {
-  color: #ffae00;
 }
 /* standard */
 .post > p:first-child,
