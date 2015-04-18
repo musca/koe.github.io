@@ -1,5 +1,6 @@
 h2,p{color:#222}
 .header,h1{position:relative}
+.post code,code{word-break:break-all}
 #comments a,.post blockquote{font-style:italic}
 #comments-form,.clear-both,.grid,.grid:after{clear:both}
 #related,.list-unstyled,ul{list-style:none}
@@ -119,7 +120,7 @@ a{color:#00B1FC;font-size:1.6em}
 .post h1>a{color:#444}
 .post h1>a:hover{color:#ffae00}
 .post div:first-child+p,.post>img:nth-child(-n+1),.post>p:first-child{font-size:21px;text-align:center}
-.post code{word-break:break-all;display:block;font-size:13px;line-height:1.2;padding:10px}
+.post code{display:block;font-size:13px;line-height:1.2;padding:10px}
 .post pre code{border:none}
 .img{padding:0!important;margin:0!important;max-width:100%!important}
 .post div img{width:100%;display:block;margin:40px auto 5px;height:auto}

@@ -55,6 +55,7 @@ ul {
 }
 code {
   font-size: $p-font-size;
+  word-break: break-all;
 }
 .border {
   border: $border;
