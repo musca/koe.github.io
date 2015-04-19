@@ -109,13 +109,13 @@ code{display:block;font-size:13px;line-height:1.2}
 .posts li{line-height:1.75em}
 .posts span{color:#aaa;font-size:80%}
 .site{font-size:115%;text-align:justify;width:90%;margin:1em auto 2em}
-#comments,.gravtar,.leading,.meta,.post blockquote,ul#comments-ul .user{text-align:center}
+#comments,.date,.gravtar,.leading,.post blockquote,ul#comments-ul .user{text-align:center}
 .title{display:inline-block;margin-bottom:2em}
 .title a{color:#a00}
 .title a:hover{color:#111}
 .header a.extra{color:#aaa;margin-left:1em}
 .header a.extra:hover{color:#111}
-.meta{width:100px;margin-top:40px}
+.date{width:100px;margin-top:40px;color:#B0B5D2}
 .leading{padding-bottom:30px;font-size:21px;border-bottom:1px solid #bdb0a8}
 .home p,.post>*,.post>div,.post>p,.posts,.posts>p,div.comment{margin:1.5em auto;max-width:42em}
 .post div:first-child+p,.post>img:nth-child(-n+1),.post>p:first-child{font-size:24px;text-align:center;padding:2em 0}
