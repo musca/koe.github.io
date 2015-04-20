@@ -316,11 +316,6 @@ div.comment {
   content: ", ";
   margin:  0 4px 0 -2px;
 }
-#related a:last-child:before {
-  content: " or ";
-  /*margin: 0 5px;*/
-  color: #333;
-}
 #related span:last-child:after {
   content: ".";
   margin-left: -3px;
