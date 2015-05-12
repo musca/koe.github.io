@@ -157,4 +157,5 @@ div.comment{width:68%;text-align:left;margin:0 0 20px 10px;position:absolute;top
 #related>div.title:only-child{display:none}
 #related span:first-child:after{content:", ";margin:0 4px 0 -2px}
 #related span:last-child:after{content:".";margin-left:-3px}
+#disqus_thread{max-width:768px}
 .small{max-width:420px}

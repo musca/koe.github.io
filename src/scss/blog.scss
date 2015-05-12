@@ -323,6 +323,9 @@ div.comment {
   content: ".";
   margin-left: -3px;
 }
+#disqus_thread {
+  max-width: 768px;
+}
 .small {
   max-width: 420px;
 }
