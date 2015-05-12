@@ -5,6 +5,7 @@ h2,p{color:#222}
 #comments-form,.clear-both,.grid,.grid:after{clear:both}
 #related,.list-unstyled,ul{list-style:none}
 abbr,address,article,aside,audio,b,blockquote,body,caption,cite,code,dd,del,details,dfn,dl,dt,em,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;border:0;padding:0;font-size:100%;outline:0;vertical-align:baseline;background:0 0}
+.logo,.white .logo{background-repeat:no-repeat;background-size:42px}
 html{font-size:62.5%}
 body{font-family:Inconsolata,Cutive,Menlo,Monaco,'Courier New' monospace;line-height:1.43;transition:opacity 1s linear;-webkit-font-smoothing:antialiased;background-color:#fefefe}
 #intro,.bob,footer,h1,h2,h3,h4{font-family:'Cutive Mono',Menlo,Monaco,'Courier New',monospace;font-weight:200;text-align:center}
@@ -40,6 +41,7 @@ code{display:block;font-size:13px;line-height:1.2}
 .float-center,.highlight{display:block;float:none;margin-left:auto;margin-right:auto}
 .column,.pull-left{float:left}
 .clear:after,.clear:before{clear:both;content:"\0020";display:block;height:0;visibility:hidden}
+.logo,.white .logo{width:42px;height:42px}
 .justify{text-align:justify}
 .uppercase{text-transform:uppercase}
 .small-text{font-size:1.4em}
@@ -90,11 +92,11 @@ code{display:block;font-size:13px;line-height:1.2}
 .only-on-mobiles{display:none!important}
 .header{padding-top:1em;height:42px;line-height:42px}
 .header .logo,.header aside{position:absolute}
-.header .logo{width:42px;height:42px;top:1em;left:0;opacity:1}
 .header aside{right:0;top:1em;font-size:1.5em;color:#555}
+.logo{top:1em;left:0;opacity:1;background-image:url(../img/logo-42x42.svg);transition:all .5s linear}
+.white .logo{top:1em;left:0;opacity:1;background-image:url(../img/logo-no-bg.svg)}
 .intro{height:410px!important;position:relative}
 .intro h2{font-size:2.1em}
-.logo{transition:all .5s linear}
 #loading .logo{z-index:3;opacity:1!important;-webkit-animation:loading 2s linear infinite;animation:loading 2s linear infinite}
 .github img{width:80%}
 .github ul{width:100%;display:block;overflow:hidden}
@@ -108,6 +110,7 @@ code{display:block;font-size:13px;line-height:1.2}
 .posts{list-style-type:none}
 .posts li{line-height:1.75em}
 .posts span{color:#aaa;font-size:80%}
+.post img{width:100%}
 .site{font-size:115%;text-align:justify;width:90%;margin:1em auto 2em}
 #comments,.date,.gravtar,.leading,.post blockquote,ul#comments-ul .user{text-align:center}
 .title{display:inline-block;margin-bottom:2em}

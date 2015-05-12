@@ -1,10 +1,10 @@
 ---
 layout: blog
 ---
-<section class="header-wrapper {{ page.color }}" style="background-color:#{{ page.bgColor }};">
+<section class="header-wrapper {{ page.color }}" style="background-color:#{{ page.bgColor }}; background-image:url(/dist/img/{{ page.bgImg }});">
   <header class="header content-wrapper more-padding-bottom">
-    <a href="/">
-      <img alt="musca logo" height="42" class="logo" src="/dist/img/logo-42x42.svg" width="42" height="42">
+    <a href="/" class="logo">
+      <!-- <img alt="musca logo" height="42" class="logo" src="/dist/img/logo-42x42.svg" width="42" height="42"> -->
     </a>
     <aside class="greeting"></aside>
   </header>
@@ -20,12 +20,25 @@ layout: blog
   <p class="date float-center margin-bottom">{{ page.date | date_to_string }}</p>
   <div class="content-wrapper">
     <div id="comments"></div>
-    <div id="comments-wrapper" >
+    <div id="comments-wrapper">
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+          /* * * CONFIGURATION VARIABLES * * */
+          var disqus_shortname = 'musca';
+    
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
       <ul id="comments-ul"></ul>
     </div>
   </div>
 </div>
-<ul id="related">
+<ul id="related" class="padding-bottom">
   {% if site.related_posts.size == 1 %}
     <div class="title"><p>You maybe like to read this related post</p></div>
   {% else %}

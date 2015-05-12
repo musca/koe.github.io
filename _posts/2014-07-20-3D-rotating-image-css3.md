@@ -7,6 +7,8 @@ tags: 3D Rotating image CSS3
 css: blog
 js: blog
 image: html5_3d_effects.svg
+bgColor: FF5151
+color: white
 ---
 
 

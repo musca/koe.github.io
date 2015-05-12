@@ -1,8 +1,10 @@
 h2,p{color:#222}
 .list-unstyled,ul{list-style:none}
 .header,h1{position:relative}
+.logo,.white .logo{top:1em;left:0;opacity:1}
 .clear-both,.flickr,.grid,.grid:after{clear:both}
 abbr,address,article,aside,audio,b,blockquote,body,caption,cite,code,dd,del,details,dfn,dl,dt,em,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;border:0;padding:0;font-size:100%;outline:0;vertical-align:baseline;background:0 0}
+.logo,.white .logo{background-repeat:no-repeat;background-size:42px}
 #grid[data-columns]::before{content:'3 .column.size-1of3'}
 .column{float:left}
 .column>div{padding:1.5em}
@@ -69,6 +71,7 @@ code{word-break:break-all;display:block;font-size:13px;line-height:1.2}
 .pull-left{float:left}
 .pull-right{float:right}
 .clear:after,.clear:before{clear:both;content:"\0020";display:block;height:0;visibility:hidden}
+.logo,.white .logo{width:42px;height:42px}
 .justify{text-align:justify}
 .align-center{text-align:center}
 .align-left{text-align:left}
@@ -86,11 +89,11 @@ code{word-break:break-all;display:block;font-size:13px;line-height:1.2}
 .highlight{padding:2em;overflow:scroll;background-color:#F1F4F9;border-radius:2px}
 .header{padding-top:1em;height:42px;line-height:42px}
 .header .logo,.header aside{position:absolute}
-.header .logo{width:42px;height:42px;top:1em;left:0;opacity:1}
 .header aside{right:0;top:1em;font-size:1.5em;color:#555}
+.logo{background-image:url(../img/logo-42x42.svg);transition:all .5s linear}
+.white .logo{background-image:url(../img/logo-no-bg.svg)}
 .intro{height:410px!important;position:relative}
 .intro h2{font-size:2.1em}
-.logo{transition:all .5s linear}
 #loading .logo{z-index:3;opacity:1!important;-webkit-animation:loading 2s linear infinite;animation:loading 2s linear infinite}
 .github img{width:80%}
 .github ul{width:100%;display:block;overflow:hidden}
