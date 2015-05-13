@@ -40,7 +40,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 });
 
 gulp.task('scripts', function() {
-  return gulp.src('src/js/*.js')
+  return gulp.src(['src/js/*.js', 'src/vendor/*.js'])
     .pipe(sourcemaps.init())
       .pipe(include())
       .pipe(uglify())
@@ -60,7 +60,9 @@ gulp.task('sass', function () {
       onError: browserSync.notify
     }))
     .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-    .pipe(minifyCSS({keepBreaks:true}))
+    .pipe(sourcemaps.init())
+      .pipe(minifyCSS({keepBreaks:true}))
+    .pipe(sourcemaps.write('maps'))
   .pipe(gulp.dest('dist/css'))
   .pipe(gulp.dest('_site/dist/css'))
   .pipe(browserSync.reload({stream:true}));
