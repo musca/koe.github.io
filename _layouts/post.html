@@ -1,21 +1,20 @@
 ---
 layout: blog
+css: main
+js: blog
 ---
-<section class="header-wrapper {{ page.color }}" style="background-color:#{{ page.bgColor }}; background-image:url(/dist/img/{{ page.bgImg }});">
-  <header class="header content-wrapper more-padding-bottom">
-    <a href="/" class="logo">
-      <!-- <img alt="musca logo" height="42" class="logo" src="/dist/img/logo-42x42.svg" width="42" height="42"> -->
-    </a>
-    <aside class="greeting"></aside>
-  </header>
-  {% if page.image %}
-  <img src="/dist/img/{{ page.image }}" width="256" class="header-image float-center more-margin-top">
-  {% endif %}
-  <h1 class="padding-bottom">
-    {{ page.title }}
-  </h1>
+<section class="header-wrapper {{ page.color }} more-padding-top" style="background-color:#{{ page.bgColor }}; background-image:url(/dist/img/{{ page.bgImg }});">
+
+  <div class="content-wrapper more-padding-top">
+    {% if page.image %}
+    <img src="/dist/img/{{ page.image }}" width="256" class="header-image float-center">
+    {% endif %}
+    <h1 class="padding-bottom">
+      {{ page.title }}
+    </h1>
+  </div>
 </section>
-<div class="post">
+<div class="post content-wrapper">
   {{ content }}
   <p class="date float-center margin-bottom">{{ page.date | date_to_string }}</p>
   <div class="content-wrapper">
@@ -26,7 +25,7 @@ layout: blog
     </div>
   </div>
 </div>
-<ul id="related" class="padding-bottom">
+<ul id="related" class="padding-bottom content-wrapper">
   {% if site.related_posts.size == 1 %}
     <div class="title"><p>You maybe like to read this related post</p></div>
   {% else %}
@@ -41,12 +40,12 @@ layout: blog
     {% endfor %}
     {% if match %}      
       <span>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ post.url }}" data-pjax='content'>{{ post.title }}</a>
       </span>        
     {% endif %}                       
   {% endfor %}
 </ul>
-<div id="disqus_thread" class="content-wrapper"></div>
+<div id="disqus_thread" class="content-wrapper more-padding-top"></div>
 <script type="text/javascript">
 /* * * CONFIGURATION VARIABLES * * */
 var disqus_shortname = 'musca';

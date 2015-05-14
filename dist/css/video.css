@@ -1,14 +1,14 @@
 h2,p{color:#222}
 .clear-both,.grid,.grid:after{clear:both}
 .list-unstyled,ul{list-style:none}
-.header,h1{position:relative}
-abbr,address,article,aside,audio,b,blockquote,body,caption,cite,code,dd,del,details,dfn,dl,dt,em,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;border:0;padding:0;font-size:100%;outline:0;vertical-align:baseline;background:0 0}
+abbr,address,article,aside,audio,b,blockquote,body,caption,cite,code,dd,del,details,dfn,dl,dt,em,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;border:0;padding:0;font-size:100%;outline:0 none;vertical-align:baseline;background:0 0}
+.logo,.white .logo{background-repeat:no-repeat;background-size:42px}
 #grid[data-columns]::before{content:'3 .column.size-1of3'}
 .column{float:left}
 .size-1of3{width:33.333%}
 .column>div{padding:1.5em}
 .column img{width:100%}
-.content-wrapper{width:90%;max-width:1500px;min-width:300px;margin:0 auto}
+.content-wrapper{width:90%;max-width:1500px;min-width:300px;margin:0 auto;transition:all .25s linear}
 .grid,.unit{box-sizing:border-box}
 .grid{display:block;padding:0 1.5em}
 .grid .unit{float:left;width:100%;padding:.75em}
@@ -39,7 +39,8 @@ html{font-size:62.5%}
 body{font-family:Inconsolata,Cutive,Menlo,Monaco,'Courier New' monospace;line-height:1.43;transition:opacity 1s linear;-webkit-font-smoothing:antialiased;background-color:#fefefe}
 #intro,.bob,footer,h1,h2,h3,h4{font-family:'Cutive Mono',Menlo,Monaco,'Courier New',monospace;font-weight:200;text-align:center}
 #intro a,.bob a,footer a,h1 a,h2 a,h3 a,h4 a{font-size:100%}
-h1{font-size:4.8em;padding-top:2em;padding-bottom:0;text-align:center;font-weight:400;color:#4f5566;letter-spacing:-2px;word-spacing:-6px}
+h1{font-size:4.8em;padding-top:2em;padding-bottom:0;position:relative;text-align:center;font-weight:400;color:#4f5566;letter-spacing:-2px;word-spacing:-6px}
+.header,.header .logo,.header aside{position:absolute}
 h2{font-size:3.6em;padding-bottom:30px}
 h3{font-size:2.4em}
 h4{font-size:2.1em}
@@ -86,11 +87,12 @@ code{word-break:break-all;display:block;font-size:13px;line-height:1.2}
 .hire-me{width:7em;font-size:1.8em}
 .highlight{padding:2em;overflow:scroll;background-color:#F1F4F9;border-radius:2px}
 .footer{border-top:1px solid #F1F4F9}
-.header{padding-top:1em;height:42px;line-height:42px}
-.header .logo,.header aside{position:absolute}
-.header .logo{width:42px;height:42px;top:1em;left:0;opacity:1}
-.header aside{right:0;top:1em;font-size:1.5em;color:#555}
+.header{padding-top:1em;height:42px;line-height:42px;width:90%;top:0;left:5%;z-index:3}
+.logo,.white .logo{width:42px;top:1em}
+.header aside{right:40px;top:1em;font-size:1.5em;color:#555}
+.logo{height:42px;left:0;opacity:1;background-image:url(../img/logo-42x42.svg);transition:all .5s linear}
+.white .logo{height:42px;left:0;opacity:1;background-image:url(../img/logo-no-bg.svg)}
 .intro{height:410px!important;position:relative}
 .intro h2{font-size:2.1em}
-.logo{transition:all .5s linear}
 #loading .logo{z-index:3;opacity:1!important;-webkit-animation:loading 2s linear infinite;animation:loading 2s linear infinite}
+/*# sourceMappingURL=maps/video.css.map */

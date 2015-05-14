@@ -21,7 +21,39 @@
     <title>musca.se | {{ page.title }}</title>
   </head>
   <body>
-    {{ content }}
+    <div class="overlay-holder"></div>
+    <section class="side-menu">
+      <span class="close-side-menu float-left">
+        <img width="18" height="18" src="/dist/img/close.svg">
+      </span>
+      <ul class="no-list-styles padding-top">
+        <li><a href="/" data-pjax='content'>home</a></li>
+        <li><a href="/blog/archive/" data-pjax='content'>all posts</a></li>
+
+        <li>
+          <p><b>about me</b></p>
+          <p>
+            Im a Swedish designer and web developer. 
+            I have been making websites since 1998.
+          </p>
+          <p>
+            I would love to talk to you so join me in my <a href="">Gitter channel</a> or send me a   <a href="">email</a> 
+          </p>
+        </li>
+      </ul>
+    </section>
+    <header class="header more-padding-bottom  content-wrapper">
+      <a href="/" class="logo" data-pjax='content'>
+        <!-- <img alt="musca logo" height="42" class="logo" src="/dist/img/logo-42x42.svg" width="42" height="42"> -->
+      </a>
+      <aside class="greeting"></aside>
+      <a href="" class="open-side-menu float-right margin-left">
+        <img width="" height="21" src="/dist/img/menu.svg" class="bag">
+      </a>
+    </header>
+    <div id="content">
+      {{ content }}
+    </div>  
     <footer class="footer more-margin-top more-padding-top content-wrapper">
       {% include footer.html %}
     </footer>

@@ -3,6 +3,29 @@ var o = $;
 
 $(document).ready(function() {   
   o("body").addClass('loaded');
+  // pjax.connect('content', 'pjaxer');
+  pjax.connect({
+    parseJS: true,
+    'complete': function(e){
+      // setTimeout(closeOverlay, 1);
+      closeOverlay(); 
+    }
+  });
+  document.getElementById("content").addEventListener('complete', function(event){
+   console.log(event); 
+  }, false);
+  
+  // Open checkout menu
+  $(".open-side-menu, .close-main-menu").click(function(event) {
+    event.preventDefault();
+    $("body").toggleClass("side-menu-showing");
+    $(".overlay-holder").toggleClass("overlay");
+  });
+  // Close overlay 
+  $(".overlay-holder").click(function() {
+    $(".overlay-holder, .side-menu, body")
+    .removeClass("overlay side-menu-showing");
+  });
   var bLazy = new Blazy({ 
       // options
   });

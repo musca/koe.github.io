@@ -1,2 +1,0 @@
-function init(){var e=document.querySelector(".greeting"),n=new Date,t=n.getHours();e.innerHTML=t>0&&4>t?"Have a great night":t>=4&&12>t?"Good morning":t>=12&&18>t?"Good afternoon":"Good evening",document.documentElement.removeAttribute("id")}window.addEventListener("load",init,!1);
-//# sourceMappingURL=maps/header.js.map

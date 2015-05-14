@@ -40,7 +40,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 });
 
 gulp.task('scripts', function() {
-  return gulp.src(['src/js/*.js', 'src/vendor/*.js'])
+  return gulp.src('src/js/*.js')
     .pipe(sourcemaps.init())
       .pipe(include())
       .pipe(uglify())

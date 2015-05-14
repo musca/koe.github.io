@@ -2,7 +2,7 @@
 layout: default
 title: Web design and development
 css: main
-js: site
+js: blog
 ---
 <section class="intro content-wrapper">
   <header>
@@ -14,37 +14,47 @@ js: site
 </section>
 <section class="portfolio align-center content-wrapper clear" id="grid" data-columns>
   <div>
-    <a href="http://restfuldesign.github.io/restfuldesign.com/" rel="nofollow">
-      <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/dist/img/rd.jpg" alt="Full jQuery window width content slider">
-      restfuldesign.com
-    </a>
-    <p>HTML, SCSS and JS</p>
+    <div>
+      <a href="http://restfuldesign.github.io/restfuldesign.com/" rel="nofollow">
+        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/dist/img/rd.jpg" alt="Full jQuery window width content slider">
+        restfuldesign.com
+      </a>
+      <p>HTML, SCSS and JS</p>
+    </div>
   </div>
   <div>
-    <a href="http://www.rolandpersson.com">
-      <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/dist/img/roland-persson-ipad-white.jpg" alt="Roland Persson Photographer">
-      rolandpersson.com
-    </a>
-    <p>Design and initial code</p>
+    <div>
+      <a href="http://www.rolandpersson.com">
+        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/dist/img/roland-persson-ipad-white.jpg" alt="Roland Persson Photographer">
+        rolandpersson.com
+      </a>
+      <p>Design and initial code</p>
+    </div>
   </div>
   <div>
-    <img class="box-shadow b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/dist/img/vinyl-animation.gif" alt="Full window background video">
-    <p>Design, code and video editing</p>
+    <div>
+      <img class="box-shadow b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/dist/img/vinyl-animation.gif" alt="Full window background video">
+      <p>Design, code and video editing</p>
+    </div>
   </div>
   <div>
-    <a class="disabled" href="http://www.jofjell.se">
-      <img class="box-shadow b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/dist/img/per-jofjell.jpg" alt="www.jofjell.se">
-      jofjell.se
-    </a>
-    <p>
-      Design and code
-    </p>
+    <div>
+      <a class="disabled" href="http://www.jofjell.se">
+        <img class="box-shadow b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/dist/img/per-jofjell.jpg" alt="www.jofjell.se">
+        jofjell.se
+      </a>
+      <p>
+        Design and code
+      </p>
+    </div>
   </div>
   <div>
-    <a href="/full-window-width-jquery-tools-content-slider-demo/" title="Full jQuery window width content slider">
-      <img alt="Full window width content slider" class="box-shadow" src="/dist/img/fwwcs.jpg">
-    </a>
-    <p>jQuery, HTML and CSS</p>
+    <div>
+      <a href="/full-window-width-jquery-tools-content-slider-demo/" title="Full jQuery window width content slider">
+        <img alt="Full window width content slider" class="box-shadow" src="/dist/img/fwwcs.jpg">
+      </a>
+      <p>jQuery, HTML and CSS</p>
+    </div>
   </div>
 </section>
 <section class="github more-padding-top more-padding-bottom content-wrapper">
@@ -61,7 +71,7 @@ js: site
 </section>
 <section class="blog more-padding-top more-padding-bottom content-wrapper clear-both">
   <h2>latest from the blog</h2>
-  <div class="padding-top">
+  <div class="padding-top post">
     {% assign post = site.posts.first %}
     {% assign content = post.content %}
     <h3 class="padding-bottom">
@@ -70,7 +80,7 @@ js: site
     {{ content }}
   </div>
 </section>
-<section class="flickr more-margin-top grid content-wrapper">
+<section class="flickr more-margin-top content-wrapper">
   <h3>Random pics from my flickr stream</h3>
   <div class="flickrLoader">
     <img src="dist/img/grid.svg" width="60" height="60">
@@ -78,3 +88,7 @@ js: site
   <ul class="flickr-feed unit whole"></ul>
   <a href="http://flickr.com/karl-oskar" class="more-flickr-photos">See more photos</a>
 </section>
+<script>
+  // var grid = document.getElementById(grid);
+ //  salvattore.register_grid(grid);
+</script>

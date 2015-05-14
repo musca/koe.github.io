@@ -2,12 +2,16 @@
   padding-top: 1em;
   height: 42px;
   line-height: 42px;
-  position: relative;
+  position: absolute;
+  width: 90%;
+  top: 0;
+  left: 5%;
+  z-index: 3;
   .logo, aside {
     position: absolute;
   }
   aside {
-    right: 0;
+    right: 40px;
     top: 1em;
     font-size: 1.5em;
     color: #555;
