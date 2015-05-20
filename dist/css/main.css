@@ -197,11 +197,9 @@ h1{font-size:5.6em}
 }
 @media screen and (min-width:441px)and (max-width:768px){h1{font-size:3.4em}
 }
-@media screen and (max-width:767px){.content-wrapper{width:95%}
-.header-wrapper img{width:32px!important}
+@media screen and (max-width:767px){.header-wrapper img{width:32px!important}
 }
-@media screen and (max-width:532px){.content-wrapper{width:96%}
-h1{font-size:3.1em;margin-bottom:5px}
+@media screen and (max-width:532px){h1{font-size:3.1em;margin-bottom:5px}
 .flickr a,.flickr li{width:153.3px;height:153.3px}
 #what-ppl-say h3{left:22px}
 }
