@@ -8,7 +8,7 @@ abbr,address,article,aside,audio,b,blockquote,body,caption,cite,code,dd,del,deta
 .size-1of3{width:33.333%}
 .column>div{padding:1.5em}
 .column img{width:100%}
-.content-wrapper{width:90%;max-width:1500px;min-width:300px;margin:0 auto;transition:all .25s linear}
+.content-wrapper{width:90%;max-width:1500px;min-width:300px;margin:0 auto;transition:-webkit-transform .25s linear;transition:transform .25s linear}
 .grid,.unit{box-sizing:border-box}
 .grid{display:block;padding:0 1.5em}
 .grid .unit{float:left;width:100%;padding:.75em}

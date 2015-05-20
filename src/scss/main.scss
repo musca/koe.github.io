@@ -51,7 +51,7 @@
   height: 100%;
   background-color: #eee;
   overflow: hidden;
-  transition: all .25s linear;
+  transition: transform .25s linear;
   z-index: 3;
   -webkit-transform: translateX(0px);
      -moz-transform: translateX(0px);

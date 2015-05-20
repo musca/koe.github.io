@@ -14,9 +14,6 @@
   }
 }
 @media screen and (max-width: 1024px) {
-  .content-wrapper {
-    width: 960px;
-  }
   h1 {
     font-size: 4.6em;
   }
@@ -59,16 +56,7 @@
 }
 
 @media screen and (max-width: 440px) {
-  .content-wrapper {
-    width: 94%;
-  }
-  .flickr li {
-    width: 33.3% !important;
-    height: auto;
-  }
-  .blog {
-    width: 90%;
-  }
+
 }
 
 @media screen and (max-width: 480px){
@@ -85,6 +73,16 @@
   .grid .unit:first-child,
   .grid .unit:last-child {
     padding: 0;
+  }
+  .content-wrapper {
+    width: 94%;
+  }
+  .flickr li {
+    width: 33.3% !important;
+    height: auto;
+  }
+  .blog {
+    width: 90%;
   }
 }
 

@@ -1,10 +1,10 @@
-//= include ['vendor/*.js', 'includes/header.js']
+//= include ['includes/header.js', 'vendor/*.js']
 var o = $;
 
 $(document).ready(function() {
   
   pjax.connect({
-    parseJS: true,
+    // parseJS: true,
     'complete': function(e){
       setTimeout(closeOverlay, 1);
     }
