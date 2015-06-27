@@ -3,12 +3,12 @@ var o = $;
 
 $(document).ready(function() {
   
-  pjax.connect({
-    // parseJS: true,
-    'complete': function(e){
-      setTimeout(closeOverlay, 1);
-    }
-  });
+  // pjax.connect({
+  //   // parseJS: true,
+  //   'complete': function(e){
+  //     setTimeout(closeOverlay, 1);
+  //   }
+  // });
   
   getData()
   
