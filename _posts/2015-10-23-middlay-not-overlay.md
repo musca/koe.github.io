@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Middlay nor overlay 
+title:  Middlay not overlay 
 date:   2015-05-12 11:16:31
 categories: blog
 tags: design images middlay  
