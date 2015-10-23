@@ -6,8 +6,9 @@ categories: blog
 tags: design images middlay  
 css: blog
 js: blog
-image: middlay.gif
 ---
+
+![Middlay](/dist/img/middlay.gif)
 
 Design exploration of the middle laying image for a shop theme.
 
