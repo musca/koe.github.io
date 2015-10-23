@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Middlay not overlay 
-date:   2015-05-12 11:16:31
+title:  Middlay the images don't overlay them.
+date:   2015-10-23 13:42:00
 categories: blog
 tags: design images middlay  
 css: blog
@@ -12,4 +12,4 @@ js: blog
 
 Design exploration of the middle laying image for a shop theme.
 
-The idea is that the overlays blocks all navigation and the middle laying image does not. 
+The idea is that a overlay blocks all navigation and the middle laying ones does not. 
