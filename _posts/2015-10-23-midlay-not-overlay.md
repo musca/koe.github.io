@@ -8,7 +8,7 @@ css: blog
 js: blog
 ---
 
-![Middlay](/dist/img/middlay.gif)
+![Middlay](https://raw.githubusercontent.com/musca/midlay/master/assets/middlay-v4.gif)
 
 Design exploration of the middle laying image for a shop theme.
 
