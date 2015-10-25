@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  Middlay the images don't overlay them.
+title:  Midlay the images don't overlay them.
 date:   2015-10-23 13:42:00
 categories: blog
-tags: design images middlay  
+tags: design images midlay  
 css: blog
 js: blog
 ---
