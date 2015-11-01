@@ -4,6 +4,6 @@ gems:
 markdown: kramdown
 highlighter: pygments
 description: "This is where I keep a blog about my github projects, web design & development."
-url: http://blog.musca.se
+url: http://musca.se
 exclude: ["src", "node_modules", "gulpfile.js", "package.json", "README.md"]
 production_url : http://musca.se
