@@ -1,4 +1,4 @@
-.flickrLoader,h1{position:relative}
+@charset "UTF-8";.flickrLoader,h1{position:relative}
 .post code,code{word-break:break-all}
 #comments a,.post blockquote{font-style:italic}
 #comments-form,.clear-both,.grid,.grid:after{clear:both}
@@ -21,8 +21,8 @@ h2,p{color:#222}
 abbr,address,article,aside,audio,b,blockquote,body,caption,cite,code,dd,del,details,dfn,dl,dt,em,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;border:0;padding:0;font-size:100%;outline:0 none;vertical-align:baseline;background:0 0}
 .logo,.white .logo{background-repeat:no-repeat;background-size:42px}
 html{font-size:62.5%}
-body{font-family:Inconsolata,Cutive,Menlo,Monaco,'Courier New' monospace;line-height:1.43;transition:opacity 1s linear;-webkit-font-smoothing:antialiased;background-color:#fefefe}
-#intro,.bob,footer,h1,h2,h3,h4{font-family:'Cutive Mono',Menlo,Monaco,'Courier New',monospace;font-weight:200;text-align:center}
+body{font-family:Inconsolata,Cutive,Menlo,Monaco,"Courier New" monospace;line-height:1.43;transition:opacity 1s linear;-webkit-font-smoothing:antialiased;background-color:#fefefe}
+#intro,.bob,footer,h1,h2,h3,h4{font-family:"Cutive Mono",Menlo,Monaco,"Courier New",monospace;font-weight:200;text-align:center}
 #intro a,.bob a,footer a,h1 a,h2 a,h3 a,h4 a{font-size:100%}
 h1{font-size:4.8em;padding-top:2em;padding-bottom:0;text-align:center;font-weight:400;color:#4f5566;letter-spacing:-2px;word-spacing:-6px}
 #header a:first-child,#rss,.bold{font-weight:700}
