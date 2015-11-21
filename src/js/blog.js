@@ -1,4 +1,5 @@
-//= include ['includes/header.js', 'vendor/*.js']
+//= require includes/*.js
+//= require vendor/*.js
 var o = $;
 
 $(document).ready(function() {

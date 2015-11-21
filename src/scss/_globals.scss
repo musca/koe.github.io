@@ -9,23 +9,21 @@ body {
   background-color: #fefefe;
 }
 h1, h2, h3, h4, #intro, footer, .bob {
-  font-family: $sec-font-stack;
-  font-weight: 200;
+  font-family: $prim-font-stack;
   text-align: center;
   a {
     font-size: 100%;
   }
 }
 h1 {
-  font-size: 4.8em;
-  padding-top: 2em;
+  font-size: 9.2em;
   padding-bottom: 0px;
   position: relative;
   text-align: center;
-  font-weight: 400;
-  color: #4f5566;
-  letter-spacing: -2px;
-  word-spacing: -6px;
+  font-weight: 700;
+  color: #222;
+//  letter-spacing: -2px;
+//  word-spacing: -6px;
 }
 h2 {
   font-size: 3.6em;
@@ -39,7 +37,9 @@ h4 {
   font-size: 2.1em;
 }
 p {
+  font-family: $sec-font-stack;
   font-size: $p-font-size;
+  font-weight: 200;
   margin-bottom: 1em;
   line-height: 30px;
   color: #222;
@@ -63,7 +63,6 @@ code {
 .border {
   border: $border;
 }
-
 .content {
   margin-left: auto;
   margin-right: auto;
@@ -118,7 +117,7 @@ code {
 .align-left   { text-align: left; }
 .align-right  { text-align: right; }
 .uppercase	  { text-transform: uppercase; }
-.bold					{ font-weight: bold;}
+.bold					{ font-weight: 800;}
 .small-text   { font-size: 1.4em;}
 .smaller-text { font-size: 1.2em;}
 .inline-block { display: inline-block; }

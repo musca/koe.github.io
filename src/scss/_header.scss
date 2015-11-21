@@ -26,6 +26,7 @@
   background-image: url(../img/logo-42x42.svg);
   background-size: 42px;
   background-repeat: no-repeat;
+  transition: all .5s linear;
 }
 .white .logo {
   width: 42px;
@@ -38,15 +39,22 @@
   background-repeat: no-repeat;
 }
 .intro {
-  height: 410px !important;
   position: relative;
-}
-.intro h2 {
-  font-size: 2.1em;
-}
-
-.logo {
-  transition: all .5s linear;
+  text-align: center;
+  h1 {
+    font-size: 12.8em;
+    line-height: 1.11;
+  }
+  p {
+    padding-top: 1em;
+    max-width: 768px;
+    display: inline-block;
+    font-size: 2.1em;
+    a {
+      font-size: 100%;
+      text-decoration: none;
+    }
+  }
 }
 #loading .logo{
   z-index: 3;
