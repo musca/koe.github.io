@@ -105,10 +105,10 @@ code{display:block;font-size:13px;line-height:1.2}
 .unit img{max-width:100%}
 .only-on-mobiles{display:none!important}
 .header{padding-top:1em;height:42px;line-height:42px;width:90%;top:0;left:5%;z-index:3}
-.logo,.white .logo{width:42px;height:42px;opacity:1;background-size:42px;background-repeat:no-repeat}
+.logo,.white .logo{top:1em;left:0}
 .header aside{right:40px;top:1em;font-size:1.5em;color:#555}
-.logo{top:1em;left:0;background-image:url(../img/logo-42x42.svg);-webkit-transition:all .5s linear;transition:all .5s linear}
-.white .logo{top:1em;left:0;background-image:url(../img/logo-no-bg.svg)}
+.logo svg{width:24px;height:24px}
+.white .logo{width:42px;height:42px;opacity:1;background-image:url(../img/logo-no-bg.svg);background-size:42px;background-repeat:no-repeat}
 .intro{position:relative;text-align:center}
 .overlay,.side-menu{position:fixed;bottom:0;height:100%;top:0}
 .intro h1{font-size:12.8em;line-height:1.11}

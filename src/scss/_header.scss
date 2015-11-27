@@ -18,15 +18,12 @@
   }
 }
 .logo {
-  width: 42px;
-  height: 42px;
   top: 1em;
   left: 0;
-  opacity: 1;
-  background-image: url(../img/logo-42x42.svg);
-  background-size: 42px;
-  background-repeat: no-repeat;
-  transition: all .5s linear;
+  svg {
+    width: 24px;
+    height: 24px;
+  }
 }
 .white .logo {
   width: 42px;
