@@ -1,39 +1,59 @@
 .header {
-  padding-top: 1em;
+  padding-top: $padding;
   height: 42px;
-  line-height: 42px;
-  position: absolute;
+  position: relative;
   width: 90%;
-  top: 0;
-  left: 5%;
   z-index: 3;
-  .logo, aside {
+  nav {
+    position: inherit;
+    height: inherit;
+  }
+  .logo, 
+  aside,
+  .open-side-menu {
     position: absolute;
   }
+  .logo {
+    left: 0;
+    svg {
+      width: 24px;
+    }
+  }
   aside {
-    right: 40px;
-    top: 1em;
+    right: 48px;
+    line-height: 24px;
     font-size: 1.5em;
-    color: #555;
+    color: $grey;
+    text-transform: uppercase;
   }
-}
-.logo {
-  top: 1em;
-  left: 0;
-  svg {
-    width: 24px;
+  .open-side-menu {
+    right: 0;
+    top: 0;
+    svg {
+      transition: width .3s;
+    }
+    &:hover {
+      svg {
+        width: 39px;
+      }
+    }   
+  }
+  a {
     height: 24px;
-  }
+    svg {
+      height: inherit;
+      > path {
+        fill: $logo-color;
+      }    
+    }
+  }  
 }
 .white .logo {
-  width: 42px;
-  height: 42px;
-  top: 1em;
-  left: 0;
-  opacity: 1;
-  background-image: url(../img/logo-no-bg.svg);
-  background-size: 42px;
-  background-repeat: no-repeat;
+  svg {
+    > path {
+      fill: #fafafa;
+    }    
+  }
 }
 .intro {
   position: relative;

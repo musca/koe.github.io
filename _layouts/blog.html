@@ -41,14 +41,17 @@
         </li>
       </ul>
     </section>
-    <header class="header more-padding-bottom  content-wrapper">
-      <a href="/" class="logo" data-pjax='content'>
-        <!-- <img alt="musca logo" height="42" class="logo" src="/dist/img/logo-42x42.svg" width="42" height="42"> -->
-      </a>
-      <aside class="greeting"></aside>
-      <a href="" class="open-side-menu float-right margin-left">
-        <img width="" height="21" src="/dist/img/menu.svg" class="bag">
-      </a>
+    <header class="header content-wrapper">
+      <nav>
+        <a href="/" class="logo" data-pjax='content'>
+          <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title>logo</title><path d="M0 0h7.984v32H0V0zm24.016 0H32v32h-7.984V0zM12.008 0h7.984v20.098h-7.984V0z" fill="#4A4A4A" fill-rule="evenodd"/></svg>
+        </a>
+        <aside class="greeting"></aside>
+        <a href="#menu" class="open-side-menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>menu</title><path d="M39 18v6H0v-6h39zm0-9v6H0V9h39zm0-9v6H0V0h39z" fill="#4A4A4A" fill-rule="evenodd"/></svg>
+          <!-- <img width="" height="21" src="/dist/img/menu.svg" class="bag"> -->
+        </a>
+      </nav>
     </header>
     <div id="content">
       {{ content }}

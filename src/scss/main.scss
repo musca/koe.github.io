@@ -19,7 +19,6 @@
 .b-lazy.b-loaded {
   opacity: 1;
 }
-
 .overlay-holder {
   opacity : 0;
 }
@@ -37,10 +36,6 @@
   -webkit-transition: opacity .2s ease-in-out;
      -moz-transition: opacity .2s ease-in-out;
           transition: opacity .2s ease-in-out;
-}
-.open-side-menu {
-  float: right;
-  margin-top: 10px;
 }
 .side-menu {
   position: fixed;

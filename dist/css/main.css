@@ -1,6 +1,7 @@
 @charset "UTF-8";
 #intro,.bob,body,footer,h1,h2,h3,h4{font-family:"Roboto Condensed",Inconsolata,Cutive,Menlo,Monaco,"Courier New" monospace}
-.flickrLoader,h1{position:relative}
+.flickrLoader,.header,h1{position:relative}
+.header aside,.uppercase{text-transform:uppercase}
 .post code,code{word-break:break-all}
 #comments a,.post blockquote{font-style:italic}
 #comments-form,.clear-both,.grid,.grid:after{clear:both}
@@ -26,7 +27,6 @@ body{line-height:1.43;-webkit-transition:opacity 1s linear;transition:opacity 1s
 #intro,.bob,footer,h1,h2,h3,h4{text-align:center}
 #intro a,.bob a,footer a,h1 a,h2 a,h3 a,h4 a{font-size:100%}
 h1{font-size:9.2em;padding-bottom:0;text-align:center;font-weight:700}
-.header,.header .logo,.header aside{position:absolute}
 h2{font-size:3.6em;padding-bottom:30px}
 h3{font-size:2.4em}
 h4{font-size:2.1em}
@@ -57,7 +57,6 @@ code{display:block;font-size:13px;line-height:1.2}
 .column,.pull-left{float:left}
 .clear:after,.clear:before{clear:both;content:"\0020";display:block;height:0;visibility:hidden}
 .justify{text-align:justify}
-.uppercase{text-transform:uppercase}
 .bold{font-weight:800}
 #header a:first-child,#rss{font-weight:700}
 .small-text{font-size:1.4em}
@@ -104,11 +103,19 @@ code{display:block;font-size:13px;line-height:1.2}
 .pull-right{float:right}
 .unit img{max-width:100%}
 .only-on-mobiles{display:none!important}
-.header{padding-top:1em;height:42px;line-height:42px;width:90%;top:0;left:5%;z-index:3}
-.logo,.white .logo{top:1em;left:0}
-.header aside{right:40px;top:1em;font-size:1.5em;color:#555}
-.logo svg{width:24px;height:24px}
-.white .logo{width:42px;height:42px;opacity:1;background-image:url(../img/logo-no-bg.svg);background-size:42px;background-repeat:no-repeat}
+.header{padding-top:2em;height:42px;width:90%;z-index:3}
+.header nav{position:inherit;height:inherit}
+.header .logo,.header .open-side-menu,.header aside{position:absolute}
+.header .logo{left:0}
+.header .logo svg{width:24px}
+.header aside{right:48px;line-height:24px;font-size:1.5em;color:#ccc}
+.header .open-side-menu{right:0;top:0}
+.header .open-side-menu svg{-webkit-transition:width .3s;transition:width .3s}
+.header .open-side-menu:hover svg{width:39px}
+.header a{height:24px}
+.header a svg{height:inherit}
+.header a svg>path{fill:#666}
+.white .logo svg>path{fill:#fafafa}
 .intro{position:relative;text-align:center}
 .overlay,.side-menu{position:fixed;bottom:0;height:100%;top:0}
 .intro h1{font-size:12.8em;line-height:1.11}
@@ -126,7 +133,6 @@ code{display:block;font-size:13px;line-height:1.2}
 .white aside,.white h1{color:#fcfcfc}
 .overlay-holder{opacity:0}
 .overlay{width:100%;opacity:.2;right:0;left:0;background-color:#111;z-index:2;-webkit-transition:opacity .2s ease-in-out;transition:opacity .2s ease-in-out}
-.open-side-menu{float:right;margin-top:10px}
 .side-menu{right:-252px;width:252px;background-color:#eee;overflow:hidden;-webkit-transition:-webkit-transform .25s linear;transition:-webkit-transform .25s linear;transition:transform .25s linear;transition:transform .25s linear,-webkit-transform .25s linear;z-index:3;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}
 .post pre.terminal,.post pre.terminal code{background-color:#333}
 .side-menu-showing .content-wrapper,.side-menu-showing .side-menu{-webkit-transform:translateX(-252px);-ms-transform:translateX(-252px);transform:translateX(-252px)}
