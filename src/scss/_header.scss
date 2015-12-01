@@ -31,12 +31,7 @@
     top: 0;
     svg {
       transition: width .3s;
-    }
-    &:hover {
-      svg {
-        width: 39px;
-      }
-    }   
+    }  
   }
   a {
     height: 24px;
@@ -48,6 +43,12 @@
     }
   }  
 }
+.open-side-menu:hover,
+.side-menu-showing {
+  svg {
+    width: 39px;
+  }
+} 
 .white .logo {
   svg {
     > path {
