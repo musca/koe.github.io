@@ -1,10 +1,12 @@
 .header {
   padding-top: $padding;
   height: 42px;
-  position: relative;
-  width: 90%;
+  position: relative;  
   z-index: 3;
+  width: 100%;
   nav {
+    width: 90%;
+    margin: 0 auto;
     position: inherit;
     height: inherit;
   }
@@ -49,11 +51,14 @@
     width: 39px;
   }
 } 
-.white .logo {
-  svg {
-    > path {
-      fill: #fafafa;
-    }    
+.white {
+  .logo,
+  .open-side-menu {
+    svg {
+      > path {
+        fill: #fafafa;
+      }    
+    }
   }
 }
 .intro {

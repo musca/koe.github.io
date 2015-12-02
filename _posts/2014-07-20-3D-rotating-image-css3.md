@@ -5,6 +5,7 @@ date:   2014-07-20 13:15:00
 categories: blog
 tags: 3D Rotating image CSS3
 js: blog
+css: blog
 image: html5_3d_effects.svg
 bgColor: FF5151
 color: white
