@@ -52,10 +52,10 @@
      -moz-transform: translateX(-38.2%);
           transform: translateX(-38.2%);
 }
-.side-menu-showing .content-wrapper {
-  -webkit-transform: translateX(-38.2%);
-     -moz-transform: translateX(-38.2%);
-          transform: translateX(-38.2%);
+.side-menu-showing .side-menu, .side-menu-showing .content-wrapper {
+  -webkit-transform: translateX(-252px);
+     -moz-transform: translateX(-252px);
+          transform: translateX(-252px);
 }
 .side-menu li {
   margin: .6em 0;

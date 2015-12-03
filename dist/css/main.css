@@ -1,6 +1,6 @@
 @charset "UTF-8";
 #intro,.bob,body,footer,h1,h2,h3,h4{font-family:"Roboto Condensed",Inconsolata,Cutive,Menlo,Monaco,"Courier New" monospace}
-.flickrLoader,.header,h1{position:relative}
+.flickrLoader,h1{position:relative}
 .header aside,.uppercase{text-transform:uppercase}
 .post code,code{word-break:break-all}
 #comments a,.post blockquote{font-style:italic}
@@ -103,19 +103,19 @@ code{display:block;font-size:13px;line-height:1.2}
 .pull-right{float:right}
 .unit img{max-width:100%}
 .only-on-mobiles{display:none!important}
-.header{padding-top:2em;height:42px;width:90%;z-index:3}
-.header nav{position:inherit;height:inherit}
+.header{position:absolute;width:100%!important;padding-top:2em;height:42px;z-index:3}
+.header nav{width:90%;margin:0 auto;position:relative;height:inherit}
 .header .logo,.header .open-side-menu,.header aside{position:absolute}
 .header .logo{left:0}
 .header .logo svg{width:24px}
 .header aside{right:48px;line-height:24px;font-size:1.5em;color:#ccc}
 .header .open-side-menu{right:0;top:0}
 .header .open-side-menu svg{-webkit-transition:width .3s;transition:width .3s}
-.header .open-side-menu:hover svg{width:39px}
 .header a{height:24px}
 .header a svg{height:inherit}
 .header a svg>path{fill:#666}
-.white .logo svg>path{fill:#fafafa}
+.open-side-menu:hover svg,.side-menu-showing svg{width:39px}
+.white .logo svg>path,.white .open-side-menu svg>path{fill:#fafafa}
 .intro{position:relative;text-align:center}
 .overlay,.side-menu{position:fixed;bottom:0;height:100%;top:0}
 .intro h1{font-size:12.8em;line-height:1.11}
