@@ -19,6 +19,10 @@
 .b-lazy.b-loaded {
   opacity: 1;
 }
+.white aside,
+.white h1 {
+  color: #fcfcfc;
+}
 .overlay-holder {
   opacity : 0;
 }
@@ -41,21 +45,27 @@
   position: fixed;
   top: 0;
   bottom: 0;
-  right: 0;
-  width:  38.2%;
+  right: -252px;
+  width: 252px;
   height: 100%;
   background-color: #eee;
   overflow: hidden;
   transition: transform .25s linear;
   z-index: 3;
-  -webkit-transform: translateX(-38.2%);
-     -moz-transform: translateX(-38.2%);
-          transform: translateX(-38.2%);
+  -webkit-transform: translateX(0px);
+     -moz-transform: translateX(0px);
+          transform: translateX(0px);
 }
 .side-menu-showing .side-menu, .side-menu-showing .content-wrapper {
   -webkit-transform: translateX(-252px);
      -moz-transform: translateX(-252px);
           transform: translateX(-252px);
+}
+.close-side-menu {
+  padding: 15px;
+}
+.close-side-menu img{
+  margin-top: 15px;
 }
 .side-menu li {
   margin: .6em 0;

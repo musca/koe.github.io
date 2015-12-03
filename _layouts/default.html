@@ -42,7 +42,8 @@
 		<noscript><link href="dist/css/main.css" rel="stylesheet"></noscript>
     <title>musca.se | {{ page.title }}</title>
   </head>
-  <body>
+  {% assign current = page.url | downcase | split: '/' %}
+  <body {% if current[1] == 'blog' %}class='blog'{% endif %}">
     <div class="overlay-holder"></div>
     <section class="side-menu">
       <span class="close-side-menu float-left">

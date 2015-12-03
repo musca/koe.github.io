@@ -9,9 +9,6 @@
   h1 {
     font-size: 5.6em;
   }
-  .blog {
-    width: 50%;
-  }
 }
 @media screen and (max-width: 1024px) {
   h1 {
@@ -19,9 +16,6 @@
   }
   #quotes p {
     padding: 10px 30px;
-  }
-  .blog {
-    width: 70%;
   }
 }
 @media screen and (min-width: 441px) and (max-width: 768px) {
@@ -32,6 +26,11 @@
 @media screen and (max-width: 767px) {
   .header-wrapper img {
     width: 32px !important;
+  }
+  #content,
+  .blog .half,
+  .blog .content-wrapper {
+    width: 100% !important;
   }
 }
 @media screen and (max-width: 532px) {
@@ -74,9 +73,6 @@
   .flickr li {
     width: 33.3% !important;
     height: auto;
-  }
-  .blog {
-    width: 90%;
   }
 }
 

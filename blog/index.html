@@ -4,9 +4,8 @@ title: a design and dev blog
 css: main
 js: blog
 ---
-<h1></h1>
 {% for post in site.posts %}
-<div class="post-wrapper more-padding-top more-padding-bottom" {% unless post.bgColor == "none" %} style="background-color: #{{ post.bgColor }};" {% endunless %}>
+<div class="post-wrapper more-padding-top more-padding-bottom" {% if post.bgColor %}style="background-color: #{{ post.bgColor }};"{% endif %}>
   <div class="grid content-wrapper">
     <div class="unit half">
       <a href="{{ post.url }}">
