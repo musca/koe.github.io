@@ -41,21 +41,21 @@
   position: fixed;
   top: 0;
   bottom: 0;
-  right: -252px;
-  width: 252px;
+  right: 0;
+  width:  38.2%;
   height: 100%;
   background-color: #eee;
   overflow: hidden;
   transition: transform .25s linear;
   z-index: 3;
-  -webkit-transform: translateX(0px);
-     -moz-transform: translateX(0px);
-          transform: translateX(0px);
+  -webkit-transform: translateX(-38.2%);
+     -moz-transform: translateX(-38.2%);
+          transform: translateX(-38.2%);
 }
-.side-menu-showing .side-menu, .side-menu-showing .content-wrapper {
-  -webkit-transform: translateX(-252px);
-     -moz-transform: translateX(-252px);
-          transform: translateX(-252px);
+.side-menu-showing .content-wrapper {
+  -webkit-transform: translateX(-38.2%);
+     -moz-transform: translateX(-38.2%);
+          transform: translateX(-38.2%);
 }
 .side-menu li {
   margin: .6em 0;
