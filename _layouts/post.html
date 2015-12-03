@@ -3,10 +3,10 @@ layout: default
 css: main
 js: blog
 ---
-<section class="header-wrapper {{ page.color }} more-padding-top" style="background-color:#{{ page.bgColor }}; background-image:url(/dist/img/{{ page.bgImg }});">
+<section class="header-wrapper {{ page.color }} more-padding-top" style="{% if page.bgColor %} background-color:#{{ page.bgColor }};{% endif %} {% if page.bgImg == "none" %} background-image:url(/dist/img/{{ page.bgImg }});{% endif %}">
 
   <div class="content-wrapper more-padding-top">
-    {% if page.image %}
+    {% if page.headerImg %}
     <img src="/dist/img/{{ page.image }}" width="256" class="header-image float-center">
     {% endif %}
     <h1 class="padding-bottom">
@@ -40,7 +40,7 @@ js: blog
     {% endfor %}
     {% if match %}      
       <span>
-        <a href="{{ post.url }}" data-pjax='content'>{{ post.title }}</a>
+        <a href="{{ post.url }}" >{{ post.title }}</a>
       </span>        
     {% endif %}                       
   {% endfor %}
