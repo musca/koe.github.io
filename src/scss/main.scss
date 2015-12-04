@@ -37,9 +37,7 @@
   left: 0;
   background-color: #111;
   z-index: 2;
-  -webkit-transition: opacity .2s ease-in-out;
-     -moz-transition: opacity .2s ease-in-out;
-          transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
 }
 .side-menu {
   position: fixed;
@@ -56,6 +54,7 @@
 }
 .side-menu-showing .side-menu, 
 .side-menu-showing .content-wrapper,
+.side-menu-showing .post-wrapper,
 .side-menu-showing .header-wrapper {
   transform: translateX(-320px);
 }

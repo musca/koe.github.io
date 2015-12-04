@@ -135,7 +135,7 @@ code{display:block;font-size:13px;line-height:1.2}
 .overlay{width:100%;opacity:.2;right:0;left:0;background-color:#111;z-index:2;-webkit-transition:opacity .2s ease-in-out;transition:opacity .2s ease-in-out}
 .side-menu{right:-320px;width:320px;background-color:#eee;overflow:hidden;transition:-webkit-transform .25s linear;transition:transform .25s linear;transition:transform .25s linear,-webkit-transform .25s linear;z-index:3;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}
 .post pre.terminal,.post pre.terminal code{background-color:#333}
-.side-menu-showing .content-wrapper,.side-menu-showing .header-wrapper,.side-menu-showing .side-menu{-webkit-transform:translateX(-320px);-ms-transform:translateX(-320px);transform:translateX(-320px)}
+.side-menu-showing .content-wrapper,.side-menu-showing .header-wrapper,.side-menu-showing .post-wrapper,.side-menu-showing .side-menu{-webkit-transform:translateX(-320px);-ms-transform:translateX(-320px);transform:translateX(-320px)}
 .close-side-menu{padding:15px}
 .close-side-menu img{margin-top:15px}
 .side-menu li{margin:.6em 0}
@@ -145,15 +145,14 @@ code{display:block;font-size:13px;line-height:1.2}
 .side-menu>ul>li>a{font-weight:700;color:#333}
 .side-menu ul ul{margin:.5em 0 1em}
 .side-menu ul{margin-left:2em}
-.blog .header-wrapper{-webkit-transition:-webkit-transform .25s linear;transition:-webkit-transform .25s linear;transition:transform .25s linear;transition:transform .25s linear,-webkit-transform .25s linear}
-.blog .header-wrapper .content-wrapper{-webkit-transform:none!important;-ms-transform:none!important;transform:none!important}
-.blog .header-wrapper,.blog .post-wrapper{background-position:50% 50%;background-repeat:no-repeat;background-size:cover}
+.blog .header-wrapper,.blog .post-wrapper{background-position:50% 50%;background-repeat:no-repeat;background-size:cover;-webkit-transition:-webkit-transform .25s linear;transition:-webkit-transform .25s linear;transition:transform .25s linear;transition:transform .25s linear,-webkit-transform .25s linear}
 .blog .header-wrapper a,.blog .post-wrapper a{text-decoration:none!important}
 #comments a,#related li>a,#rss,ul#comments-ul .gravtar,ul#comments-ul .user{text-decoration:none}
 .blog .header-wrapper a h2,.blog .post-wrapper a h2{line-height:1.23}
 .blog .header-wrapper a svg,.blog .post-wrapper a svg{width:120px;height:80px;-webkit-transition:margin .3s;transition:margin .3s}
 .blog .header-wrapper a:hover svg,.blog .post-wrapper a:hover svg{margin-left:.5em}
 .blog .header-wrapper p,.blog .post-wrapper p{font-size:2.4em}
+.blog .header-wrapper .content-wrapper,.blog .post-wrapper .content-wrapper{-webkit-transform:none!important;-ms-transform:none!important;transform:none!important}
 .blog .header-wrapper.item1,.blog .post-wrapper.item1{padding-top:20em}
 .blog .header-wrapper.white a:hover,.blog .header-wrapper.white h2,.blog .header-wrapper.white p,.blog .post-wrapper.white a:hover,.blog .post-wrapper.white h2,.blog .post-wrapper.white p{color:#f4f4f4!important}
 .blog .header-wrapper.white svg path,.blog .post-wrapper.white svg path{fill:#f4f4f4}

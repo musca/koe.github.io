@@ -1,15 +1,10 @@
 .blog {
-  .header-wrapper {
-    transition: transform .25s linear;
-    .content-wrapper {
-      transform: none !important;
-    }
-  }
   .post-wrapper,
   .header-wrapper {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform .25s linear;
     a {
       text-decoration: none !important;
       h2 {
@@ -28,6 +23,9 @@
     }
     p {
       font-size: 2.4em;
+    }
+    .content-wrapper {
+      transform: none !important;
     }
     &.item1 {
       padding-top: 20em;
