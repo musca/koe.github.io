@@ -100,7 +100,7 @@ code{display:block;font-size:13px;line-height:1.2}
 .header a{height:24px}
 .header a svg{height:inherit}
 .header a svg>path{fill:#666}
-.open-side-menu:hover .open-side-menu svg,.side-menu-showing .open-side-menu svg{width:39px}
+.open-side-menu:hover svg,.side-menu-showing svg{width:39px!important}
 .white .logo svg>path,.white .open-side-menu svg>path{fill:#fafafa}
 .intro{position:relative;text-align:center}
 .intro h1{font-size:12.8em;line-height:1.11}
