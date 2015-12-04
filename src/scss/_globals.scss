@@ -1,5 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 html {
- font-size: 62.5%; 
+ font-size: 62.5%;
+ box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 body {
   font-family: $prim-font-stack;
