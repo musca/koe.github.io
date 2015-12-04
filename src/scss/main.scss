@@ -51,12 +51,16 @@
   transition: transform .25s linear;
   z-index: 3;
   transform: translateX(0px);
+  overflow: auto;
 }
-.side-menu-showing .side-menu, 
-.side-menu-showing .content-wrapper,
-.side-menu-showing .post-wrapper,
-.side-menu-showing .header-wrapper {
-  transform: translateX(-320px);
+.side-menu-showing {
+  overflow: hidden;
+  .side-menu, 
+  .content-wrapper,
+  .post-wrapper,
+  .header-wrapper {
+    transform: translateX(-320px);
+  }
 }
 .close-side-menu {
   margin-top: 20px;
