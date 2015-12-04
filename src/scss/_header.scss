@@ -51,9 +51,11 @@
 }
 .open-side-menu:hover,
 .side-menu-showing {
-  svg {
-    width: 39px;
-  }
+  .open-side-menu {
+    svg {
+      width: 39px;
+    }
+  } 
 } 
 .white {
   .logo,

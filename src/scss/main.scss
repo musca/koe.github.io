@@ -59,10 +59,10 @@
   transform: translateX(-320px);
 }
 .close-side-menu {
-  padding: 15px;
-}
-.close-side-menu img{
-  margin-top: 15px;
+  margin-top: 20px;
+  padding: 0 20px;
+  display: block;
+  cursor: pointer;
 }
 .side-menu li {
   margin: .6em 0;
