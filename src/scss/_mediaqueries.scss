@@ -48,11 +48,10 @@
   }
 }
 
-@media screen and (max-width: 440px) {
-
-}
-
 @media screen and (max-width: 480px){
+  .intro h1 {
+    font-size: 6.4em;
+  }
   h1 {
     padding-top: 4em;
   }

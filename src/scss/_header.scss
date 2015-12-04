@@ -1,10 +1,12 @@
 .header {
-  position: absolute;
-  width: 100% !important;
-  max-width: initial;
-  padding-top: $padding;
-  height: 42px;   
-  z-index: 3;
+  &.content-wrapper {
+    position: absolute;
+    width: 100% !important;
+    max-width: initial;
+    padding-top: $padding;
+    height: 42px;   
+    z-index: 3; 
+  }
   nav {
     width: 90%;
     max-width: 1500px;

@@ -43,7 +43,7 @@
     <title>musca.se | {{ page.title }}</title>
   </head>
   {% assign current = page.url | downcase | split: '/' %}
-  <body {% if current[1] == 'blog' %}class='blog'{% endif %}">
+  <body {% if current[1] == 'blog' %}class='blog {{ page.color }}'{% endif %}>
     <div class="overlay-holder"></div>
     <section class="side-menu">
       <span class="close-side-menu float-left">

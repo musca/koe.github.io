@@ -5,14 +5,13 @@ date:   2014-07-20 13:15:00
 categories: blog
 tags: 3D Rotating image CSS3
 js: blog
-css: blog
+css: main
 headerImg: html5_3d_effects.svg
 bgColor: FF5151
-bgImg: none
 color: white
 ---
 
-
+<!--more-->
 <style>
 	.header-image {
 		width: 140px;
@@ -46,6 +45,7 @@ color: white
 	    transform: perspective(400px) rotateY(-360deg); }
 	}
 </style>
+
 
 	<img src="/dist/img/logo.svg" class="logo">
 

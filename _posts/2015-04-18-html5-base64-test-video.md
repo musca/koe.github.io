@@ -4,14 +4,15 @@ title:  "HTML5 base64 test video"
 date:   2015-04-18 13:37:01
 categories: blog
 tags: HTML5 video base64
-css: blog
+css: main
 js: blog
 bgColor: 81c6e8
 color: white
-image: html5_multimedia.svg
+headerImg: html5_multimedia.svg
 ---
 
 I needed a small base64 video file to check for HTML 5 video tag support in the browser. This is what I came up with.
+<!--more-->
 
 mp4 version:
 <code>

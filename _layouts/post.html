@@ -1,15 +1,13 @@
 ---
 layout: default
-css: main
-js: blog
 ---
-<section class="header-wrapper {{ page.color }} more-padding-top" style="{% if page.bgColor %} background-color:#{{ page.bgColor }};{% endif %} {% if page.bgImg == "none" %} background-image:url(/dist/img/{{ page.bgImg }});{% endif %}">
+<section class="header-wrapper more-padding-top" style="{% if page.bgColor %} background-color:#{{ page.bgColor }};{% endif %} {% if page.bgImg %} background-image:url(/dist/img/{{ page.bgImg }});{% endif %}">
 
   <div class="content-wrapper more-padding-top">
     {% if page.headerImg %}
     <img src="/dist/img/{{ page.headerImg }}" width="256" class="header-image float-center">
     {% endif %}
-    <h1 class="padding-bottom">
+    <h1 {% if page.bgColor or page.bgImg %}class="padding-bottom"{% endif %}>
       {{ page.title }}
     </h1>
   </div>
