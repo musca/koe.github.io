@@ -1,11 +1,10 @@
 //= require includes/*.js
 //= require vendor/*.js
 var o = $;
-
+var video 
 $(document).ready(function() {
-
   getData()
-  
+  video = document.querySelector("video");
   var bLazy = new Blazy();
   
   document.getElementById("content").addEventListener('complete', function(event){

@@ -6,6 +6,7 @@ categories: blog
 tags: HTML5 video base64
 css: main
 js: blog
+color: black
 bgColor: FFC916
 headerImg: html5_multimedia.svg
 ---

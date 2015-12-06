@@ -1,10 +1,10 @@
-$prim-font-stack:		'Roboto Condensed', 'Inconsolata','Cutive', 'Menlo', 'Monaco', 'Courier New' monospace;
-$sec-font-stack:		sans-serif, 'Cutive Mono', 'Menlo', 'Monaco', 'Courier New', monospace;
+$prim-font-stack:		Roboto, 'Lato', sans-serif;
+$sec-font-stack:		sans-serif;
 $line-height:       1.6;
 $logo-color:        #666;
 $header-bg-color: 	#fbfbfb;
 $link-color:        #65C7FD;
-$grey:							#ccc;
+
 $border: 						1px solid #ddd;
 $less-padding:			1em;
 $padding:						2em;
@@ -12,6 +12,8 @@ $margin:            3em;
 $more-margin:       5em;
 $more-padding:			5em;
 $green:							rgba(104, 166, 52, .95);
+$black:             #222;
+$grey:							#ccc;
 $white:							#f4f4f4;
 $blue:							#08c;
 $light-blue:        #F1F4F9;

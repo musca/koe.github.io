@@ -46,7 +46,7 @@ color: white
 	}
 </style>
 
-
+{% highlight html linenos %}
 	<img src="/dist/img/logo.svg" class="logo">
 
 	.logo {
@@ -61,3 +61,4 @@ color: white
         transform: perspective(400px) rotateY(-360deg); 
       }
 	}
+{% endhighlight %}

@@ -12,7 +12,7 @@ js: blog
 
 
 Design exploration of the middle laying image for a shop theme.
-The idea is that a overlay blocks all navigation and the middle laying ones does not.
+The idea is that a overlay blocks navigation and the middle laying one does not.
 <!--more-->
 
 ![Middlay](https://raw.githubusercontent.com/musca/midlay/master/assets/middlay-v4.gif)

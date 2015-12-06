@@ -60,7 +60,17 @@
   .open-side-menu {
     svg {
       > path {
-        fill: #fafafa;
+        fill: $white;
+      }    
+    }
+  }
+}
+.black {
+  .logo,
+  .open-side-menu {
+    svg {
+      > path {
+        fill: $black;
       }    
     }
   }
@@ -68,9 +78,33 @@
 .intro {
   position: relative;
   text-align: center;
+  overflow: hidden;
+  .video-container {
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+  }
+
+  video {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      min-height: 50%;
+      min-width: 50%;
+  }
   h1 {
+    color: rgba(47, 47, 47, 0.7);
     font-size: 12.8em;
-    line-height: 1.11;
+    line-height: 1.2;
+    span {
+//      background-color: #FFFF00;
+      background-color: rgba(255, 255, 255, 0.33);
+    }
   }
   p {
     padding-top: 1em;
