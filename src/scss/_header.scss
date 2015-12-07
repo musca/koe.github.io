@@ -5,7 +5,7 @@
     max-width: initial;
     padding-top: $padding;
     height: 42px;   
-    z-index: 3; 
+    z-index: 4; 
   }
   nav {
     width: 90%;
@@ -13,41 +13,41 @@
     margin: 0 auto;
     position: relative;
     height: inherit;
-  }
-  .logo, 
-  aside,
-  .open-side-menu {
-    position: absolute;
-  }
-  .logo {
-    left: 0;
-    svg {
-      width: 24px;
+    .logo, 
+    aside,
+    .open-side-menu {
+      position: absolute;
     }
-  }
-  aside {
-    right: 48px;
-    line-height: 24px;
-    font-size: 1.5em;
-    color: $grey;
-    text-transform: uppercase;
-  }
-  .open-side-menu {
-    right: 0;
-    top: 0;
-    svg {
-      transition: width .3s;
+    .logo {
+      left: 0;
+      svg {
+        width: 24px;
+      }
+    }
+    aside {
+      right: 48px;
+      line-height: 24px;
+      font-size: 1.5em;
+      color: $grey;
+      text-transform: uppercase;
+    }
+    .open-side-menu {
+      right: 0;
+      top: 0;
+      svg {
+        transition: width .3s;
+      }  
+    }
+    a {
+      height: 24px;
+      svg {
+        height: inherit;
+        > path {
+          fill: $logo-color;
+        }    
+      }
     }  
   }
-  a {
-    height: 24px;
-    svg {
-      height: inherit;
-      > path {
-        fill: $logo-color;
-      }    
-    }
-  }  
 }
 .open-side-menu:hover,
 .side-menu-showing .open-side-menu {
@@ -115,6 +115,7 @@
     left: -50%;
     width: 200%;
     height: 200%;
+    transition: transform .25s linear;
   }
   video {
     position: absolute;

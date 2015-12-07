@@ -1,42 +1,48 @@
 //= require includes/*.js
 //= require vendor/*.js
+'use strict';
 var o = $;
 $(document).ready(function() {
-  var header = document.querySelector(".intro");
-  var video = document.querySelector("video");
   var didScroll = false;
   var didResize = false;
   var bLazy = new Blazy();
   
+  console.log(isRoot());
+  
+  var header = document.querySelector(".intro");
+  var video = document.querySelector("video");
   //verge.inViewport(video)
-  setHeaderHeight();
+  if (isRoot && header != null) {
+    
+    setHeaderHeight();
+    
+    function setHeaderHeight() {
+      header.style.height = verge.viewportH()+"px"; 
+    }
   
-  function setHeaderHeight() {
-    header.style.height = verge.viewportH()+"px";
+    function pauseVideo() {
+      if (verge.inViewport(video, -verge.viewportH() / 2)) {
+        if (video.paused) video.play();    
+      } else {
+        video.pause();
+      }
+    }
+  
+    window.onscroll = function() {
+      didScroll = true;
+    };
+  
+    setInterval(function() {
+      if (didScroll) {
+        didScroll = false;
+        // Check header position and then
+        pauseVideo();
+      }
+      if (didResize) {
+        setHeaderHeight();
+      }
+    }, 1000);
   }
-  
-  function pauseVideo() {
-    if (verge.inViewport(video, -verge.viewportH() / 2)) {
-      if (video.paused) video.play();    
-    } else {
-      video.pause();
-    }
-  }
-  
-  window.onscroll = function() {
-    didScroll = true;
-  };
-  
-  setInterval(function() {
-    if (didScroll) {
-      didScroll = false;
-      // Check header position and then
-      pauseVideo();
-    }
-    if (didResize) {
-      setHeaderHeight();
-    }
-  }, 1000);
   
   document.getElementById("content").addEventListener('complete', function(event){
    var grid = document.getElementById('grid');
@@ -62,6 +68,10 @@ $(document).ready(function() {
   function closeOverlay() {
     $(".overlay-holder, .side-menu, body")
     .removeClass("overlay side-menu-showing");
+  }
+  
+  function isRoot() {
+      return location.pathname == "/";
   }
   
   (function () {
