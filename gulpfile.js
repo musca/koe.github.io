@@ -41,8 +41,8 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 
 gulp.task('scripts', function() {
   return gulp.src('src/js/*.js')
-    .pipe(sourcemaps.init())
-      .pipe(include())
+    .pipe(include())
+    .pipe(sourcemaps.init())     
       .pipe(uglify())
     .pipe(sourcemaps.write('maps'))
   .pipe(gulp.dest('dist/js'))

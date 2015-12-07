@@ -1,14 +1,44 @@
 //= require includes/*.js
 //= require vendor/*.js
 var o = $;
-var video 
 $(document).ready(function() {
-  getData()
-  video = document.querySelector("video");
+  var header = document.querySelector(".intro");
+  var video = document.querySelector("video");
+  var didScroll = false;
+  var didResize = false;
   var bLazy = new Blazy();
   
+  //verge.inViewport(video)
+  setHeaderHeight();
+  
+  function setHeaderHeight() {
+    header.style.height = verge.viewportH()+"px";
+  }
+  
+  function pauseVideo() {
+    if (verge.inViewport(video, -verge.viewportH() / 2)) {
+      if (video.paused) video.play();    
+    } else {
+      video.pause();
+    }
+  }
+  
+  window.onscroll = function() {
+    didScroll = true;
+  };
+  
+  setInterval(function() {
+    if (didScroll) {
+      didScroll = false;
+      // Check header position and then
+      pauseVideo();
+    }
+    if (didResize) {
+      setHeaderHeight();
+    }
+  }, 1000);
+  
   document.getElementById("content").addEventListener('complete', function(event){
-   console.log(event);
    var grid = document.getElementById('grid');
    salvattore.recreateColumns(grid);
    setTimeout(bLazy.revalidate, 50);
@@ -16,47 +46,48 @@ $(document).ready(function() {
   }, false);
   
   o("body").addClass('loaded');
+  
   // Open side menu
   $(".open-side-menu, .close-side-menu").click(function(event) {
     event.preventDefault();
     $("body").toggleClass("side-menu-showing");
     $(".overlay-holder").toggleClass("overlay");
   });
+  
   // Close side menu and overlay 
   $(".overlay-holder").click(function() {
     closeOverlay();
   });
+  
   function closeOverlay() {
     $(".overlay-holder, .side-menu, body")
     .removeClass("overlay side-menu-showing");
   }
   
-  function getData() {
-    // Get github repos
-    o.ajax({
-        url: 'https://api.github.com/users/musca/repos?sort=updated'
-      , type: 'jsonp'
-      , method: 'get'
-      , jsonpCallback: 'callback'
-      , fail: function (err) { 
-        alert("err");
-      }
-      , success: function (data) {
-      
-        var repos = data.data,
-            tmpHolder = [];
+  (function () {
+    // Get github repos   
+    atomic.get('https://api.github.com/users/musca/repos?sort=updated')
+    .success(function (data, xhr) {
+      var tmpHolder = [];
 
-        for (var i = 0; i < 5; i++) {
+      for (var i = 0; i < 5; i++) {
+        tmpHolder.push(
+          '<li>' +
+          '  <a href="'+data[i].html_url+'">'+data[i].name+'</a>' +
+          '  <span class="language smaller-text">'+data[i].language+'</span><br>' +
+          '  <p>'+data[i].description+'</p>' +
+          '</li>'
+        );
+      };
+      o(".github-projects").append(tmpHolder.join(''));
+    })
+    .error(function (data, xhr) {
 
-          var tmp = '  <a href="'+repos[i].html_url+'">'+repos[i].name+'</a> '+
-                    '  <span class="language smaller-text">'+repos[i].language+'</span><br> '+
-                    '  <p>'+repos[i].description+'</p> ';
+    })
+    .always(function (data, xhr) {
 
-          tmpHolder.push('<li>' + tmp + '</li>');
-        };
-        o(".github-projects").append(tmpHolder.join(''));
-      }
     });
+    
     //Flickr stream
   	o.ajax({
   	    url: 'http://api.flickr.com/services/feeds/photos_public.gne?format=json&id=64589350@N05&lang=en-us'
@@ -134,5 +165,5 @@ $(document).ready(function() {
     function scrollWindow(topPos){
       window.scrollTo(0, topPos);
     }
-  }
+  })();
 });
