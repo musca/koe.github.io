@@ -128,7 +128,7 @@
     min-height: 50%;
     min-width: 50%;
     z-index: 1;
-    -webkit-filter:blur(30px);
+    filter:blur(30px);
   }
 }
 #loading .logo{
