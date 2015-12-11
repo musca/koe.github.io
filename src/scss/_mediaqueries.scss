@@ -24,6 +24,9 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .video-container {
+    display: none;
+  }
   .header-wrapper img {
     width: 32px !important;
   }
@@ -34,7 +37,7 @@
   }
 }
 @media screen and (max-width: 532px) {
-  h1 {
+  .intro header h1 {
     font-size: 3.1em;
     margin-bottom: 5px;
   }
@@ -49,8 +52,11 @@
 }
 
 @media screen and (max-width: 480px){
-  .intro h1 {
-    font-size: 6.4em;
+  .intro header {
+    h1 {
+      padding-top: 60px !important;
+      font-size: 3.6em;
+    }
   }
   h1 {
     padding-top: 4em;
