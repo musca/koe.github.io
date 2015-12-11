@@ -5,13 +5,10 @@ var o = $;
 $(document).ready(function() {
   var didScroll = false;
   var didResize = false;
-  var bLazy = new Blazy();
-  
-  console.log(isRoot());
-  
+  var bLazy = new Blazy();  
   var header = document.querySelector(".intro");
   var video = document.querySelector("video");
-  //verge.inViewport(video)
+
   if (isRoot && header != null) {
     
     setHeaderHeight();
