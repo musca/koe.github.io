@@ -12,9 +12,16 @@ $(document).ready(function() {
   if (isRoot && header != null) {
     
     setHeaderHeight();
+    alignContent();
+    
+    function alignContent() {
+      var headerContent = document.querySelector(".header-content");
+      var margin = headerContent.offsetHeight / 2;
+      headerContent.style.marginTop = "-"+margin+"px";
+    }
     
     function setHeaderHeight() {
-      header.style.height = verge.viewportH()+"px"; 
+      header.style.height = verge.viewportH()+"px";
     }
   
     function pauseVideo() {
@@ -27,6 +34,10 @@ $(document).ready(function() {
   
     window.onscroll = function() {
       didScroll = true;
+    };
+    
+    window.onresize = function() {
+      didResize = true;
     };
   
     setInterval(function() {

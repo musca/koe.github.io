@@ -105,8 +105,8 @@ code{display:block;font-size:13px;line-height:1.2}
 .white .logo svg>path,.white .open-side-menu svg>path{fill:#f4f4f4}
 .black .logo svg>path,.black .open-side-menu svg>path{fill:#222}
 .intro{position:relative;text-align:center;overflow:hidden}
-.intro header{position:relative;z-index:3}
-.intro header h1{color:rgba(47,47,47,.7);font-size:12.8em;line-height:1.2}
+.intro header{position:relative;top:50%;z-index:3}
+.intro header h1{font-size:6.4em;line-height:1.2}
 .intro header p{padding-top:1em;max-width:768px;display:inline-block;font-size:2.1em}
 .intro header p a{font-size:100%}
 .intro .video-overlay{position:absolute;width:100%;height:100%;background-color:rgba(255,255,255,.33);z-index:2;opacity:.8}
