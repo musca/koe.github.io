@@ -9,7 +9,7 @@ $(document).ready(function() {
   var header = document.querySelector(".intro");
   var video = document.querySelector("video");
 
-  if (isRoot && header != null) {
+  if (header) {
     
     setHeaderHeight();
     alignContent();
