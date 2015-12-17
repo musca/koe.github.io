@@ -85,7 +85,7 @@ code{display:block;font-size:13px;line-height:1.2}
 .inline-block{display:inline-block}
 .leading{line-height:1.5;display:block}
 .disabled,a[disabled]{pointer-events:none;cursor:default;text-decoration:line-through}
-.border-button,.intro header p a,.side-menu ul li a{text-decoration:none}
+.border-button,.side-menu ul li a{text-decoration:none}
 .box-shadow{-webkit-box-shadow:0 2px 7px #ccc;box-shadow:0 2px 7px #ccc}
 .border-button{border:1px solid #65c7fd;padding:9px 18px;-webkit-border-radius:30px;border-radius:30px}
 .hire-me{width:7em;font-size:1.8em}
@@ -108,8 +108,7 @@ code{display:block;font-size:13px;line-height:1.2}
 .intro{position:relative;text-align:center;overflow:hidden}
 .intro header{position:relative;top:50%;z-index:3}
 .intro header h1{font-size:6.4em;line-height:1.2;font-weight:400}
-.intro header p{padding-top:1em;max-width:768px;display:inline-block;font-size:2.1em}
-.intro header p a{font-size:100%}
+.intro header a{width:160px;height:48px;background-color:rgba(240,248,255,.3);-webkit-border-radius:24px;border-radius:24px}
 .intro .video-overlay{position:absolute;width:100%;height:100%;background-color:rgba(255,255,255,.9);z-index:2;opacity:.8}
 .intro .video-container{position:absolute;top:-50%;left:-50%;width:200%;height:200%;transition:-webkit-transform .25s linear;transition:transform .25s linear;transition:transform .25s linear,-webkit-transform .25s linear}
 .intro video{position:absolute;top:0;bottom:0;right:0;left:0;margin:auto;min-height:50%;min-width:50%;z-index:1;-webkit-filter:blur(30px);filter:blur(30px)}
