@@ -88,17 +88,11 @@
       line-height: 1.2;
       font-weight: normal;
     }
-    p {
-      padding-top: 1em;
-      max-width: 768px;
-      display: inline-block;
-      font-size: 2.1em;
-      a {
-        width: 160px;
-        height: 48px;
-        background-color: rgba(240, 248, 255, 0.3);
-        border-radius: 24px;
-      }
+    a {
+      width: 160px;
+      height: 48px;
+      background-color: rgba(240, 248, 255, 0.3);
+      border-radius: 24px;
     }
   }
   .video-overlay {
